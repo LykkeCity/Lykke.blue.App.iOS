@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pin Pad View Controller-->
+        <scene sceneID="NeX-ek-dT7">
+            <objects>
+                <viewController storyboardIdentifier="PinPad" id="lRn-SQ-B2a" customClass="PinPadViewController" customModule="LykkeBlueLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ohO-ea-haS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFV-D7-VGt" customClass="NumPadView" customModule="LykkeBlueLife" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="100" width="375" height="360"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="q3d-W7-0Iz"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LfE-ML-aKX" userLabel="dotsContainer">
+                                <rect key="frame" x="107" y="10" width="160" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGU-Fa-U7h" userLabel="first">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="60"/>
+                                        <state key="normal" image="grayDot"/>
+                                        <state key="selected" image="blackDot"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buZ-S9-r5a" userLabel="second">
+                                        <rect key="frame" x="40" y="0.0" width="40" height="60"/>
+                                        <state key="normal" image="grayDot"/>
+                                        <state key="selected" image="blackDot"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOX-qF-nyW" userLabel="third">
+                                        <rect key="frame" x="80" y="0.0" width="40" height="60"/>
+                                        <state key="normal" image="grayDot"/>
+                                        <state key="selected" image="blackDot"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVt-NR-DPT" userLabel="fourth">
+                                        <rect key="frame" x="120" y="0.0" width="40" height="60"/>
+                                        <state key="normal" image="grayDot"/>
+                                        <state key="selected" image="blackDot"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Cnx-iK-9vF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LfE-ML-aKX" firstAttribute="centerX" secondItem="ohO-ea-haS" secondAttribute="centerX" id="BSz-Xy-Jq8"/>
+                            <constraint firstItem="wFV-D7-VGt" firstAttribute="trailing" secondItem="1rP-cS-YqB" secondAttribute="trailing" id="Q2l-ST-Fk7"/>
+                            <constraint firstItem="wFV-D7-VGt" firstAttribute="leading" secondItem="1rP-cS-YqB" secondAttribute="leading" id="Z54-Nh-hFi"/>
+                            <constraint firstItem="wFV-D7-VGt" firstAttribute="bottom" secondItem="1rP-cS-YqB" secondAttribute="bottom" id="pvh-4X-amx"/>
+                            <constraint firstItem="LfE-ML-aKX" firstAttribute="width" secondItem="ohO-ea-haS" secondAttribute="width" multiplier="0.426" id="qR1-TX-cQ8"/>
+                            <constraint firstItem="wFV-D7-VGt" firstAttribute="top" secondItem="LfE-ML-aKX" secondAttribute="bottom" constant="30" id="xfy-x4-7bG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1rP-cS-YqB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="460"/>
+                    <connections>
+                        <outlet property="dotsContainer" destination="LfE-ML-aKX" id="iZp-Kv-VzA"/>
+                        <outlet property="first" destination="ZGU-Fa-U7h" id="0u4-yD-iZW"/>
+                        <outlet property="fourth" destination="cVt-NR-DPT" id="Mbx-Ld-9PE"/>
+                        <outlet property="numpad" destination="wFV-D7-VGt" id="2xF-dR-aW5"/>
+                        <outlet property="second" destination="buZ-S9-r5a" id="luM-m3-UUv"/>
+                        <outlet property="third" destination="sOX-qF-nyW" id="EuQ-2z-NDr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UR2-Wi-mlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394.39999999999998" y="113.79310344827587"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blackDot" width="8" height="8"/>
+        <image name="grayDot" width="8" height="8"/>
+    </resources>
+</document>

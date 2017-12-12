@@ -1,0 +1,168 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Alamofire (4.6.0)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
+  - CocoaAsyncSocket (7.6.2)
+  - Crashlytics (3.9.3):
+    - Fabric (~> 1.7.2)
+  - Differentiator (2.0.2)
+  - Fabric (1.7.2)
+  - Firebase/Core (4.7.0):
+    - FirebaseAnalytics (= 4.0.5)
+    - FirebaseCore (= 4.0.12)
+  - Firebase/Crash (4.7.0):
+    - Firebase/Core
+    - FirebaseCrash (= 2.0.2)
+  - Firebase/DynamicLinks (4.7.0):
+    - Firebase/Core
+    - FirebaseDynamicLinks (= 2.3.0)
+  - FirebaseAnalytics (4.0.5):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - nanopb (~> 0.3)
+  - FirebaseCore (4.0.12):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCrash (2.0.2):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - Protobuf (~> 3.1)
+  - FirebaseDynamicLinks (2.3.0):
+    - FirebaseAnalytics (~> 4.0)
+  - FirebaseInstanceID (2.0.7)
+  - GHODictionary (1.1.0)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - GoogleToolboxForMac/Logger (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GoogleToolboxForMac/NSData+zlib (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - MDWamp (2.2.4):
+    - CocoaAsyncSocket
+    - MPMessagePack
+    - SocketRocket
+  - MPMessagePack (1.4.3):
+    - GHODictionary
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - NVActivityIndicatorView (3.7.0):
+    - NVActivityIndicatorView/Presenter (= 3.7.0)
+  - NVActivityIndicatorView/Presenter (3.7.0)
+  - Protobuf (3.5.0)
+  - QRCodeReader.swift (7.4.3)
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxDataSources (2.0.2):
+    - Differentiator (~> 2.0)
+    - RxCocoa (>= 3.6.1)
+    - RxSwift (>= 3.6.1)
+  - RxKeyboard (0.6.2):
+    - RxCocoa (>= 3.4)
+    - RxSwift (>= 3.4)
+  - RxOptional (3.2.0):
+    - RxCocoa
+    - RxSwift
+  - RxSwift (3.6.1)
+  - RxSwiftExt (2.5.1):
+    - RxSwiftExt/Core (= 2.5.1)
+  - RxSwiftExt/Core (2.5.1):
+    - RxSwift (~> 3.4)
+  - SocketRocket (0.5.1)
+  - TextFieldEffects (1.4.0)
+  - Toaster (2.1.1)
+  - TwitterCore (3.0.3)
+  - TwitterKit (3.2.2):
+    - TwitterCore (>= 3.0.3)
+  - UIDeviceIdentifier (1.1.1)
+  - Valet (2.4.2)
+  - WalletCore (0.0.1):
+    - AFNetworking
+    - MDWamp
+    - QRCodeReader.swift (~> 7.4.0)
+    - RxCocoa (~> 3.6.1)
+    - RxKeyboard (~> 0.6.2)
+    - RxOptional (~> 3.1)
+    - RxSwift (~> 3.6.1)
+    - RxSwiftExt (~> 2.4)
+    - UIDeviceIdentifier
+    - Valet
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - AlamofireImage (~> 3.1)
+  - Crashlytics (~> 3.9.3)
+  - Fabric (~> 1.7.2)
+  - Firebase/Core
+  - Firebase/Crash
+  - Firebase/DynamicLinks
+  - NVActivityIndicatorView (~> 3.5)
+  - RxDataSources (~> 2.0)
+  - TextFieldEffects (~> 1.3)
+  - Toaster (~> 2.1)
+  - TwitterCore (~> 3.0)
+  - TwitterKit (~> 3.2)
+  - WalletCore (from `../WalletCoreiOS`)
+
+EXTERNAL SOURCES:
+  WalletCore:
+    :path: ../WalletCoreiOS
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  CocoaAsyncSocket: 3541e024f48c54b251638ef72d51dd42808de932
+  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
+  Differentiator: caa9b3957981a2ac8e6b2eac8a676af461caa604
+  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
+  Firebase: dbfb98ccec2dcfcd21ab9cc1b4981a3f3c8c5e26
+  FirebaseAnalytics: 5b02a63ead2c3f0259cfc7f15e053e440587ecf8
+  FirebaseCore: 6cf108b63997bc08c04a1ffa55a3ac0d71a59ffc
+  FirebaseCrash: cded0fc566c03651aea606a101bc156085f333ca
+  FirebaseDynamicLinks: b75f5b4dcfc3c9b7889e1283632359e5431264e7
+  FirebaseInstanceID: 148c25c986c8699e67304b114e365713dce467f2
+  GHODictionary: 225e042596a4b3d5b66b2b24250086b2f95514af
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
+  MDWamp: c41dd5e15ffb61f4f23d027c925173e8c2313c3b
+  MPMessagePack: 6dc3a4b93bfdc7cdafcb64de62e2adc50cd99880
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
+  Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
+  QRCodeReader.swift: 4a1d46f3057b1b6fc555578b2dc9f2dc99c7ccda
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxDataSources: 7f190474a93a206c082c2d74c4cc9c8f7bea4feb
+  RxKeyboard: 09e6bd45070888cd9701e941b2324a49cc974a1b
+  RxOptional: d2d6a68064bc16b4801332c40663967f481b0234
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  RxSwiftExt: ec25c6df68d15ad6fe326792d60452b52e83d606
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
+  Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
+  TwitterCore: 549c74ed5f3d6134392dc944c6d215e233e50ad8
+  TwitterKit: b9feccfc70bef86fe389c06a63a72fed9f020b9c
+  UIDeviceIdentifier: 9281343882e24460235f00a0d7d2fc04a65688c6
+  Valet: 14463ef24fab8fd5809044ecedb61484b799fdd6
+  WalletCore: c976f55f5b38cbb24f3d02fc05ab255c406eac69
+
+PODFILE CHECKSUM: 88f75326a9697743de05f30f0807a713b5f26156
+
+COCOAPODS: 1.3.1

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonsBarView" customModule="LykkeBlueLife" customModuleProvider="target">
+            <connections>
+                <outlet property="backwardButton" destination="k1y-0l-MfD" id="iEr-19-pTE"/>
+                <outlet property="forwardButton" destination="Z8i-eb-vwI" id="A2r-RO-pOj"/>
+                <outlet property="view" destination="iN0-l3-epB" id="W4d-Qf-Tw7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8i-eb-vwI">
+                    <rect key="frame" x="336" y="0.0" width="70" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="EVr-V4-KFs"/>
+                        <constraint firstAttribute="height" constant="90" id="lOH-Sv-czT"/>
+                    </constraints>
+                    <state key="normal" image="forwardBlueFilled"/>
+                    <state key="disabled" image="forwardBlueDisabled"/>
+                    <state key="selected" image="forwardBlueFilled"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1y-0l-MfD">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="F30-3U-v0B"/>
+                        <constraint firstAttribute="width" constant="70" id="b27-Yq-CYm"/>
+                    </constraints>
+                    <state key="normal" image="backwardBlue"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="k1y-0l-MfD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ow4-Ze-JNk"/>
+                <constraint firstItem="Z8i-eb-vwI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="jwR-1p-BqZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Z8i-eb-vwI" secondAttribute="trailing" id="k0b-ah-gp3"/>
+                <constraint firstItem="k1y-0l-MfD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="rwb-36-48Y"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="51" y="-256"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backwardBlue" width="30" height="30"/>
+        <image name="forwardBlueDisabled" width="30" height="30"/>
+        <image name="forwardBlueFilled" width="30" height="30"/>
+    </resources>
+</document>
