@@ -75,8 +75,9 @@ class LWPortfolioCurrencyTableViewCell: UITableViewCell {
             .drive(valueLabel.rx.text)
             .disposed(by: disposeBag)
         
-        currency.img
-            .drive(iconImageView.rx.image)
+        currency.imgUrl
+            .filterNil()
+            .drive(iconImageView.rx.afImage)
             .addDisposableTo(disposeBag)
         
         return self

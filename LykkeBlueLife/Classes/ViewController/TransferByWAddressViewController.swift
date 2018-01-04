@@ -41,11 +41,18 @@ class TransferByWAddressViewController: BaseViewController {
     @IBAction func transferAction(_ sender: UIButton) {
         let formatter = NumberFormatter()
         formatter.numberStyle = NumberFormatter.Style.decimal
-        let amount = formatter.number(from: amountTextField.text!)
+        
+        guard formatter.number(from: amountTextField.text!) != nil else {
+            // ???: Unable to format text as number, display/log error?
+            return
+        }
+        
+        let amount = NSDecimalNumber(string: amountTextField.text)
+        
         self.showLoadingView(isLoading: true)
         let asset = LWCache.asset(byId: wallet.identity)
-
-        if(asset?.blockchainType == BLOCKCHAIN_TYPE_ETHEREUM) {
+        
+        if(asset?.blockchainType == LWBlockchainType.ethereum) {
             
             /*
             [[LWEthereumTransactionsManager shared] requestCashoutForAsset:asset volume:amount addressTo:self.bitcoinString completion:^(NSDictionary *result){
@@ -58,24 +65,7 @@ class TransferByWAddressViewController: BaseViewController {
             self.showLoadingView(isLoading: false)
             self.dismiss(animated: true)
         }
-        //else if([LWCache instance].flagOffchainRequests == NO) {
-        else if(LWCache.instance().flagOffchainRequests == false) {
-            //LWCache.instance().calle
-            
-            //[LWAuthManager instance].caller = self;
-            LWAuthManager.instance().caller = self
-            
-            LWAuthManager.instance().requestCashOut( amount, assetId: self.wallet.identity, multiSig: walletTextField.text!)
-            /*
-            [[LWAuthManager instance] requestCashOut:amount
-                assetId:self.assetId
-                multiSig:self.bitcoinString];*/
-            self.showLoadingView(isLoading: false)
-            self.dismiss(animated: true)
-        }
         else {
-            
-            
             LWOffchainTransactionsManager.shared().requestCashOut(amount
                 , assetId: self.wallet.identity, multiSig: walletTextField.text!, completion: { (result : [AnyHashable : Any]?) in
                 self.showLoadingView(isLoading: false)

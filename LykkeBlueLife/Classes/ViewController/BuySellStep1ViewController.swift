@@ -282,11 +282,11 @@ class BuySellStep1ViewController: BaseViewController, UIPickerViewDelegate, UITe
                         {
                             self.showLoadingView(isLoading: true)
                             //Buying with eth
-                            if firstAssetModel.blockchainType != BLOCKCHAIN_TYPE_ETHEREUM && secondAssetModel.blockchainType != BLOCKCHAIN_TYPE_ETHEREUM {
+                            if firstAssetModel.blockchainType != LWBlockchainType.ethereum && secondAssetModel.blockchainType != LWBlockchainType.ethereum {
                                 
                                 let offchainTransactionManager = LWOffchainTransactionsManager.shared()
                                 //offchainTransactionManager?.sendSwapRequest(forAsset: firstAssetModel.identity, pair: assetPairModel.identity, volume: unitsAmaountValue, completion: {
-                                offchainTransactionManager?.sendSwapRequest(forAsset: self.firstWallet.identity, pair: assetPairModel.identity, volume: unitsAmaountValue, completion: {
+                                offchainTransactionManager?.sendSwapRequest(forAsset: self.firstWallet.identity, pair: assetPairModel.identity, volume: unitsAmaountValue as NSNumber, completion: {
                                     [weak self] result in
                                     self?.showLoadingView(isLoading: false)
                                     if result == nil {

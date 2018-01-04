@@ -38,6 +38,7 @@
 		9A2ECDA01F500DA100E81680 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2ECD9B1F500DA100E81680 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
 		9A2ECDA11F500DA100E81680 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2ECD9C1F500DA100E81680 /* UITextField+fixCaretPosition.swift */; };
 		9AEAD0DA1F545DC600E11EAB /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEAD0D91F545DC600E11EAB /* RoundedButton.swift */; };
+		BE31CC041FFD3AEF001B350C /* InputForm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */; };
 		C10D61551FB089560009699E /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D61541FB089560009699E /* QuoteViewController.swift */; };
 		C10D61591FB0AD0F0009699E /* ManifestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D61581FB0AD0F0009699E /* ManifestoViewController.swift */; };
 		C10D615B1FB0B30E0009699E /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D615A1FB0B30E0009699E /* UserDefaultsKeys.swift */; };
@@ -189,6 +190,7 @@
 		A0D2E27E06A878B9DE3E1CC0 /* Pods-LykkeBlueLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife.debug.xcconfig"; sourceTree = "<group>"; };
 		B41E7BE62C2CC578659F4DC8 /* Pods_LykkeBlueLifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LykkeBlueLifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E3AF308239A5D824690E56 /* Pods-LykkeBlueLifeTests.release.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLifeTests.release.dev.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLifeTests/Pods-LykkeBlueLifeTests.release.dev.xcconfig"; sourceTree = "<group>"; };
+		BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputForm+Extensions.swift"; sourceTree = "<group>"; };
 		C10D61541FB089560009699E /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		C10D61581FB0AD0F0009699E /* ManifestoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManifestoViewController.swift; sourceTree = "<group>"; };
 		C10D615A1FB0B30E0009699E /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
@@ -675,6 +677,7 @@
 				61A9B8BA1FC414F1002EC9A7 /* UINaviagtionBar+Extensions.swift */,
 				61A9B8BC1FC44919002EC9A7 /* UIScrollView+Rx.swift */,
 				C136E0081FC46B6800A9E696 /* UIApplication+TopViewController.swift */,
+				BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -841,7 +844,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "GOOGLE_APP_ID=1:155786652284:ios:a5b78dc77c650ca2\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"${HOME}/Sensitive/lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json\"";
+			shellScript = "GOOGLE_APP_ID=1:155786652284:ios:a5b78dc77c650ca2\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"${SRCROOT}/LykkeBlueLife/Sensitive/lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json\"";
 		};
 		84A3E4EABB283A736ADE0298 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -904,8 +907,10 @@
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/EasyMapping/EasyMapping.framework",
 				"${BUILT_PRODUCTS_DIR}/GHODictionary/GHODictionary.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/MDWamp/MDWamp.framework",
@@ -932,8 +937,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlocksKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyMapping.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GHODictionary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDWamp.framework",
@@ -1059,6 +1066,7 @@
 				C1985A581FC8440300CCD0D7 /* SignInCodeViewController.swift in Sources */,
 				E0BB8D7B1F4B1DAC002B4C12 /* SignUpPasswordViewController.swift in Sources */,
 				E0B2A6ED1F56E914004B0995 /* PinSetViewController.swift in Sources */,
+				BE31CC041FFD3AEF001B350C /* InputForm+Extensions.swift in Sources */,
 				61A9B8BD1FC44919002EC9A7 /* UIScrollView+Rx.swift in Sources */,
 				E0BB8D691F47262C002B4C12 /* SignInViewController.swift in Sources */,
 				C13E63A81F9F656F00873CA3 /* NewPasswordViewController.swift in Sources */,
