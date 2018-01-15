@@ -135,6 +135,28 @@
 		E0BB8D8A1F4D94EE002B4C12 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0BB8D891F4D94EE002B4C12 /* Settings.storyboard */; };
 		E0BB8D8C1F4D95E6002B4C12 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB8D8B1F4D95E6002B4C12 /* SettingsViewController.swift */; };
 		E0BB8D981F4EEBA0002B4C12 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB8D971F4EEBA0002B4C12 /* BaseViewController.swift */; };
+		F5AD9257200CD2F80053B39B /* CommunityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9254200CD2F80053B39B /* CommunityViewModel.swift */; };
+		F5AD9258200CD2F80053B39B /* ProfilePledgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9255200CD2F80053B39B /* ProfilePledgeViewModel.swift */; };
+		F5AD9259200CD2F80053B39B /* ReferralLinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9256200CD2F80053B39B /* ReferralLinkViewModel.swift */; };
+		F5AD9264200CD3DE0053B39B /* LWRxBlueAuthManagerReferralLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD925C200CD3DD0053B39B /* LWRxBlueAuthManagerReferralLink.swift */; };
+		F5AD9265200CD3DE0053B39B /* LWRxBlueAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD925D200CD3DD0053B39B /* LWRxBlueAuthManager.swift */; };
+		F5AD9266200CD3DE0053B39B /* LWRxBlueAuthManagerPledgeGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD925E200CD3DD0053B39B /* LWRxBlueAuthManagerPledgeGet.swift */; };
+		F5AD9267200CD3DE0053B39B /* LWRxBlueAuthManagerReferralLinkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD925F200CD3DD0053B39B /* LWRxBlueAuthManagerReferralLinkInfo.swift */; };
+		F5AD9268200CD3DE0053B39B /* LWRxBlueAuthManagerPledgePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9260200CD3DD0053B39B /* LWRxBlueAuthManagerPledgePost.swift */; };
+		F5AD9269200CD3DE0053B39B /* LWRxAuthManagerTwitterTimeLineJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9261200CD3DD0053B39B /* LWRxAuthManagerTwitterTimeLineJson.swift */; };
+		F5AD926A200CD3DE0053B39B /* LWRxBlueAuthManagerCommunityUsersCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9262200CD3DD0053B39B /* LWRxBlueAuthManagerCommunityUsersCount.swift */; };
+		F5AD926B200CD3DE0053B39B /* LWRxBlueAuthManagerClaimReferralLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9263200CD3DE0053B39B /* LWRxBlueAuthManagerClaimReferralLink.swift */; };
+		F5AD9277200CD3F40053B39B /* PledgeGetPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD926D200CD3F30053B39B /* PledgeGetPacket.swift */; };
+		F5AD9278200CD3F40053B39B /* TwitterTimeLineJsonPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD926E200CD3F30053B39B /* TwitterTimeLineJsonPacket.swift */; };
+		F5AD9279200CD3F40053B39B /* CommunityUsersCountPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD926F200CD3F30053B39B /* CommunityUsersCountPacket.swift */; };
+		F5AD927A200CD3F40053B39B /* PledgePostPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9270200CD3F30053B39B /* PledgePostPacket.swift */; };
+		F5AD927B200CD3F40053B39B /* PledgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9271200CD3F30053B39B /* PledgeModel.swift */; };
+		F5AD927C200CD3F40053B39B /* ReferralLinkClaimPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9272200CD3F30053B39B /* ReferralLinkClaimPacket.swift */; };
+		F5AD927D200CD3F40053B39B /* ReferralLinkInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9273200CD3F40053B39B /* ReferralLinkInfoModel.swift */; };
+		F5AD927E200CD3F40053B39B /* ReferralLinkInfoPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9274200CD3F40053B39B /* ReferralLinkInfoPacket.swift */; };
+		F5AD927F200CD3F40053B39B /* ReferralLinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9275200CD3F40053B39B /* ReferralLinkModel.swift */; };
+		F5AD9280200CD3F40053B39B /* ReferralLinkPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9276200CD3F40053B39B /* ReferralLinkPacket.swift */; };
+		F5AD9283200CD9E00053B39B /* PledgeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9282200CD9E00053B39B /* PledgeService.swift */; };
 		FF526FCD1C0538CB9A884B96 /* Pods_LykkeBlueLifeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41E7BE62C2CC578659F4DC8 /* Pods_LykkeBlueLifeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -296,6 +318,28 @@
 		E0BB8D971F4EEBA0002B4C12 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = LykkeBlueLife/Classes/ViewController/BaseViewController.swift; sourceTree = SOURCE_ROOT; };
 		E4D3662ABF236B17155E1C88 /* Pods-LykkeBlueLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife.release.xcconfig"; sourceTree = "<group>"; };
 		EA09E41BAA36E80EDE810757 /* Pods_LykkeBlueLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LykkeBlueLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5AD9254200CD2F80053B39B /* CommunityViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityViewModel.swift; sourceTree = "<group>"; };
+		F5AD9255200CD2F80053B39B /* ProfilePledgeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePledgeViewModel.swift; sourceTree = "<group>"; };
+		F5AD9256200CD2F80053B39B /* ReferralLinkViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralLinkViewModel.swift; sourceTree = "<group>"; };
+		F5AD925C200CD3DD0053B39B /* LWRxBlueAuthManagerReferralLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxBlueAuthManagerReferralLink.swift; sourceTree = "<group>"; };
+		F5AD925D200CD3DD0053B39B /* LWRxBlueAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxBlueAuthManager.swift; sourceTree = "<group>"; };
+		F5AD925E200CD3DD0053B39B /* LWRxBlueAuthManagerPledgeGet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxBlueAuthManagerPledgeGet.swift; sourceTree = "<group>"; };
+		F5AD925F200CD3DD0053B39B /* LWRxBlueAuthManagerReferralLinkInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxBlueAuthManagerReferralLinkInfo.swift; sourceTree = "<group>"; };
+		F5AD9260200CD3DD0053B39B /* LWRxBlueAuthManagerPledgePost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxBlueAuthManagerPledgePost.swift; sourceTree = "<group>"; };
+		F5AD9261200CD3DD0053B39B /* LWRxAuthManagerTwitterTimeLineJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxAuthManagerTwitterTimeLineJson.swift; sourceTree = "<group>"; };
+		F5AD9262200CD3DD0053B39B /* LWRxBlueAuthManagerCommunityUsersCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxBlueAuthManagerCommunityUsersCount.swift; sourceTree = "<group>"; };
+		F5AD9263200CD3DE0053B39B /* LWRxBlueAuthManagerClaimReferralLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxBlueAuthManagerClaimReferralLink.swift; sourceTree = "<group>"; };
+		F5AD926D200CD3F30053B39B /* PledgeGetPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PledgeGetPacket.swift; sourceTree = "<group>"; };
+		F5AD926E200CD3F30053B39B /* TwitterTimeLineJsonPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterTimeLineJsonPacket.swift; sourceTree = "<group>"; };
+		F5AD926F200CD3F30053B39B /* CommunityUsersCountPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityUsersCountPacket.swift; sourceTree = "<group>"; };
+		F5AD9270200CD3F30053B39B /* PledgePostPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PledgePostPacket.swift; sourceTree = "<group>"; };
+		F5AD9271200CD3F30053B39B /* PledgeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PledgeModel.swift; sourceTree = "<group>"; };
+		F5AD9272200CD3F30053B39B /* ReferralLinkClaimPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralLinkClaimPacket.swift; sourceTree = "<group>"; };
+		F5AD9273200CD3F40053B39B /* ReferralLinkInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralLinkInfoModel.swift; sourceTree = "<group>"; };
+		F5AD9274200CD3F40053B39B /* ReferralLinkInfoPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralLinkInfoPacket.swift; sourceTree = "<group>"; };
+		F5AD9275200CD3F40053B39B /* ReferralLinkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralLinkModel.swift; sourceTree = "<group>"; };
+		F5AD9276200CD3F40053B39B /* ReferralLinkPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralLinkPacket.swift; sourceTree = "<group>"; };
+		F5AD9282200CD9E00053B39B /* PledgeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PledgeService.swift; sourceTree = "<group>"; };
 		FCACF5FCE1B76C870FB7EBDA /* Pods-LykkeBlueLife.release.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLife.release.dev.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife.release.dev.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -415,6 +459,9 @@
 		C13BA2EF1FB32A5C0062121F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F5AD9254200CD2F80053B39B /* CommunityViewModel.swift */,
+				F5AD9255200CD2F80053B39B /* ProfilePledgeViewModel.swift */,
+				F5AD9256200CD2F80053B39B /* ReferralLinkViewModel.swift */,
 				C13BA2F01FB32ACB0062121F /* FootprintViewModel.swift */,
 				C13BA2F41FB4841C0062121F /* NetPositiveViewModel.swift */,
 			);
@@ -572,6 +619,7 @@
 		E0A9EB1E1F44898C001A0241 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F5AD925A200CD3BF0053B39B /* Core */,
 				61B643041FCC05CA00E4DEC0 /* Twitter */,
 				C12FE76C1FC31B40002304EA /* Coordinator */,
 				C13BA2EF1FB32A5C0062121F /* ViewModel */,
@@ -680,6 +728,56 @@
 				BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F5AD925A200CD3BF0053B39B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F5AD9281200CD9D70053B39B /* Service */,
+				F5AD926C200CD3E90053B39B /* Model */,
+				F5AD925B200CD3C60053B39B /* Repository */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F5AD925B200CD3C60053B39B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F5AD9261200CD3DD0053B39B /* LWRxAuthManagerTwitterTimeLineJson.swift */,
+				F5AD925D200CD3DD0053B39B /* LWRxBlueAuthManager.swift */,
+				F5AD9263200CD3DE0053B39B /* LWRxBlueAuthManagerClaimReferralLink.swift */,
+				F5AD9262200CD3DD0053B39B /* LWRxBlueAuthManagerCommunityUsersCount.swift */,
+				F5AD925E200CD3DD0053B39B /* LWRxBlueAuthManagerPledgeGet.swift */,
+				F5AD9260200CD3DD0053B39B /* LWRxBlueAuthManagerPledgePost.swift */,
+				F5AD925C200CD3DD0053B39B /* LWRxBlueAuthManagerReferralLink.swift */,
+				F5AD925F200CD3DD0053B39B /* LWRxBlueAuthManagerReferralLinkInfo.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F5AD926C200CD3E90053B39B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5AD926F200CD3F30053B39B /* CommunityUsersCountPacket.swift */,
+				F5AD926D200CD3F30053B39B /* PledgeGetPacket.swift */,
+				F5AD9271200CD3F30053B39B /* PledgeModel.swift */,
+				F5AD9270200CD3F30053B39B /* PledgePostPacket.swift */,
+				F5AD9272200CD3F30053B39B /* ReferralLinkClaimPacket.swift */,
+				F5AD9273200CD3F40053B39B /* ReferralLinkInfoModel.swift */,
+				F5AD9274200CD3F40053B39B /* ReferralLinkInfoPacket.swift */,
+				F5AD9275200CD3F40053B39B /* ReferralLinkModel.swift */,
+				F5AD9276200CD3F40053B39B /* ReferralLinkPacket.swift */,
+				F5AD926E200CD3F30053B39B /* TwitterTimeLineJsonPacket.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5AD9281200CD9D70053B39B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F5AD9282200CD9E00053B39B /* PledgeService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1008,6 +1106,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5AD927A200CD3F40053B39B /* PledgePostPacket.swift in Sources */,
 				C183F4A91FD813E700F96379 /* ReferralLinkHelper.swift in Sources */,
 				E0B2A6F61F56E924004B0995 /* ChooseCurrencyViewCell.swift in Sources */,
 				E0BB8D671F472608002B4C12 /* SignUpEmailViewController.swift in Sources */,
@@ -1015,36 +1114,47 @@
 				C17B69C51FAC59A30076A53A /* FootprintViewController.swift in Sources */,
 				9A2ECDA01F500DA100E81680 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
 				C136E0091FC46B6800A9E696 /* UIApplication+TopViewController.swift in Sources */,
+				F5AD927E200CD3F40053B39B /* ReferralLinkInfoPacket.swift in Sources */,
 				C10D615B1FB0B30E0009699E /* UserDefaultsKeys.swift in Sources */,
 				C13E63AC1F9F666900873CA3 /* VerifyPinViewController.swift in Sources */,
 				C12FE7671FBB0A45002304EA /* InviteButton.swift in Sources */,
+				F5AD927B200CD3F40053B39B /* PledgeModel.swift in Sources */,
 				61A2F2241FDAB35B002A8F02 /* Twitter+Rx.swift in Sources */,
 				C1985A571FC8440300CCD0D7 /* SignInPinViewController.swift in Sources */,
+				F5AD9268200CD3DE0053B39B /* LWRxBlueAuthManagerPledgePost.swift in Sources */,
 				E0BB8D6F1F4ABE1E002B4C12 /* SignUpEnterPinViewController.swift in Sources */,
+				F5AD9258200CD2F80053B39B /* ProfilePledgeViewModel.swift in Sources */,
 				616E585C1FC6AA8600A61AAF /* SignUpGeneratePrivateKeyViewController.swift in Sources */,
 				61E7158D1FC576C400A7554A /* SignUpPhoneConfirmationViewController.swift in Sources */,
 				C13BA2E81FB1B6D60062121F /* RandomQuoteGenerator.swift in Sources */,
 				6107C6001FC46CDB0061C35B /* SignUpAddPhoneViewController.swift in Sources */,
+				F5AD9283200CD9E00053B39B /* PledgeService.swift in Sources */,
 				E0B2A6F01F56E914004B0995 /* SettingsEmailConfirmViewController.swift in Sources */,
 				C1FEDD8A1FA21B2400FD87C5 /* VerifyBackupViewController.swift in Sources */,
 				C13E63AE1F9F66D800873CA3 /* VerifySMSCodeViewController.swift in Sources */,
 				618B4BE11FD2C3E8001C5830 /* SettingsTableViewCell.swift in Sources */,
 				9A2ECD9D1F500DA100E81680 /* KeyboardView.swift in Sources */,
 				C1985A501FC7214000CCD0D7 /* ProfileViewController.swift in Sources */,
+				F5AD9265200CD3DE0053B39B /* LWRxBlueAuthManager.swift in Sources */,
+				F5AD9278200CD3F40053B39B /* TwitterTimeLineJsonPacket.swift in Sources */,
+				F5AD927F200CD3F40053B39B /* ReferralLinkModel.swift in Sources */,
 				46286F611FC2C890002CAF8D /* Observable+Extensions.swift in Sources */,
 				61A9B8BB1FC414F1002EC9A7 /* UINaviagtionBar+Extensions.swift in Sources */,
 				61A9B8B71FC321C8002EC9A7 /* ButtonsBarView.swift in Sources */,
 				E0B2A6F11F56E914004B0995 /* SettingsPhoneConfirmViewController.swift in Sources */,
 				E0B2A6F81F56E924004B0995 /* LoadingView.swift in Sources */,
 				E05515351F725F6700D488BE /* ReceiveByWAddressViewController.swift in Sources */,
+				F5AD9277200CD3F40053B39B /* PledgeGetPacket.swift in Sources */,
 				C13BA2F11FB32ACB0062121F /* FootprintViewModel.swift in Sources */,
 				61A9B8BF1FC44D46002EC9A7 /* UIViewController+Rx.swift in Sources */,
 				616E58511FC5945A00A61AAF /* NumPadView.swift in Sources */,
 				C10D61551FB089560009699E /* QuoteViewController.swift in Sources */,
 				E0B2A7061F56FEBA004B0995 /* ValidatePinViewController.swift in Sources */,
 				C19A6D2D1FC6D1EC00AE4C7D /* TwitterViewController.swift in Sources */,
+				F5AD9280200CD3F40053B39B /* ReferralLinkPacket.swift in Sources */,
 				C136E00B1FC470FD00A9E696 /* LWKeychainManagerHelper.swift in Sources */,
 				C10D61601FB1AD560009699E /* DefaultPlistParser.swift in Sources */,
+				F5AD9266200CD3DE0053B39B /* LWRxBlueAuthManagerPledgeGet.swift in Sources */,
 				C1985A5A1FC860EA00CCD0D7 /* ProgressCircle.swift in Sources */,
 				E0BB8D8C1F4D95E6002B4C12 /* SettingsViewController.swift in Sources */,
 				C13BA2EA1FB1E4D90062121F /* OnboardingVideoViewController.swift in Sources */,
@@ -1055,19 +1165,25 @@
 				C1D5D1E71FDFDE2D00CC916A /* AppConstants+Security.swift in Sources */,
 				9A2ECD9F1F500DA100E81680 /* SkyFloatingLabelTextFieldWithExtensions.swift in Sources */,
 				E0B2A6EC1F56E914004B0995 /* ChangeCurrencyViewController.swift in Sources */,
+				F5AD9279200CD3F40053B39B /* CommunityUsersCountPacket.swift in Sources */,
 				C10D61621FB1B5380009699E /* PlistParser.swift in Sources */,
 				6107C5FE1FC45CA90061C35B /* SignUpVerifyEmailViewController.swift in Sources */,
 				E028051B1F66B4480058E36D /* BuySellStep2ViewController.swift in Sources */,
+				F5AD9259200CD2F80053B39B /* ReferralLinkViewModel.swift in Sources */,
 				C12FE76B1FBB0E54002304EA /* AppTheme.swift in Sources */,
 				E02804E21F62A8F40058E36D /* BuySellStep1ViewController.swift in Sources */,
+				F5AD926A200CD3DE0053B39B /* LWRxBlueAuthManagerCommunityUsersCount.swift in Sources */,
+				F5AD926B200CD3DE0053B39B /* LWRxBlueAuthManagerClaimReferralLink.swift in Sources */,
 				C1985A5E1FCC6F8800CCD0D7 /* PledgeIntroViewController.swift in Sources */,
 				E0AE50B01F61724800CA8BA9 /* LWPortfolioCurrencyTableViewCell.swift in Sources */,
 				E0A9EAF91F44624B001A0241 /* AppDelegate.swift in Sources */,
+				F5AD9267200CD3DE0053B39B /* LWRxBlueAuthManagerReferralLinkInfo.swift in Sources */,
 				C1985A581FC8440300CCD0D7 /* SignInCodeViewController.swift in Sources */,
 				E0BB8D7B1F4B1DAC002B4C12 /* SignUpPasswordViewController.swift in Sources */,
 				E0B2A6ED1F56E914004B0995 /* PinSetViewController.swift in Sources */,
 				BE31CC041FFD3AEF001B350C /* InputForm+Extensions.swift in Sources */,
 				61A9B8BD1FC44919002EC9A7 /* UIScrollView+Rx.swift in Sources */,
+				F5AD9257200CD2F80053B39B /* CommunityViewModel.swift in Sources */,
 				E0BB8D691F47262C002B4C12 /* SignInViewController.swift in Sources */,
 				C13E63A81F9F656F00873CA3 /* NewPasswordViewController.swift in Sources */,
 				616E58561FC598C400A61AAF /* PinPadViewController.swift in Sources */,
@@ -1080,17 +1196,21 @@
 				C10D61591FB0AD0F0009699E /* ManifestoViewController.swift in Sources */,
 				E02804E91F62B0090058E36D /* LWUtilsHelper.swift in Sources */,
 				61B643061FCC05EB00E4DEC0 /* TwitterTimelineDataSource.swift in Sources */,
+				F5AD9264200CD3DE0053B39B /* LWRxBlueAuthManagerReferralLink.swift in Sources */,
 				61A2F2261FDAC63D002A8F02 /* SettingsViewController+Sections.swift in Sources */,
 				C12D44D91F865E4000140EDD /* AppConstants.swift in Sources */,
 				E0711C331F7A4C7D001A1AE4 /* TransactionHistoryViewController.swift in Sources */,
+				F5AD927D200CD3F40053B39B /* ReferralLinkInfoModel.swift in Sources */,
 				C19A6D2B1FC6D1EC00AE4C7D /* CommunityViewController.swift in Sources */,
 				9A2ECDA11F500DA100E81680 /* UITextField+fixCaretPosition.swift in Sources */,
+				F5AD9269200CD3DE0053B39B /* LWRxAuthManagerTwitterTimeLineJson.swift in Sources */,
 				C1DB50311F8E655600C70875 /* UserDefaults+Extensions.swift in Sources */,
 				E0B2A6EF1F56E914004B0995 /* SettingsChangePhoneViewController.swift in Sources */,
 				E0AE50B31F617EA900CA8BA9 /* UIImageView+Rx.swift in Sources */,
 				E0BB8D841F4C6031002B4C12 /* Notification+Extensions.swift in Sources */,
 				E05515331F6FEBD000D488BE /* TransferByWAddressViewController.swift in Sources */,
 				C13E63BA1FA081A500873CA3 /* BackupViewController.swift in Sources */,
+				F5AD927C200CD3F40053B39B /* ReferralLinkClaimPacket.swift in Sources */,
 				E0BB8D811F4C3860002B4C12 /* UIHelper.swift in Sources */,
 				C19A6D2C1FC6D1EC00AE4C7D /* HomePageViewController.swift in Sources */,
 				46286F631FC2CA50002CAF8D /* CurrencyExchanger+Extensions.swift in Sources */,
@@ -1195,6 +1315,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug.Dev;
 		};
@@ -1296,6 +1417,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release.Dev;
@@ -1406,6 +1528,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -1449,6 +1572,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1615,6 +1739,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug.Test;
 		};
@@ -1716,6 +1841,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release.Test;
