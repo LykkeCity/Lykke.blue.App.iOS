@@ -14,6 +14,7 @@ public class LWRxBlueAuthManagerReferralLink: NSObject {
     
     public typealias Packet = ReferralLinkPacket
     public typealias Result = ApiResult<ReferralLinkModel>
+    public typealias ResultType = ReferralLinkModel
     public typealias RequestParams = Void
     
     override init() {

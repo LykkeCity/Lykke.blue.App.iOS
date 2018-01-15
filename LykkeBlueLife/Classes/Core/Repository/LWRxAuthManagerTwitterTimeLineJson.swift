@@ -14,6 +14,7 @@ public class LWRxAuthManagerTwitterTimeLineJson: NSObject {
     
     public typealias Packet = TwitterTimeLineJsonPacket
     public typealias Result = ApiResultList<[AnyHashable: Any]>
+    public typealias ResultType = [AnyHashable: Any]
     public typealias RequestParams = TwitterTimeLineJsonPacket.Body
     
     override init() {

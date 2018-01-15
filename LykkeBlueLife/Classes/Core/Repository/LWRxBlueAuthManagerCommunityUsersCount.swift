@@ -13,6 +13,7 @@ import WalletCore
 public class LWRxBlueAuthManagerCommunityUsersCount: NSObject {
     public typealias Packet = CommunityUsersCountPacket
     public typealias Result = ApiResult<Int>
+    public typealias ResultType = Int
     public typealias RequestParams = Void
     
     override init() {

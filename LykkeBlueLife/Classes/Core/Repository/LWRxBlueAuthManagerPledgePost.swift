@@ -14,6 +14,7 @@ public class LWRxBlueAuthManagerPledgePost: NSObject {
     
     public typealias Packet = PledgePostPacket
     public typealias Result = ApiResult<Void>
+    public typealias ResultType = Void
     public typealias RequestParams = PledgePostPacket.Body
     
     override init() {
