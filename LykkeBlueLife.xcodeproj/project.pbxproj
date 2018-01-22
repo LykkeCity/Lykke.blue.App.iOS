@@ -135,6 +135,7 @@
 		E0BB8D8A1F4D94EE002B4C12 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0BB8D891F4D94EE002B4C12 /* Settings.storyboard */; };
 		E0BB8D8C1F4D95E6002B4C12 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB8D8B1F4D95E6002B4C12 /* SettingsViewController.swift */; };
 		E0BB8D981F4EEBA0002B4C12 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB8D971F4EEBA0002B4C12 /* BaseViewController.swift */; };
+		F50733FE20160D4D00E76AB2 /* lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json in Resources */ = {isa = PBXBuildFile; fileRef = F50733FD20160D4D00E76AB2 /* lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json */; };
 		F5AD9257200CD2F80053B39B /* CommunityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9254200CD2F80053B39B /* CommunityViewModel.swift */; };
 		F5AD9258200CD2F80053B39B /* ProfilePledgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9255200CD2F80053B39B /* ProfilePledgeViewModel.swift */; };
 		F5AD9259200CD2F80053B39B /* ReferralLinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9256200CD2F80053B39B /* ReferralLinkViewModel.swift */; };
@@ -318,6 +319,7 @@
 		E0BB8D971F4EEBA0002B4C12 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = LykkeBlueLife/Classes/ViewController/BaseViewController.swift; sourceTree = SOURCE_ROOT; };
 		E4D3662ABF236B17155E1C88 /* Pods-LykkeBlueLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife.release.xcconfig"; sourceTree = "<group>"; };
 		EA09E41BAA36E80EDE810757 /* Pods_LykkeBlueLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LykkeBlueLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50733FD20160D4D00E76AB2 /* lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json"; path = "../../../../Downloads/Sensitive/lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json"; sourceTree = "<group>"; };
 		F5AD9254200CD2F80053B39B /* CommunityViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityViewModel.swift; sourceTree = "<group>"; };
 		F5AD9255200CD2F80053B39B /* ProfilePledgeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePledgeViewModel.swift; sourceTree = "<group>"; };
 		F5AD9256200CD2F80053B39B /* ReferralLinkViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralLinkViewModel.swift; sourceTree = "<group>"; };
@@ -523,6 +525,7 @@
 		C1D5D1E81FDFE21600CC916A /* Sensitive */ = {
 			isa = PBXGroup;
 			children = (
+				F50733FD20160D4D00E76AB2 /* lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json */,
 				C183F4B61FD992BD00F96379 /* GoogleService-Info.plist */,
 				C1D5D1E61FDFDE2D00CC916A /* AppConstants+Security.swift */,
 			);
@@ -902,6 +905,7 @@
 				C10D615E1FB0BEC40009699E /* quotes.plist in Resources */,
 				C1FEDD9A1FA7273D00FD87C5 /* Replica-Regular.ttf in Resources */,
 				C1FEDD951FA7273D00FD87C5 /* Replica-Bold.ttf in Resources */,
+				F50733FE20160D4D00E76AB2 /* lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json in Resources */,
 				E0A9EB281F457CBC001A0241 /* SignInUp.storyboard in Resources */,
 				E0B2A70E1F5847BB004B0995 /* english_words_list.txt in Resources */,
 				C1FEDD961FA7273D00FD87C5 /* Replica-BoldItalic.ttf in Resources */,

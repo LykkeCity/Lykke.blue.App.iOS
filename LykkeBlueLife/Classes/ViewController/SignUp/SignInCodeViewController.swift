@@ -34,10 +34,12 @@ class SignInCodeViewController: UIViewController {
     }()
     
     let clientCodesTrigger = Variable<Void?>(nil)
+    let smsCodeForRetrieveKeyTrigger = PublishSubject<String>()
     
     lazy var clientCodesViewModel: ClientCodesViewModel = {
+        
         return ClientCodesViewModel(
-            trigger: self.clientCodesTrigger.asObservable().filterNil(),
+            smsCodeForRetrieveKey: self.smsCodeForRetrieveKeyTrigger,
             dependency: (
                 authManager: LWRxAuthManager.instance,
                 keychainManager: LWKeychainManager.instance()
@@ -149,7 +151,11 @@ fileprivate extension SignUpPhoneConfirmPinViewModel {
             resultConfirmPin.asObservable().filterSuccess().filter{ $0.isPassed }.map{ _ in Void() }.bind(to: vc.clientCodesTrigger),
             resultResendPin.asObservable().filterSuccess().subscribe(onNext: { verificationSet in
                 Toast(text: "Successfuly resent code.").show()
-            })
+            }),
+            vc.buttonsBar.forwardButton.rx.tap
+                .withLatestFrom(vc.codeField.rx.text)
+                .filterNil()
+                .bind(to: vc.smsCodeForRetrieveKeyTrigger)
         ]
     }
 }
