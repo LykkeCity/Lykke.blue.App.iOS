@@ -22,17 +22,6 @@ class SignInCodeViewController: UIViewController {
     
     var disposeBag = DisposeBag()
     
-    lazy var confirmPinViewModel: SignUpPhoneConfirmPinViewModel = {
-        return SignUpPhoneConfirmPinViewModel(
-            submitConfirmPin: self.buttonsBar.forwardButton.rx.tap.asObservable(),
-            submitResendPin: Observable.never()
-        )
-    }()
-    
-    lazy var phoneNumberViewModel: PhoneNumberViewModel = {
-        return PhoneNumberViewModel(saveSubmit: Observable.just(Void()))
-    }()
-    
     let clientCodesTrigger = Variable<Void?>(nil)
     let smsCodeForRetrieveKeyTrigger = PublishSubject<String>()
     
@@ -51,9 +40,7 @@ class SignInCodeViewController: UIViewController {
     
     fileprivate lazy var loadingViewModel = {
         return LoadingViewModel([
-            self.clientCodesViewModel.loadingViewModel.isLoading,
-            self.confirmPinViewModel.loading,
-            self.phoneNumberViewModel.loading
+            self.clientCodesViewModel.loadingViewModel.isLoading
         ])
     }()
     
@@ -68,14 +55,6 @@ class SignInCodeViewController: UIViewController {
         
         scrollView
             .bindToToaster()
-            .disposed(by: disposeBag)
-        
-        phoneNumberViewModel
-            .bind(toViewController: self)
-            .disposed(by: disposeBag)
-        
-        confirmPinViewModel
-            .bind(toViewController: self)
             .disposed(by: disposeBag)
         
         clientCodesViewModel
@@ -95,30 +74,6 @@ class SignInCodeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-}
-
-fileprivate extension PhoneNumberViewModel {
-    func bind(toViewController vc: SignInCodeViewController) -> [Disposable] {
-        
-        phonenumber.value = vc.phone
-        
-        return [
-            saveSettingsResult.asObservable().filterSuccess().subscribe(onNext: { phone in
-                Toast(text: "SMS code sent.").show()
-            }),
-            saveSettingsResult.asObservable().filterError().bind(to: vc.rx.error)
-        ]
-    }
 }
 
 fileprivate extension ClientCodesViewModel {
@@ -128,30 +83,8 @@ fileprivate extension ClientCodesViewModel {
             encodeMainKeyObservable.subscribe(onNext: { [weak vc] encodedKey in
                 vc?.rx.hideLoading()
                 AppCoordinator.shared.showHome(fromViewController: vc)
-            })
-        ]
-    }
-}
-
-
-fileprivate extension SignUpPhoneConfirmPinViewModel {
-    func bind(toViewController vc: SignInCodeViewController) -> [Disposable] {
-        phone.value = vc.phone
-        
-        let error = Observable.merge(
-            resultConfirmPin.asObservable().filterError(),
-            resultConfirmPin.asObservable().filterSuccess().filter{ !$0.isPassed }.map{ _ in ["Message": "Invalid code. Please try again."] },
-            resultResendPin.asObservable().filterError()
-        )
-        
-        return [
-            vc.codeField.rx.text.asObservable().filterNil().bind(to: pin),
-            isValid.bind(to: vc.buttonsBar.forwardButton.rx.isEnabled),
-            error.bind(to: vc.rx.error),
-            resultConfirmPin.asObservable().filterSuccess().filter{ $0.isPassed }.map{ _ in Void() }.bind(to: vc.clientCodesTrigger),
-            resultResendPin.asObservable().filterSuccess().subscribe(onNext: { verificationSet in
-                Toast(text: "Successfuly resent code.").show()
             }),
+            
             vc.buttonsBar.forwardButton.rx.tap
                 .withLatestFrom(vc.codeField.rx.text)
                 .filterNil()
