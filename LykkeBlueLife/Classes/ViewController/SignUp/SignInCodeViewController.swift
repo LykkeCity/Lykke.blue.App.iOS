@@ -23,12 +23,14 @@ class SignInCodeViewController: UIViewController {
     var disposeBag = DisposeBag()
     
     let clientCodesTrigger = Variable<Void?>(nil)
-    let smsCodeForRetrieveKeyTrigger = PublishSubject<String>()
     
     lazy var clientCodesViewModel: ClientCodesViewModel = {
         
         return ClientCodesViewModel(
-            smsCodeForRetrieveKey: self.smsCodeForRetrieveKeyTrigger,
+            smsCodeForRetrieveKey: self.buttonsBar.forwardButton
+                .rx.tap
+                .withLatestFrom(self.codeField.rx.text)
+                .filterNil(),
             dependency: (
                 authManager: LWRxAuthManager.instance,
                 keychainManager: LWKeychainManager.instance()
@@ -83,12 +85,7 @@ fileprivate extension ClientCodesViewModel {
             encodeMainKeyObservable.subscribe(onNext: { [weak vc] encodedKey in
                 vc?.rx.hideLoading()
                 AppCoordinator.shared.showHome(fromViewController: vc)
-            }),
-            
-            vc.buttonsBar.forwardButton.rx.tap
-                .withLatestFrom(vc.codeField.rx.text)
-                .filterNil()
-                .bind(to: vc.smsCodeForRetrieveKeyTrigger)
+            })
         ]
     }
 }
