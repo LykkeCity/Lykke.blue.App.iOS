@@ -19,6 +19,7 @@ pod 'TwitterCore', '~> 3.0'
 pod 'TwitterKit', '~> 3.2'
 pod 'RxDataSources', '~> 2.0'
 pod 'QRCodeReader.swift', '~> 7.5.1'
+pod 'Toast'
 
   # Pods for LykkeBlueLife
 
