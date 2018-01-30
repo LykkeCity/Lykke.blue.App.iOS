@@ -209,3 +209,19 @@ class SettingsLogoutItem: SettingItemProtocol{
             .disposed(by: disposeBag)
     }
 }
+
+class SettingsBackupWalletItem: SettingItemProtocol {
+    var label: Driver<String> { return Driver.just("backup private key") }
+    var value = Driver.just("")
+    var nextArrowIsHidden: Bool { return false }
+    
+    weak var presenter: UIViewController?
+    
+    init(presenter: UIViewController) {
+        self.presenter = presenter
+    }
+    
+    func onSelect() {
+        presenter?.performSegue(withIdentifier: AppConstants.Segue.showBeginPrivateKeyBackup, sender: self)
+    }
+}

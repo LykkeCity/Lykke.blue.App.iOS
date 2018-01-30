@@ -32,6 +32,7 @@ public enum AppConstants {
         public static let showSignInSMSCode = "showSignInSMSCode"
         public static let showProfile = "showProfile"
         public static let showQuote = "showQuote"
+        public static let showBeginPrivateKeyBackup = "showBeginPrivateKeyBackup"
     }
     
     public enum Storyboard {
