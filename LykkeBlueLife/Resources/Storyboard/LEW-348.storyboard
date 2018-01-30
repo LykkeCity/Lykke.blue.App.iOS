@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JIg-lF-4Lb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Backup Private Key Container-->
+        <scene sceneID="0ag-uk-JSd">
+            <objects>
+                <viewController storyboardIdentifier="BackupPrivateKeyContainer" id="JIg-lF-4Lb" customClass="BackupPrivateKeyContainer" customModule="LykkeBlueLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ewu-Z4-eWh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qeQ-OM-C19">
+                                <rect key="frame" x="0.0" y="90" width="375" height="577"/>
+                                <connections>
+                                    <segue destination="jNn-kq-yPi" kind="embed" id="TcS-p0-avI"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backup Private Key" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caa-yV-LdA">
+                                <rect key="frame" x="114" y="35" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYt-XL-Z4d">
+                                <rect key="frame" x="320" y="31" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qeQ-OM-C19" firstAttribute="trailing" secondItem="Scp-N0-zfr" secondAttribute="trailing" id="6fp-gh-xuG"/>
+                            <constraint firstItem="caa-yV-LdA" firstAttribute="top" secondItem="Scp-N0-zfr" secondAttribute="top" constant="15" id="JFN-pg-Sel"/>
+                            <constraint firstItem="qeQ-OM-C19" firstAttribute="bottom" secondItem="Scp-N0-zfr" secondAttribute="bottom" id="OUD-CW-fJf"/>
+                            <constraint firstItem="qeQ-OM-C19" firstAttribute="leading" secondItem="Scp-N0-zfr" secondAttribute="leading" id="PTj-Qz-seq"/>
+                            <constraint firstItem="caa-yV-LdA" firstAttribute="centerX" secondItem="ewu-Z4-eWh" secondAttribute="centerX" id="Rg6-BV-6g2"/>
+                            <constraint firstItem="qeQ-OM-C19" firstAttribute="top" secondItem="Scp-N0-zfr" secondAttribute="top" constant="70" id="XYS-Ta-cDG"/>
+                            <constraint firstItem="fYt-XL-Z4d" firstAttribute="centerY" secondItem="caa-yV-LdA" secondAttribute="centerY" id="j2z-FU-kUJ"/>
+                            <constraint firstItem="Scp-N0-zfr" firstAttribute="trailing" secondItem="fYt-XL-Z4d" secondAttribute="trailing" constant="16" id="wqd-pd-tOH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Scp-N0-zfr"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="fYt-XL-Z4d" id="E6Q-Ji-rva"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X3s-bQ-YA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-218.40000000000001" y="28.335832083958024"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zd6-dh-kna">
+            <objects>
+                <navigationController id="jNn-kq-yPi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fm7-PT-hoG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vDS-rE-CV4" kind="relationship" relationship="rootViewController" id="CiW-3D-fjs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wwa-lG-IVx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566" y="28"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cTP-9U-vEw">
+            <objects>
+                <viewController id="vDS-rE-CV4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YAT-iL-njM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="577"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Backup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14T-rS-PUV">
+                                <rect key="frame" x="137" y="322" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UFg-Nd-ctE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aQb-MB-vUn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CYN-IK-HdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308" y="28"/>
+        </scene>
+    </scenes>
+</document>

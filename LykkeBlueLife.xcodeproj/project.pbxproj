@@ -45,6 +45,8 @@
 		BE125442201B708E004FC314 /* Driver+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE125441201B708E004FC314 /* Driver+Extensions.swift */; };
 		BE24B0F82017655B0005E7B8 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */; };
 		BE31CC041FFD3AEF001B350C /* InputForm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */; };
+		BED425FC2020A2AE00046EFC /* LEW-348.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED425FB2020A2AE00046EFC /* LEW-348.storyboard */; };
+		BED425FF2020B0E600046EFC /* BackupPrivateKeyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED425FE2020B0E600046EFC /* BackupPrivateKeyContainer.swift */; };
 		C10D61551FB089560009699E /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D61541FB089560009699E /* QuoteViewController.swift */; };
 		C10D61591FB0AD0F0009699E /* ManifestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D61581FB0AD0F0009699E /* ManifestoViewController.swift */; };
 		C10D615B1FB0B30E0009699E /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D615A1FB0B30E0009699E /* UserDefaultsKeys.swift */; };
@@ -225,6 +227,8 @@
 		BE125441201B708E004FC314 /* Driver+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Driver+Extensions.swift"; sourceTree = "<group>"; };
 		BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputForm+Extensions.swift"; sourceTree = "<group>"; };
+		BED425FB2020A2AE00046EFC /* LEW-348.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "LEW-348.storyboard"; sourceTree = "<group>"; };
+		BED425FE2020B0E600046EFC /* BackupPrivateKeyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupPrivateKeyContainer.swift; sourceTree = "<group>"; };
 		C10D61541FB089560009699E /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		C10D61581FB0AD0F0009699E /* ManifestoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManifestoViewController.swift; sourceTree = "<group>"; };
 		C10D615A1FB0B30E0009699E /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
@@ -450,6 +454,14 @@
 			path = TradingAssetView;
 			sourceTree = "<group>";
 		};
+		BED425FD2020B0CF00046EFC /* BackupPrivateKey */ = {
+			isa = PBXGroup;
+			children = (
+				BED425FE2020B0E600046EFC /* BackupPrivateKeyContainer.swift */,
+			);
+			path = BackupPrivateKey;
+			sourceTree = "<group>";
+		};
 		C10D61531FB089380009699E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +525,7 @@
 		C13E63B81FA0818200873CA3 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				BED425FD2020B0CF00046EFC /* BackupPrivateKey */,
 				6158FF001FD2D77400AFCC28 /* SettingItem.swift */,
 				E0BB8D8B1F4D95E6002B4C12 /* SettingsViewController.swift */,
 				61A2F2251FDAC63D002A8F02 /* SettingsViewController+Sections.swift */,
@@ -731,6 +744,7 @@
 				C17B69BE1FAA17A50076A53A /* Onboarding.storyboard */,
 				C17B69C01FAB72950076A53A /* Pledge.storyboard */,
 				616E58521FC5963A00A61AAF /* Shared.storyboard */,
+				BED425FB2020A2AE00046EFC /* LEW-348.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -920,6 +934,7 @@
 				C1FEDD971FA7273D00FD87C5 /* Replica-Italic.ttf in Resources */,
 				C183F4B71FD992BD00F96379 /* GoogleService-Info.plist in Resources */,
 				E0BB8D631F471F72002B4C12 /* Localizable.strings in Resources */,
+				BED425FC2020A2AE00046EFC /* LEW-348.storyboard in Resources */,
 				E0B2A6F71F56E924004B0995 /* ChooseCurrencyViewCell.xib in Resources */,
 				E0A9EB031F44624B001A0241 /* LaunchScreen.storyboard in Resources */,
 				616E58531FC5963A00A61AAF /* Shared.storyboard in Resources */,
@@ -1158,6 +1173,7 @@
 				C12FE7671FBB0A45002304EA /* InviteButton.swift in Sources */,
 				F5AD927B200CD3F40053B39B /* PledgeModel.swift in Sources */,
 				61A2F2241FDAB35B002A8F02 /* Twitter+Rx.swift in Sources */,
+				BED425FF2020B0E600046EFC /* BackupPrivateKeyContainer.swift in Sources */,
 				C1985A571FC8440300CCD0D7 /* SignInPinViewController.swift in Sources */,
 				F5AD9268200CD3DE0053B39B /* LWRxBlueAuthManagerPledgePost.swift in Sources */,
 				E0BB8D6F1F4ABE1E002B4C12 /* SignUpEnterPinViewController.swift in Sources */,

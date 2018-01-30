@@ -40,11 +40,20 @@
                     <size key="freeformSize" width="375" height="767"/>
                     <connections>
                         <outlet property="tableView" destination="n1Y-eG-Vzr" id="ZB1-K6-kSU"/>
+                        <segue destination="NIi-La-KaY" kind="presentation" identifier="showBeginPrivateKeyBackup" id="oqm-kh-JWl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMA-PB-SvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-236" y="-48.125937031484263"/>
+        </scene>
+        <!--LEW-348-->
+        <scene sceneID="OHt-8E-ZD1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LEW-348" id="NIi-La-KaY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5M-Io-jdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="519"/>
         </scene>
         <!--Settings Push Notifications View Controller-->
         <scene sceneID="97f-G7-veX">
