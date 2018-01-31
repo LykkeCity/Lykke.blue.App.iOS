@@ -13,8 +13,8 @@ import WalletCore
 public class LWRxAuthManagerTwitterTimeLineJson: NSObject {
     
     public typealias Packet = TwitterTimeLineJsonPacket
-    public typealias Result = ApiResultList<[AnyHashable: Any]>
-    public typealias ResultType = [AnyHashable: Any]
+    public typealias Result = ApiResult<[[AnyHashable: Any]]>
+    public typealias ResultType = [[AnyHashable: Any]]
     public typealias RequestParams = TwitterTimeLineJsonPacket.Body
     
     override init() {
@@ -47,7 +47,7 @@ extension LWRxAuthManagerTwitterTimeLineJson: AuthManagerProtocol {
     }
 }
 
-public extension ObservableType where Self.E == ApiResultList<[AnyHashable: Any]> {
+public extension ObservableType where Self.E == ApiResult<[[AnyHashable: Any]]> {
     public func filterSuccess() -> Observable<[[AnyHashable: Any]]> {
         return map{$0.getSuccess()}.filterNil()
     }
