@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmericanTypewriter.ttc">
+            <string>AmericanTypewriter</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Manifesto View Controller-->
+        <scene sceneID="dJ0-hX-qKo">
+            <objects>
+                <viewController storyboardIdentifier="Manifesto" id="6A2-rG-74q" customClass="ManifestoViewController" customModule="LykkeBlueLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Manifesto" id="xcq-fA-mTh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnboardingLogo" translatesAutoresizingMaskIntoConstraints="NO" id="HR6-Tw-kmU">
+                                <rect key="frame" x="157.66666666666666" y="84" width="60" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="Pd6-BU-fPe"/>
+                                    <constraint firstAttribute="width" constant="60" id="gku-ne-lis"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="74K-2k-M5W">
+                                <rect key="frame" x="40" y="185" width="295" height="521"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="V2F-PO-mYf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="yPG-8j-nww"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Earth faces dangerous ecological tipping points due to primitive economic models that undervalue nature. We’re building a global movement to act on climate and protect biodiversity by investing in natural capital. Now is the time for our values and our financial resources to define a truly sustainable global marketplace, open to everyone. </string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="20" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2D-tS-bDG" userLabel="Next">
+                                <rect key="frame" x="162.66666666666666" y="706" width="50" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="8pN-b7-kpz"/>
+                                    <constraint firstAttribute="height" constant="42" id="SjZ-Bm-Tym"/>
+                                </constraints>
+                                <state key="normal" image="Next"/>
+                                <connections>
+                                    <action selector="next:" destination="6A2-rG-74q" eventType="touchUpInside" id="B9P-Ex-LDz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.48627450980392156" green="0.80784313725490198" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="TMk-mn-LGc" firstAttribute="bottom" secondItem="g2D-tS-bDG" secondAttribute="bottom" constant="30" id="28e-dn-dhG"/>
+                            <constraint firstItem="g2D-tS-bDG" firstAttribute="top" secondItem="74K-2k-M5W" secondAttribute="bottom" id="8nh-uZ-iaq"/>
+                            <constraint firstItem="g2D-tS-bDG" firstAttribute="centerX" secondItem="TMk-mn-LGc" secondAttribute="centerX" id="F1C-AG-eSE"/>
+                            <constraint firstItem="HR6-Tw-kmU" firstAttribute="centerX" secondItem="TMk-mn-LGc" secondAttribute="centerX" id="bZE-SP-8x0"/>
+                            <constraint firstItem="HR6-Tw-kmU" firstAttribute="top" secondItem="TMk-mn-LGc" secondAttribute="top" constant="40" id="fpv-2d-ULU"/>
+                            <constraint firstItem="74K-2k-M5W" firstAttribute="centerX" secondItem="TMk-mn-LGc" secondAttribute="centerX" id="iSn-Eg-8xC"/>
+                            <constraint firstItem="74K-2k-M5W" firstAttribute="top" secondItem="HR6-Tw-kmU" secondAttribute="bottom" constant="40" id="jOk-zh-gjB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TMk-mn-LGc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OqW-rP-SdP"/>
+                    <connections>
+                        <segue destination="xZ8-fp-Rcm" kind="show" identifier="showQuoteScreen" animates="NO" id="aDw-Zl-Ov7"/>
+                        <segue destination="JZ4-E6-cPD" kind="show" identifier="showOnboardingVideoScreen" animates="NO" id="YXC-fG-wcI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RTn-2k-UBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-169" y="162"/>
+        </scene>
+        <!--Onboarding Video View Controller-->
+        <scene sceneID="VXp-cs-H5c">
+            <objects>
+                <viewController id="JZ4-E6-cPD" customClass="OnboardingVideoViewController" customModule="LykkeBlueLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Manifesto" id="3aS-Ns-Ftr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="introVideoBg" translatesAutoresizingMaskIntoConstraints="NO" id="zFf-ns-7NI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ju-Rd-knf" userLabel="Next">
+                                <rect key="frame" x="163" y="706" width="50" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="3zv-dZ-QJ1"/>
+                                    <constraint firstAttribute="width" constant="50" id="jdu-ca-uhV"/>
+                                </constraints>
+                                <state key="normal" image="Next"/>
+                                <connections>
+                                    <segue destination="jh2-Je-mVZ" kind="show" animates="NO" id="w1z-gd-IRQ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOy-m8-1ib">
+                                <rect key="frame" x="0.0" y="286" width="375" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="FTV-vo-2CM"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMb-nW-Yfi" userLabel="play">
+                                <rect key="frame" x="148" y="371" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="oDB-Ks-6OA"/>
+                                    <constraint firstAttribute="height" constant="80" id="xQG-8X-IJ4"/>
+                                </constraints>
+                                <state key="normal" image="playButton"/>
+                                <connections>
+                                    <action selector="play:" destination="JZ4-E6-cPD" eventType="touchUpInside" id="YQC-0H-XN5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.48627450979999998" green="0.80784313730000001" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VkJ-Wt-9Ho" firstAttribute="bottom" secondItem="7ju-Rd-knf" secondAttribute="bottom" constant="30" id="35t-qq-vgM"/>
+                            <constraint firstItem="AMb-nW-Yfi" firstAttribute="centerX" secondItem="VkJ-Wt-9Ho" secondAttribute="centerX" id="4jb-Il-SxR"/>
+                            <constraint firstItem="zFf-ns-7NI" firstAttribute="leading" secondItem="wOy-m8-1ib" secondAttribute="leading" id="5ro-93-zXB"/>
+                            <constraint firstItem="7ju-Rd-knf" firstAttribute="centerX" secondItem="VkJ-Wt-9Ho" secondAttribute="centerX" id="Ko9-HM-tpp"/>
+                            <constraint firstItem="zFf-ns-7NI" firstAttribute="width" secondItem="3aS-Ns-Ftr" secondAttribute="width" id="LVv-OG-7mT"/>
+                            <constraint firstItem="wOy-m8-1ib" firstAttribute="width" secondItem="3aS-Ns-Ftr" secondAttribute="width" id="Pn7-J4-OK8"/>
+                            <constraint firstItem="zFf-ns-7NI" firstAttribute="height" secondItem="3aS-Ns-Ftr" secondAttribute="height" id="Ri9-R9-dPT"/>
+                            <constraint firstItem="wOy-m8-1ib" firstAttribute="centerY" secondItem="VkJ-Wt-9Ho" secondAttribute="centerY" id="e4S-VW-CJy"/>
+                            <constraint firstItem="AMb-nW-Yfi" firstAttribute="centerY" secondItem="VkJ-Wt-9Ho" secondAttribute="centerY" id="lh5-NE-95M"/>
+                            <constraint firstItem="wOy-m8-1ib" firstAttribute="centerX" secondItem="VkJ-Wt-9Ho" secondAttribute="centerX" id="m3a-Um-Fie"/>
+                            <constraint firstItem="zFf-ns-7NI" firstAttribute="top" secondItem="3aS-Ns-Ftr" secondAttribute="top" id="pgI-Cp-LNg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VkJ-Wt-9Ho"/>
+                    </view>
+                    <connections>
+                        <outlet property="videoContainer" destination="wOy-m8-1ib" id="tqj-bU-heh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b2S-Cf-b9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="637.60000000000002" y="593.25337331334333"/>
+        </scene>
+        <!--SignInUpNav-->
+        <scene sceneID="52K-L6-fNQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignInUp" referencedIdentifier="SignInUpNav" id="zZO-z7-zQA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUj-JH-XLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="-221"/>
+        </scene>
+        <!--SignUpNav-->
+        <scene sceneID="BSM-2L-l0N">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignInUp" referencedIdentifier="SignUpNav" id="mbt-Ut-hG3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2or-lU-QS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1317" y="-174"/>
+        </scene>
+        <!--Quote View Controller-->
+        <scene sceneID="mIj-tQ-bTE">
+            <objects>
+                <viewController storyboardIdentifier="Quote" id="xZ8-fp-Rcm" customClass="QuoteViewController" customModule="LykkeBlueLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Manifesto" id="04e-1l-Eh2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cb9-u2-SLC">
+                                <rect key="frame" x="25" y="-14572" width="325" height="29966"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the good man is the friend of all living things" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxN-XN-3x4" userLabel="Quote">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="29922"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- mahatma gandhi" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCJ-AQ-fyA" userLabel="Author">
+                                        <rect key="frame" x="0.0" y="29942" width="325" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23.5" id="2rX-Hi-95p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebe-az-Ne9">
+                                <rect key="frame" x="30" y="716" width="32" height="32"/>
+                                <state key="normal" image="SignUpIcon"/>
+                                <connections>
+                                    <segue destination="mbt-Ut-hG3" kind="show" id="yGV-L3-gKX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKV-kN-PkU">
+                                <rect key="frame" x="315" y="716" width="30" height="32"/>
+                                <state key="normal" image="LoginIcon"/>
+                                <connections>
+                                    <segue destination="zZO-z7-zQA" kind="show" id="Pdq-KH-oqS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnboardingLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2G2-va-Ayl">
+                                <rect key="frame" x="157.66666666666666" y="104" width="60" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="iOU-JC-NLD"/>
+                                    <constraint firstAttribute="height" constant="61" id="tFr-AC-BBL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.48627450979999998" green="0.80784313730000001" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2G2-va-Ayl" firstAttribute="top" secondItem="rKM-Ld-TLU" secondAttribute="top" constant="60" id="6xe-FR-ll6"/>
+                            <constraint firstItem="rKM-Ld-TLU" firstAttribute="bottom" secondItem="FKV-kN-PkU" secondAttribute="bottom" constant="30" id="8sj-Qp-D6g"/>
+                            <constraint firstItem="rKM-Ld-TLU" firstAttribute="trailing" secondItem="cb9-u2-SLC" secondAttribute="trailing" constant="25" id="ILb-5s-y3C"/>
+                            <constraint firstItem="cb9-u2-SLC" firstAttribute="centerY" secondItem="rKM-Ld-TLU" secondAttribute="centerY" id="Ou0-V7-uBc"/>
+                            <constraint firstItem="2G2-va-Ayl" firstAttribute="centerX" secondItem="rKM-Ld-TLU" secondAttribute="centerX" id="cRm-P3-cY2"/>
+                            <constraint firstItem="Ebe-az-Ne9" firstAttribute="leading" secondItem="rKM-Ld-TLU" secondAttribute="leading" constant="30" id="e23-Ae-qVj"/>
+                            <constraint firstItem="rKM-Ld-TLU" firstAttribute="trailing" secondItem="FKV-kN-PkU" secondAttribute="trailing" constant="30" id="ett-Ql-5qp"/>
+                            <constraint firstItem="rKM-Ld-TLU" firstAttribute="bottom" secondItem="Ebe-az-Ne9" secondAttribute="bottom" constant="30" id="hVm-mq-Shh"/>
+                            <constraint firstItem="cb9-u2-SLC" firstAttribute="leading" secondItem="rKM-Ld-TLU" secondAttribute="leading" constant="25" id="ykV-Jm-M2C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rKM-Ld-TLU"/>
+                    </view>
+                    <connections>
+                        <outlet property="author" destination="nCJ-AQ-fyA" id="Ay9-r0-fSI"/>
+                        <outlet property="quote" destination="wxN-XN-3x4" id="D7Q-ms-mEN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxc-jY-sdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="638" y="-197"/>
+        </scene>
+        <!--PledgeIntro-->
+        <scene sceneID="i2p-0J-kRJ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Pledge" storyboardName="Pledge" referencedIdentifier="PledgeIntro" id="jh2-Je-mVZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nl7-Oa-iqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LoginIcon" width="30" height="32"/>
+        <image name="Next" width="10" height="18"/>
+        <image name="OnboardingLogo" width="60" height="60"/>
+        <image name="SignUpIcon" width="32" height="32"/>
+        <image name="introVideoBg" width="375" height="667"/>
+        <image name="playButton" width="80" height="80"/>
+    </resources>
+</document>

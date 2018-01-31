@@ -1,0 +1,1994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46286F611FC2C890002CAF8D /* Observable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46286F601FC2C890002CAF8D /* Observable+Extensions.swift */; };
+		46286F631FC2CA50002CAF8D /* CurrencyExchanger+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46286F621FC2CA50002CAF8D /* CurrencyExchanger+Extensions.swift */; };
+		4E23D60C52DB37EA714F4067 /* Pods_LykkeBlueLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA09E41BAA36E80EDE810757 /* Pods_LykkeBlueLife.framework */; };
+		6107C5FE1FC45CA90061C35B /* SignUpVerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6107C5FD1FC45CA90061C35B /* SignUpVerifyEmailViewController.swift */; };
+		6107C6001FC46CDB0061C35B /* SignUpAddPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6107C5FF1FC46CDB0061C35B /* SignUpAddPhoneViewController.swift */; };
+		6158FF011FD2D77400AFCC28 /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6158FF001FD2D77400AFCC28 /* SettingItem.swift */; };
+		616E584F1FC5928C00A61AAF /* NumPadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 616E584E1FC5928C00A61AAF /* NumPadView.xib */; };
+		616E58511FC5945A00A61AAF /* NumPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616E58501FC5945A00A61AAF /* NumPadView.swift */; };
+		616E58531FC5963A00A61AAF /* Shared.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616E58521FC5963A00A61AAF /* Shared.storyboard */; };
+		616E58561FC598C400A61AAF /* PinPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616E58551FC598C400A61AAF /* PinPadViewController.swift */; };
+		616E58581FC5B36000A61AAF /* SignUpConfirmPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616E58571FC5B36000A61AAF /* SignUpConfirmPinViewController.swift */; };
+		616E585A1FC5B3C000A61AAF /* SignUpSetPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616E58591FC5B3C000A61AAF /* SignUpSetPinViewController.swift */; };
+		616E585C1FC6AA8600A61AAF /* SignUpGeneratePrivateKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616E585B1FC6AA8600A61AAF /* SignUpGeneratePrivateKeyViewController.swift */; };
+		618B4BDF1FD2C3CB001C5830 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 618B4BDE1FD2C3CB001C5830 /* SettingsTableViewCell.xib */; };
+		618B4BE11FD2C3E8001C5830 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4BE01FD2C3E8001C5830 /* SettingsTableViewCell.swift */; };
+		61A2F2241FDAB35B002A8F02 /* Twitter+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2F2231FDAB35B002A8F02 /* Twitter+Rx.swift */; };
+		61A2F2261FDAC63D002A8F02 /* SettingsViewController+Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2F2251FDAC63D002A8F02 /* SettingsViewController+Sections.swift */; };
+		61A9B8B51FC321B3002EC9A7 /* ButtonsBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A9B8B41FC321B3002EC9A7 /* ButtonsBarView.xib */; };
+		61A9B8B71FC321C8002EC9A7 /* ButtonsBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A9B8B61FC321C8002EC9A7 /* ButtonsBarView.swift */; };
+		61A9B8B91FC321FD002EC9A7 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A9B8B81FC321FD002EC9A7 /* UIView+Extensions.swift */; };
+		61A9B8BB1FC414F1002EC9A7 /* UINaviagtionBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A9B8BA1FC414F1002EC9A7 /* UINaviagtionBar+Extensions.swift */; };
+		61A9B8BD1FC44919002EC9A7 /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A9B8BC1FC44919002EC9A7 /* UIScrollView+Rx.swift */; };
+		61A9B8BF1FC44D46002EC9A7 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A9B8BE1FC44D46002EC9A7 /* UIViewController+Rx.swift */; };
+		61B643061FCC05EB00E4DEC0 /* TwitterTimelineDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B643051FCC05EB00E4DEC0 /* TwitterTimelineDataSource.swift */; };
+		61E7158D1FC576C400A7554A /* SignUpPhoneConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E7158C1FC576C400A7554A /* SignUpPhoneConfirmationViewController.swift */; };
+		9A2ECD9D1F500DA100E81680 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2ECD981F500DA100E81680 /* KeyboardView.swift */; };
+		9A2ECD9E1F500DA100E81680 /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2ECD991F500DA100E81680 /* SkyFloatingLabelTextField.swift */; };
+		9A2ECD9F1F500DA100E81680 /* SkyFloatingLabelTextFieldWithExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2ECD9A1F500DA100E81680 /* SkyFloatingLabelTextFieldWithExtensions.swift */; };
+		9A2ECDA01F500DA100E81680 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2ECD9B1F500DA100E81680 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		9A2ECDA11F500DA100E81680 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2ECD9C1F500DA100E81680 /* UITextField+fixCaretPosition.swift */; };
+		9AEAD0DA1F545DC600E11EAB /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEAD0D91F545DC600E11EAB /* RoundedButton.swift */; };
+		BE099E522016250B007CCB29 /* TradeCryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE099E512016250A007CCB29 /* TradeCryptoViewController.swift */; };
+		BE099E5520163260007CCB29 /* TradingAssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE099E5420163260007CCB29 /* TradingAssetView.swift */; };
+		BE099E5720163273007CCB29 /* TradingAssetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE099E5620163273007CCB29 /* TradingAssetView.xib */; };
+		BE125440201B6D71004FC314 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE12543F201B6D71004FC314 /* DispatchQueue+Extensions.swift */; };
+		BE125442201B708E004FC314 /* Driver+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE125441201B708E004FC314 /* Driver+Extensions.swift */; };
+		BE24B0F82017655B0005E7B8 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */; };
+		BE31CC041FFD3AEF001B350C /* InputForm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */; };
+		C10D61551FB089560009699E /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D61541FB089560009699E /* QuoteViewController.swift */; };
+		C10D61591FB0AD0F0009699E /* ManifestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D61581FB0AD0F0009699E /* ManifestoViewController.swift */; };
+		C10D615B1FB0B30E0009699E /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D615A1FB0B30E0009699E /* UserDefaultsKeys.swift */; };
+		C10D615E1FB0BEC40009699E /* quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = C10D615D1FB0BEC40009699E /* quotes.plist */; };
+		C10D61601FB1AD560009699E /* DefaultPlistParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D615F1FB1AD560009699E /* DefaultPlistParser.swift */; };
+		C10D61621FB1B5380009699E /* PlistParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D61611FB1B5380009699E /* PlistParser.swift */; };
+		C1167DD01F84B7DB004CF521 /* PinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1167DCF1F84B7DB004CF521 /* PinPresenter.swift */; };
+		C12D44D71F8523F700140EDD /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12D44D61F8523F700140EDD /* Presenter.swift */; };
+		C12D44D91F865E4000140EDD /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12D44D81F865E4000140EDD /* AppConstants.swift */; };
+		C12FE7671FBB0A45002304EA /* InviteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FE7661FBB0A45002304EA /* InviteButton.swift */; };
+		C12FE76B1FBB0E54002304EA /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FE76A1FBB0E54002304EA /* AppTheme.swift */; };
+		C12FE76E1FC31B60002304EA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FE76D1FC31B60002304EA /* AppCoordinator.swift */; };
+		C136E0091FC46B6800A9E696 /* UIApplication+TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136E0081FC46B6800A9E696 /* UIApplication+TopViewController.swift */; };
+		C136E00B1FC470FD00A9E696 /* LWKeychainManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136E00A1FC470FD00A9E696 /* LWKeychainManagerHelper.swift */; };
+		C13BA2E81FB1B6D60062121F /* RandomQuoteGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BA2E71FB1B6D60062121F /* RandomQuoteGenerator.swift */; };
+		C13BA2EA1FB1E4D90062121F /* OnboardingVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BA2E91FB1E4D90062121F /* OnboardingVideoViewController.swift */; };
+		C13BA2EC1FB204DE0062121F /* NetPositiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BA2EB1FB204DE0062121F /* NetPositiveViewController.swift */; };
+		C13BA2EE1FB308220062121F /* UISlider+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BA2ED1FB308220062121F /* UISlider+Extensions.swift */; };
+		C13BA2F11FB32ACB0062121F /* FootprintViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BA2F01FB32ACB0062121F /* FootprintViewModel.swift */; };
+		C13BA2F51FB4841C0062121F /* NetPositiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BA2F41FB4841C0062121F /* NetPositiveViewModel.swift */; };
+		C13E63A31F9F611600873CA3 /* ChangePassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13E63A21F9F611600873CA3 /* ChangePassword.storyboard */; };
+		C13E63A81F9F656F00873CA3 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E63A71F9F656F00873CA3 /* NewPasswordViewController.swift */; };
+		C13E63AA1F9F663100873CA3 /* CreatePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E63A91F9F663100873CA3 /* CreatePinViewController.swift */; };
+		C13E63AC1F9F666900873CA3 /* VerifyPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E63AB1F9F666900873CA3 /* VerifyPinViewController.swift */; };
+		C13E63AE1F9F66D800873CA3 /* VerifySMSCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E63AD1F9F66D800873CA3 /* VerifySMSCodeViewController.swift */; };
+		C13E63B01F9F67A900873CA3 /* SuccessScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E63AF1F9F67A900873CA3 /* SuccessScreenViewController.swift */; };
+		C13E63BA1FA081A500873CA3 /* BackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E63B91FA081A500873CA3 /* BackupViewController.swift */; };
+		C17B69BF1FAA17A50076A53A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17B69BE1FAA17A50076A53A /* Onboarding.storyboard */; };
+		C17B69C11FAB72950076A53A /* Pledge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17B69C01FAB72950076A53A /* Pledge.storyboard */; };
+		C17B69C51FAC59A30076A53A /* FootprintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B69C41FAC59A30076A53A /* FootprintViewController.swift */; };
+		C17B69C71FAC9ED10076A53A /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B69C61FAC9ED10076A53A /* OnboardingPresenter.swift */; };
+		C183F4A91FD813E700F96379 /* ReferralLinkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C183F4A81FD813E700F96379 /* ReferralLinkHelper.swift */; };
+		C183F4B71FD992BD00F96379 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C183F4B61FD992BD00F96379 /* GoogleService-Info.plist */; };
+		C1985A501FC7214000CCD0D7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1985A4F1FC7214000CCD0D7 /* ProfileViewController.swift */; };
+		C1985A571FC8440300CCD0D7 /* SignInPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1985A551FC8440200CCD0D7 /* SignInPinViewController.swift */; };
+		C1985A581FC8440300CCD0D7 /* SignInCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1985A561FC8440300CCD0D7 /* SignInCodeViewController.swift */; };
+		C1985A5A1FC860EA00CCD0D7 /* ProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1985A591FC860EA00CCD0D7 /* ProgressCircle.swift */; };
+		C1985A5E1FCC6F8800CCD0D7 /* PledgeIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1985A5D1FCC6F8800CCD0D7 /* PledgeIntroViewController.swift */; };
+		C1985A601FCD592C00CCD0D7 /* PledgeSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1985A5F1FCD592C00CCD0D7 /* PledgeSuccessViewController.swift */; };
+		C19A6D2B1FC6D1EC00AE4C7D /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6D251FC6D1EC00AE4C7D /* CommunityViewController.swift */; };
+		C19A6D2C1FC6D1EC00AE4C7D /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6D261FC6D1EC00AE4C7D /* HomePageViewController.swift */; };
+		C19A6D2D1FC6D1EC00AE4C7D /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6D271FC6D1EC00AE4C7D /* TwitterViewController.swift */; };
+		C1D5D1E71FDFDE2D00CC916A /* AppConstants+Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5D1E61FDFDE2D00CC916A /* AppConstants+Security.swift */; };
+		C1DB50311F8E655600C70875 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB50301F8E655600C70875 /* UserDefaults+Extensions.swift */; };
+		C1FEDD8A1FA21B2400FD87C5 /* VerifyBackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FEDD891FA21B2400FD87C5 /* VerifyBackupViewController.swift */; };
+		C1FEDD941FA7273700FD87C5 /* American Typewriter Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1FEDD8D1FA7246A00FD87C5 /* American Typewriter Regular.ttf */; };
+		C1FEDD951FA7273D00FD87C5 /* Replica-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1FEDD921FA7246A00FD87C5 /* Replica-Bold.ttf */; };
+		C1FEDD961FA7273D00FD87C5 /* Replica-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1FEDD901FA7246A00FD87C5 /* Replica-BoldItalic.ttf */; };
+		C1FEDD971FA7273D00FD87C5 /* Replica-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1FEDD8C1FA7246900FD87C5 /* Replica-Italic.ttf */; };
+		C1FEDD981FA7273D00FD87C5 /* Replica-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1FEDD911FA7246A00FD87C5 /* Replica-Light.ttf */; };
+		C1FEDD991FA7273D00FD87C5 /* Replica-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1FEDD8F1FA7246A00FD87C5 /* Replica-LightItalic.ttf */; };
+		C1FEDD9A1FA7273D00FD87C5 /* Replica-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1FEDD931FA7246A00FD87C5 /* Replica-Regular.ttf */; };
+		C1FEDD9B1FA7273D00FD87C5 /* ReplicaPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1FEDD8E1FA7246A00FD87C5 /* ReplicaPro-Regular.ttf */; };
+		E02804E01F6293330058E36D /* BuySell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02804DF1F6293330058E36D /* BuySell.storyboard */; };
+		E02804E21F62A8F40058E36D /* BuySellStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02804E11F62A8F40058E36D /* BuySellStep1ViewController.swift */; };
+		E02804E61F62AFAC0058E36D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02804E51F62AFAC0058E36D /* UIViewController+Extensions.swift */; };
+		E02804E91F62B0090058E36D /* LWUtilsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02804E81F62B0090058E36D /* LWUtilsHelper.swift */; };
+		E028051B1F66B4480058E36D /* BuySellStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E028051A1F66B4480058E36D /* BuySellStep2ViewController.swift */; };
+		E028051D1F66D3FD0058E36D /* TempButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E028051C1F66D3FD0058E36D /* TempButton.swift */; };
+		E05515331F6FEBD000D488BE /* TransferByWAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05515321F6FEBD000D488BE /* TransferByWAddressViewController.swift */; };
+		E05515351F725F6700D488BE /* ReceiveByWAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05515341F725F6700D488BE /* ReceiveByWAddressViewController.swift */; };
+		E0711C331F7A4C7D001A1AE4 /* TransactionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0711C321F7A4C7D001A1AE4 /* TransactionHistoryViewController.swift */; };
+		E0711C3E1F7BB57B001A1AE4 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0711C3D1F7BB57B001A1AE4 /* SafariServices.framework */; };
+		E0A9EAF91F44624B001A0241 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9EAF81F44624B001A0241 /* AppDelegate.swift */; };
+		E0A9EAFE1F44624B001A0241 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A9EAFC1F44624B001A0241 /* Main.storyboard */; };
+		E0A9EB001F44624B001A0241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A9EAFF1F44624B001A0241 /* Assets.xcassets */; };
+		E0A9EB031F44624B001A0241 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A9EB011F44624B001A0241 /* LaunchScreen.storyboard */; };
+		E0A9EB0E1F44624B001A0241 /* LykkeBlueLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9EB0D1F44624B001A0241 /* LykkeBlueLifeTests.swift */; };
+		E0A9EB241F457BC8001A0241 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9EB231F457BC8001A0241 /* HomeScreenViewController.swift */; };
+		E0A9EB281F457CBC001A0241 /* SignInUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A9EB271F457CBC001A0241 /* SignInUp.storyboard */; };
+		E0AE50A91F61701D00CA8BA9 /* Buy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0AE50A81F61701D00CA8BA9 /* Buy.storyboard */; };
+		E0AE50B01F61724800CA8BA9 /* LWPortfolioCurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE50AE1F61724800CA8BA9 /* LWPortfolioCurrencyTableViewCell.swift */; };
+		E0AE50B11F61724800CA8BA9 /* LWPortfolioCurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0AE50AF1F61724800CA8BA9 /* LWPortfolioCurrencyTableViewCell.xib */; };
+		E0AE50B31F617EA900CA8BA9 /* UIImageView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE50B21F617EA900CA8BA9 /* UIImageView+Rx.swift */; };
+		E0B2A6EC1F56E914004B0995 /* ChangeCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2A6E51F56E914004B0995 /* ChangeCurrencyViewController.swift */; };
+		E0B2A6ED1F56E914004B0995 /* PinSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2A6E61F56E914004B0995 /* PinSetViewController.swift */; };
+		E0B2A6EF1F56E914004B0995 /* SettingsChangePhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2A6E81F56E914004B0995 /* SettingsChangePhoneViewController.swift */; };
+		E0B2A6F01F56E914004B0995 /* SettingsEmailConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2A6E91F56E914004B0995 /* SettingsEmailConfirmViewController.swift */; };
+		E0B2A6F11F56E914004B0995 /* SettingsPhoneConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2A6EA1F56E914004B0995 /* SettingsPhoneConfirmViewController.swift */; };
+		E0B2A6F21F56E914004B0995 /* SettingsPushNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2A6EB1F56E914004B0995 /* SettingsPushNotificationsViewController.swift */; };
+		E0B2A6F61F56E924004B0995 /* ChooseCurrencyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2A6F31F56E924004B0995 /* ChooseCurrencyViewCell.swift */; };
+		E0B2A6F71F56E924004B0995 /* ChooseCurrencyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0B2A6F41F56E924004B0995 /* ChooseCurrencyViewCell.xib */; };
+		E0B2A6F81F56E924004B0995 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2A6F51F56E924004B0995 /* LoadingView.swift */; };
+		E0B2A7061F56FEBA004B0995 /* ValidatePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2A7051F56FEBA004B0995 /* ValidatePinViewController.swift */; };
+		E0B2A70C1F583FA6004B0995 /* ShakeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2A70B1F583FA6004B0995 /* ShakeScreenViewController.swift */; };
+		E0B2A70E1F5847BB004B0995 /* english_words_list.txt in Resources */ = {isa = PBXBuildFile; fileRef = E0B2A70D1F5847BB004B0995 /* english_words_list.txt */; };
+		E0BB8D631F471F72002B4C12 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0BB8D621F471F72002B4C12 /* Localizable.strings */; };
+		E0BB8D671F472608002B4C12 /* SignUpEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB8D661F472608002B4C12 /* SignUpEmailViewController.swift */; };
+		E0BB8D691F47262C002B4C12 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB8D681F47262C002B4C12 /* SignInViewController.swift */; };
+		E0BB8D6F1F4ABE1E002B4C12 /* SignUpEnterPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB8D6E1F4ABE1E002B4C12 /* SignUpEnterPinViewController.swift */; };
+		E0BB8D7B1F4B1DAC002B4C12 /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB8D7A1F4B1DAC002B4C12 /* SignUpPasswordViewController.swift */; };
+		E0BB8D811F4C3860002B4C12 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB8D801F4C3860002B4C12 /* UIHelper.swift */; };
+		E0BB8D841F4C6031002B4C12 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB8D831F4C6031002B4C12 /* Notification+Extensions.swift */; };
+		E0BB8D8A1F4D94EE002B4C12 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0BB8D891F4D94EE002B4C12 /* Settings.storyboard */; };
+		E0BB8D8C1F4D95E6002B4C12 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB8D8B1F4D95E6002B4C12 /* SettingsViewController.swift */; };
+		E0BB8D981F4EEBA0002B4C12 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB8D971F4EEBA0002B4C12 /* BaseViewController.swift */; };
+		F5AD9257200CD2F80053B39B /* CommunityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9254200CD2F80053B39B /* CommunityViewModel.swift */; };
+		F5AD9258200CD2F80053B39B /* ProfilePledgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9255200CD2F80053B39B /* ProfilePledgeViewModel.swift */; };
+		F5AD9259200CD2F80053B39B /* ReferralLinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9256200CD2F80053B39B /* ReferralLinkViewModel.swift */; };
+		F5AD9264200CD3DE0053B39B /* LWRxBlueAuthManagerReferralLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD925C200CD3DD0053B39B /* LWRxBlueAuthManagerReferralLink.swift */; };
+		F5AD9265200CD3DE0053B39B /* LWRxBlueAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD925D200CD3DD0053B39B /* LWRxBlueAuthManager.swift */; };
+		F5AD9266200CD3DE0053B39B /* LWRxBlueAuthManagerPledgeGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD925E200CD3DD0053B39B /* LWRxBlueAuthManagerPledgeGet.swift */; };
+		F5AD9267200CD3DE0053B39B /* LWRxBlueAuthManagerReferralLinkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD925F200CD3DD0053B39B /* LWRxBlueAuthManagerReferralLinkInfo.swift */; };
+		F5AD9268200CD3DE0053B39B /* LWRxBlueAuthManagerPledgePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9260200CD3DD0053B39B /* LWRxBlueAuthManagerPledgePost.swift */; };
+		F5AD9269200CD3DE0053B39B /* LWRxAuthManagerTwitterTimeLineJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9261200CD3DD0053B39B /* LWRxAuthManagerTwitterTimeLineJson.swift */; };
+		F5AD926A200CD3DE0053B39B /* LWRxBlueAuthManagerCommunityUsersCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9262200CD3DD0053B39B /* LWRxBlueAuthManagerCommunityUsersCount.swift */; };
+		F5AD926B200CD3DE0053B39B /* LWRxBlueAuthManagerClaimReferralLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9263200CD3DE0053B39B /* LWRxBlueAuthManagerClaimReferralLink.swift */; };
+		F5AD9277200CD3F40053B39B /* PledgeGetPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD926D200CD3F30053B39B /* PledgeGetPacket.swift */; };
+		F5AD9278200CD3F40053B39B /* TwitterTimeLineJsonPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD926E200CD3F30053B39B /* TwitterTimeLineJsonPacket.swift */; };
+		F5AD9279200CD3F40053B39B /* CommunityUsersCountPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD926F200CD3F30053B39B /* CommunityUsersCountPacket.swift */; };
+		F5AD927A200CD3F40053B39B /* PledgePostPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9270200CD3F30053B39B /* PledgePostPacket.swift */; };
+		F5AD927B200CD3F40053B39B /* PledgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9271200CD3F30053B39B /* PledgeModel.swift */; };
+		F5AD927C200CD3F40053B39B /* ReferralLinkClaimPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9272200CD3F30053B39B /* ReferralLinkClaimPacket.swift */; };
+		F5AD927D200CD3F40053B39B /* ReferralLinkInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9273200CD3F40053B39B /* ReferralLinkInfoModel.swift */; };
+		F5AD927E200CD3F40053B39B /* ReferralLinkInfoPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9274200CD3F40053B39B /* ReferralLinkInfoPacket.swift */; };
+		F5AD927F200CD3F40053B39B /* ReferralLinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9275200CD3F40053B39B /* ReferralLinkModel.swift */; };
+		F5AD9280200CD3F40053B39B /* ReferralLinkPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9276200CD3F40053B39B /* ReferralLinkPacket.swift */; };
+		F5AD9283200CD9E00053B39B /* PledgeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9282200CD9E00053B39B /* PledgeService.swift */; };
+		FF526FCD1C0538CB9A884B96 /* Pods_LykkeBlueLifeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41E7BE62C2CC578659F4DC8 /* Pods_LykkeBlueLifeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0A9EB0A1F44624B001A0241 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0A9EAED1F44624A001A0241 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0A9EAF41F44624B001A0241;
+			remoteInfo = LykkeBlueLife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00B1CB5BC42E30A54D07DFD7 /* Pods-LykkeBlueLifeTests.debug.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLifeTests.debug.dev.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLifeTests/Pods-LykkeBlueLifeTests.debug.dev.xcconfig"; sourceTree = "<group>"; };
+		1956B0085B44B8AB39297D18 /* Pods-LykkeBlueLife.debug.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLife.debug.dev.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife.debug.dev.xcconfig"; sourceTree = "<group>"; };
+		21327A34D2071484DBD8FEC5 /* Pods-LykkeBlueLife.release.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLife.release.test.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife.release.test.xcconfig"; sourceTree = "<group>"; };
+		26859074DCDF44AC3C12DD64 /* Pods-LykkeBlueLifeTests.release.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLifeTests.release.test.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLifeTests/Pods-LykkeBlueLifeTests.release.test.xcconfig"; sourceTree = "<group>"; };
+		3ACE93D6D77CEC55FE20D3F2 /* Pods-LykkeBlueLifeTests.debug.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLifeTests.debug.test.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLifeTests/Pods-LykkeBlueLifeTests.debug.test.xcconfig"; sourceTree = "<group>"; };
+		3DAC567F3838BB826952EF59 /* Pods-LykkeBlueLife.debug.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLife.debug.test.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife.debug.test.xcconfig"; sourceTree = "<group>"; };
+		3ECDF156FA9C7D888CC009C6 /* Pods-LykkeBlueLifeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLifeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLifeTests/Pods-LykkeBlueLifeTests.release.xcconfig"; sourceTree = "<group>"; };
+		46286F601FC2C890002CAF8D /* Observable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Extensions.swift"; sourceTree = "<group>"; };
+		46286F621FC2CA50002CAF8D /* CurrencyExchanger+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrencyExchanger+Extensions.swift"; sourceTree = "<group>"; };
+		6107C5FD1FC45CA90061C35B /* SignUpVerifyEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVerifyEmailViewController.swift; sourceTree = "<group>"; };
+		6107C5FF1FC46CDB0061C35B /* SignUpAddPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAddPhoneViewController.swift; sourceTree = "<group>"; };
+		6158FF001FD2D77400AFCC28 /* SettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItem.swift; sourceTree = "<group>"; };
+		616E584E1FC5928C00A61AAF /* NumPadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumPadView.xib; sourceTree = "<group>"; };
+		616E58501FC5945A00A61AAF /* NumPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumPadView.swift; sourceTree = "<group>"; };
+		616E58521FC5963A00A61AAF /* Shared.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shared.storyboard; sourceTree = "<group>"; };
+		616E58551FC598C400A61AAF /* PinPadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinPadViewController.swift; sourceTree = "<group>"; };
+		616E58571FC5B36000A61AAF /* SignUpConfirmPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConfirmPinViewController.swift; sourceTree = "<group>"; };
+		616E58591FC5B3C000A61AAF /* SignUpSetPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSetPinViewController.swift; sourceTree = "<group>"; };
+		616E585B1FC6AA8600A61AAF /* SignUpGeneratePrivateKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpGeneratePrivateKeyViewController.swift; sourceTree = "<group>"; };
+		618B4BDE1FD2C3CB001C5830 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		618B4BE01FD2C3E8001C5830 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		61A2F2231FDAB35B002A8F02 /* Twitter+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Twitter+Rx.swift"; sourceTree = "<group>"; };
+		61A2F2251FDAC63D002A8F02 /* SettingsViewController+Sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+Sections.swift"; sourceTree = "<group>"; };
+		61A9B8B41FC321B3002EC9A7 /* ButtonsBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonsBarView.xib; sourceTree = "<group>"; };
+		61A9B8B61FC321C8002EC9A7 /* ButtonsBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsBarView.swift; sourceTree = "<group>"; };
+		61A9B8B81FC321FD002EC9A7 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		61A9B8BA1FC414F1002EC9A7 /* UINaviagtionBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINaviagtionBar+Extensions.swift"; sourceTree = "<group>"; };
+		61A9B8BC1FC44919002EC9A7 /* UIScrollView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Rx.swift"; sourceTree = "<group>"; };
+		61A9B8BE1FC44D46002EC9A7 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		61B643051FCC05EB00E4DEC0 /* TwitterTimelineDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterTimelineDataSource.swift; sourceTree = "<group>"; };
+		61E7158C1FC576C400A7554A /* SignUpPhoneConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPhoneConfirmationViewController.swift; sourceTree = "<group>"; };
+		6BD2F8EC2ABD8B5021E6FABE /* Pods-LykkeBlueLifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLifeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLifeTests/Pods-LykkeBlueLifeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A2ECD981F500DA100E81680 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		9A2ECD991F500DA100E81680 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		9A2ECD9A1F500DA100E81680 /* SkyFloatingLabelTextFieldWithExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyFloatingLabelTextFieldWithExtensions.swift; sourceTree = "<group>"; };
+		9A2ECD9B1F500DA100E81680 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		9A2ECD9C1F500DA100E81680 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		9AEAD0D91F545DC600E11EAB /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		A0D2E27E06A878B9DE3E1CC0 /* Pods-LykkeBlueLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife.debug.xcconfig"; sourceTree = "<group>"; };
+		B41E7BE62C2CC578659F4DC8 /* Pods_LykkeBlueLifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LykkeBlueLifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E3AF308239A5D824690E56 /* Pods-LykkeBlueLifeTests.release.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLifeTests.release.dev.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLifeTests/Pods-LykkeBlueLifeTests.release.dev.xcconfig"; sourceTree = "<group>"; };
+		BE099E512016250A007CCB29 /* TradeCryptoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeCryptoViewController.swift; sourceTree = "<group>"; };
+		BE099E5420163260007CCB29 /* TradingAssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingAssetView.swift; sourceTree = "<group>"; };
+		BE099E5620163273007CCB29 /* TradingAssetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TradingAssetView.xib; sourceTree = "<group>"; };
+		BE12543F201B6D71004FC314 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		BE125441201B708E004FC314 /* Driver+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Driver+Extensions.swift"; sourceTree = "<group>"; };
+		BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputForm+Extensions.swift"; sourceTree = "<group>"; };
+		C10D61541FB089560009699E /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		C10D61581FB0AD0F0009699E /* ManifestoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManifestoViewController.swift; sourceTree = "<group>"; };
+		C10D615A1FB0B30E0009699E /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		C10D615D1FB0BEC40009699E /* quotes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = quotes.plist; sourceTree = "<group>"; };
+		C10D615F1FB1AD560009699E /* DefaultPlistParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPlistParser.swift; sourceTree = "<group>"; };
+		C10D61611FB1B5380009699E /* PlistParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistParser.swift; sourceTree = "<group>"; };
+		C1167DCF1F84B7DB004CF521 /* PinPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinPresenter.swift; sourceTree = "<group>"; };
+		C11FE5D21F95027A00903FDE /* QRCodeReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QRCodeReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12D44D61F8523F700140EDD /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		C12D44D81F865E4000140EDD /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		C12FE7661FBB0A45002304EA /* InviteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteButton.swift; sourceTree = "<group>"; };
+		C12FE76A1FBB0E54002304EA /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		C12FE76D1FC31B60002304EA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C136E0081FC46B6800A9E696 /* UIApplication+TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+TopViewController.swift"; sourceTree = "<group>"; };
+		C136E00A1FC470FD00A9E696 /* LWKeychainManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWKeychainManagerHelper.swift; sourceTree = "<group>"; };
+		C13BA2E71FB1B6D60062121F /* RandomQuoteGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteGenerator.swift; sourceTree = "<group>"; };
+		C13BA2E91FB1E4D90062121F /* OnboardingVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVideoViewController.swift; sourceTree = "<group>"; };
+		C13BA2EB1FB204DE0062121F /* NetPositiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetPositiveViewController.swift; sourceTree = "<group>"; };
+		C13BA2ED1FB308220062121F /* UISlider+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISlider+Extensions.swift"; sourceTree = "<group>"; };
+		C13BA2F01FB32ACB0062121F /* FootprintViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootprintViewModel.swift; sourceTree = "<group>"; };
+		C13BA2F41FB4841C0062121F /* NetPositiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetPositiveViewModel.swift; sourceTree = "<group>"; };
+		C13E63A21F9F611600873CA3 /* ChangePassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePassword.storyboard; sourceTree = "<group>"; };
+		C13E63A71F9F656F00873CA3 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
+		C13E63A91F9F663100873CA3 /* CreatePinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePinViewController.swift; sourceTree = "<group>"; };
+		C13E63AB1F9F666900873CA3 /* VerifyPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPinViewController.swift; sourceTree = "<group>"; };
+		C13E63AD1F9F66D800873CA3 /* VerifySMSCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifySMSCodeViewController.swift; sourceTree = "<group>"; };
+		C13E63AF1F9F67A900873CA3 /* SuccessScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessScreenViewController.swift; sourceTree = "<group>"; };
+		C13E63B91FA081A500873CA3 /* BackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupViewController.swift; sourceTree = "<group>"; };
+		C17B69BE1FAA17A50076A53A /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		C17B69C01FAB72950076A53A /* Pledge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pledge.storyboard; sourceTree = "<group>"; };
+		C17B69C41FAC59A30076A53A /* FootprintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootprintViewController.swift; sourceTree = "<group>"; };
+		C17B69C61FAC9ED10076A53A /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		C17F7C521F8D10CB003661AB /* LykkeBlueLife.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LykkeBlueLife.entitlements; sourceTree = "<group>"; };
+		C183F4A81FD813E700F96379 /* ReferralLinkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferralLinkHelper.swift; sourceTree = "<group>"; };
+		C183F4B61FD992BD00F96379 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C1985A4F1FC7214000CCD0D7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C1985A551FC8440200CCD0D7 /* SignInPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInPinViewController.swift; sourceTree = "<group>"; };
+		C1985A561FC8440300CCD0D7 /* SignInCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInCodeViewController.swift; sourceTree = "<group>"; };
+		C1985A591FC860EA00CCD0D7 /* ProgressCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircle.swift; sourceTree = "<group>"; };
+		C1985A5D1FCC6F8800CCD0D7 /* PledgeIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PledgeIntroViewController.swift; sourceTree = "<group>"; };
+		C1985A5F1FCD592C00CCD0D7 /* PledgeSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PledgeSuccessViewController.swift; sourceTree = "<group>"; };
+		C19A6D251FC6D1EC00AE4C7D /* CommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
+		C19A6D261FC6D1EC00AE4C7D /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		C19A6D271FC6D1EC00AE4C7D /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		C1C0780D1F94FD3F00AC89A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C1D5D1E61FDFDE2D00CC916A /* AppConstants+Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppConstants+Security.swift"; sourceTree = "<group>"; };
+		C1DB50301F8E655600C70875 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		C1FEDD891FA21B2400FD87C5 /* VerifyBackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyBackupViewController.swift; sourceTree = "<group>"; };
+		C1FEDD8C1FA7246900FD87C5 /* Replica-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Replica-Italic.ttf"; sourceTree = "<group>"; };
+		C1FEDD8D1FA7246A00FD87C5 /* American Typewriter Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "American Typewriter Regular.ttf"; sourceTree = "<group>"; };
+		C1FEDD8E1FA7246A00FD87C5 /* ReplicaPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReplicaPro-Regular.ttf"; sourceTree = "<group>"; };
+		C1FEDD8F1FA7246A00FD87C5 /* Replica-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Replica-LightItalic.ttf"; sourceTree = "<group>"; };
+		C1FEDD901FA7246A00FD87C5 /* Replica-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Replica-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C1FEDD911FA7246A00FD87C5 /* Replica-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Replica-Light.ttf"; sourceTree = "<group>"; };
+		C1FEDD921FA7246A00FD87C5 /* Replica-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Replica-Bold.ttf"; sourceTree = "<group>"; };
+		C1FEDD931FA7246A00FD87C5 /* Replica-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Replica-Regular.ttf"; sourceTree = "<group>"; };
+		E02804DF1F6293330058E36D /* BuySell.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BuySell.storyboard; sourceTree = "<group>"; };
+		E02804E11F62A8F40058E36D /* BuySellStep1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuySellStep1ViewController.swift; path = LykkeBlueLife/Classes/ViewController/BuySellStep1ViewController.swift; sourceTree = SOURCE_ROOT; };
+		E02804E51F62AFAC0058E36D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		E02804E81F62B0090058E36D /* LWUtilsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWUtilsHelper.swift; sourceTree = "<group>"; };
+		E028051A1F66B4480058E36D /* BuySellStep2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuySellStep2ViewController.swift; path = LykkeBlueLife/Classes/ViewController/BuySellStep2ViewController.swift; sourceTree = SOURCE_ROOT; };
+		E028051C1F66D3FD0058E36D /* TempButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempButton.swift; sourceTree = "<group>"; };
+		E05515321F6FEBD000D488BE /* TransferByWAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransferByWAddressViewController.swift; path = LykkeBlueLife/Classes/ViewController/TransferByWAddressViewController.swift; sourceTree = SOURCE_ROOT; };
+		E05515341F725F6700D488BE /* ReceiveByWAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiveByWAddressViewController.swift; path = LykkeBlueLife/Classes/ViewController/ReceiveByWAddressViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0711C321F7A4C7D001A1AE4 /* TransactionHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransactionHistoryViewController.swift; path = LykkeBlueLife/Classes/ViewController/TransactionHistoryViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0711C3D1F7BB57B001A1AE4 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		E0A9EAF51F44624B001A0241 /* LykkeBlueLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LykkeBlueLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0A9EAF81F44624B001A0241 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0A9EAFD1F44624B001A0241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0A9EAFF1F44624B001A0241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0A9EB021F44624B001A0241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0A9EB041F44624B001A0241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0A9EB091F44624B001A0241 /* LykkeBlueLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LykkeBlueLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0A9EB0D1F44624B001A0241 /* LykkeBlueLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LykkeBlueLifeTests.swift; sourceTree = "<group>"; };
+		E0A9EB0F1F44624B001A0241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0A9EB231F457BC8001A0241 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScreenViewController.swift; path = LykkeBlueLife/Classes/ViewController/HomeScreenViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0A9EB271F457CBC001A0241 /* SignInUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignInUp.storyboard; sourceTree = "<group>"; };
+		E0AE50A81F61701D00CA8BA9 /* Buy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Buy.storyboard; sourceTree = "<group>"; };
+		E0AE50AE1F61724800CA8BA9 /* LWPortfolioCurrencyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWPortfolioCurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		E0AE50AF1F61724800CA8BA9 /* LWPortfolioCurrencyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LWPortfolioCurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		E0AE50B21F617EA900CA8BA9 /* UIImageView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Rx.swift"; sourceTree = "<group>"; };
+		E0B2A6E51F56E914004B0995 /* ChangeCurrencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangeCurrencyViewController.swift; path = LykkeBlueLife/Classes/ViewController/ChangeCurrencyViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0B2A6E61F56E914004B0995 /* PinSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinSetViewController.swift; path = LykkeBlueLife/Classes/ViewController/SignUp/PinSetViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0B2A6E81F56E914004B0995 /* SettingsChangePhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsChangePhoneViewController.swift; path = LykkeBlueLife/Classes/ViewController/Settings/SettingsChangePhoneViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0B2A6E91F56E914004B0995 /* SettingsEmailConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsEmailConfirmViewController.swift; path = LykkeBlueLife/Classes/ViewController/Settings/SettingsEmailConfirmViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0B2A6EA1F56E914004B0995 /* SettingsPhoneConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsPhoneConfirmViewController.swift; path = LykkeBlueLife/Classes/ViewController/Settings/SettingsPhoneConfirmViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0B2A6EB1F56E914004B0995 /* SettingsPushNotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsPushNotificationsViewController.swift; path = LykkeBlueLife/Classes/ViewController/Settings/SettingsPushNotificationsViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0B2A6F31F56E924004B0995 /* ChooseCurrencyViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCurrencyViewCell.swift; sourceTree = "<group>"; };
+		E0B2A6F41F56E924004B0995 /* ChooseCurrencyViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseCurrencyViewCell.xib; sourceTree = "<group>"; };
+		E0B2A6F51F56E924004B0995 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		E0B2A7051F56FEBA004B0995 /* ValidatePinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidatePinViewController.swift; path = LykkeBlueLife/Classes/ViewController/ValidatePinViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0B2A70B1F583FA6004B0995 /* ShakeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShakeScreenViewController.swift; path = LykkeBlueLife/Classes/ViewController/ShakeScreenViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0B2A70D1F5847BB004B0995 /* english_words_list.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = english_words_list.txt; sourceTree = "<group>"; };
+		E0BB8D621F471F72002B4C12 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E0BB8D661F472608002B4C12 /* SignUpEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpEmailViewController.swift; path = LykkeBlueLife/Classes/ViewController/SignUp/SignUpEmailViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0BB8D681F47262C002B4C12 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = LykkeBlueLife/Classes/ViewController/SignUp/SignInViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0BB8D6E1F4ABE1E002B4C12 /* SignUpEnterPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpEnterPinViewController.swift; path = LykkeBlueLife/Classes/ViewController/SignUp/SignUpEnterPinViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0BB8D7A1F4B1DAC002B4C12 /* SignUpPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpPasswordViewController.swift; path = LykkeBlueLife/Classes/ViewController/SignUp/SignUpPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0BB8D801F4C3860002B4C12 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		E0BB8D831F4C6031002B4C12 /* Notification+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
+		E0BB8D891F4D94EE002B4C12 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		E0BB8D8B1F4D95E6002B4C12 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = LykkeBlueLife/Classes/ViewController/Settings/SettingsViewController.swift; sourceTree = SOURCE_ROOT; };
+		E0BB8D971F4EEBA0002B4C12 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = LykkeBlueLife/Classes/ViewController/BaseViewController.swift; sourceTree = SOURCE_ROOT; };
+		E4D3662ABF236B17155E1C88 /* Pods-LykkeBlueLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife.release.xcconfig"; sourceTree = "<group>"; };
+		EA09E41BAA36E80EDE810757 /* Pods_LykkeBlueLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LykkeBlueLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5AD9254200CD2F80053B39B /* CommunityViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityViewModel.swift; sourceTree = "<group>"; };
+		F5AD9255200CD2F80053B39B /* ProfilePledgeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePledgeViewModel.swift; sourceTree = "<group>"; };
+		F5AD9256200CD2F80053B39B /* ReferralLinkViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralLinkViewModel.swift; sourceTree = "<group>"; };
+		F5AD925C200CD3DD0053B39B /* LWRxBlueAuthManagerReferralLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxBlueAuthManagerReferralLink.swift; sourceTree = "<group>"; };
+		F5AD925D200CD3DD0053B39B /* LWRxBlueAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxBlueAuthManager.swift; sourceTree = "<group>"; };
+		F5AD925E200CD3DD0053B39B /* LWRxBlueAuthManagerPledgeGet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxBlueAuthManagerPledgeGet.swift; sourceTree = "<group>"; };
+		F5AD925F200CD3DD0053B39B /* LWRxBlueAuthManagerReferralLinkInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxBlueAuthManagerReferralLinkInfo.swift; sourceTree = "<group>"; };
+		F5AD9260200CD3DD0053B39B /* LWRxBlueAuthManagerPledgePost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxBlueAuthManagerPledgePost.swift; sourceTree = "<group>"; };
+		F5AD9261200CD3DD0053B39B /* LWRxAuthManagerTwitterTimeLineJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxAuthManagerTwitterTimeLineJson.swift; sourceTree = "<group>"; };
+		F5AD9262200CD3DD0053B39B /* LWRxBlueAuthManagerCommunityUsersCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxBlueAuthManagerCommunityUsersCount.swift; sourceTree = "<group>"; };
+		F5AD9263200CD3DE0053B39B /* LWRxBlueAuthManagerClaimReferralLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRxBlueAuthManagerClaimReferralLink.swift; sourceTree = "<group>"; };
+		F5AD926D200CD3F30053B39B /* PledgeGetPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PledgeGetPacket.swift; sourceTree = "<group>"; };
+		F5AD926E200CD3F30053B39B /* TwitterTimeLineJsonPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterTimeLineJsonPacket.swift; sourceTree = "<group>"; };
+		F5AD926F200CD3F30053B39B /* CommunityUsersCountPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityUsersCountPacket.swift; sourceTree = "<group>"; };
+		F5AD9270200CD3F30053B39B /* PledgePostPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PledgePostPacket.swift; sourceTree = "<group>"; };
+		F5AD9271200CD3F30053B39B /* PledgeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PledgeModel.swift; sourceTree = "<group>"; };
+		F5AD9272200CD3F30053B39B /* ReferralLinkClaimPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralLinkClaimPacket.swift; sourceTree = "<group>"; };
+		F5AD9273200CD3F40053B39B /* ReferralLinkInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralLinkInfoModel.swift; sourceTree = "<group>"; };
+		F5AD9274200CD3F40053B39B /* ReferralLinkInfoPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralLinkInfoPacket.swift; sourceTree = "<group>"; };
+		F5AD9275200CD3F40053B39B /* ReferralLinkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralLinkModel.swift; sourceTree = "<group>"; };
+		F5AD9276200CD3F40053B39B /* ReferralLinkPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralLinkPacket.swift; sourceTree = "<group>"; };
+		F5AD9282200CD9E00053B39B /* PledgeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PledgeService.swift; sourceTree = "<group>"; };
+		FCACF5FCE1B76C870FB7EBDA /* Pods-LykkeBlueLife.release.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLife.release.dev.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife.release.dev.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0A9EAF21F44624B001A0241 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0711C3E1F7BB57B001A1AE4 /* SafariServices.framework in Frameworks */,
+				4E23D60C52DB37EA714F4067 /* Pods_LykkeBlueLife.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A9EB061F44624B001A0241 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF526FCD1C0538CB9A884B96 /* Pods_LykkeBlueLifeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		616E58541FC598AF00A61AAF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				616E58551FC598C400A61AAF /* PinPadViewController.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		61872A481FC2FA4F0017F07B /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				C1985A561FC8440300CCD0D7 /* SignInCodeViewController.swift */,
+				C1985A551FC8440200CCD0D7 /* SignInPinViewController.swift */,
+				E0BB8D681F47262C002B4C12 /* SignInViewController.swift */,
+				E0BB8D661F472608002B4C12 /* SignUpEmailViewController.swift */,
+				6107C5FD1FC45CA90061C35B /* SignUpVerifyEmailViewController.swift */,
+				E0BB8D7A1F4B1DAC002B4C12 /* SignUpPasswordViewController.swift */,
+				6107C5FF1FC46CDB0061C35B /* SignUpAddPhoneViewController.swift */,
+				61E7158C1FC576C400A7554A /* SignUpPhoneConfirmationViewController.swift */,
+				616E58591FC5B3C000A61AAF /* SignUpSetPinViewController.swift */,
+				616E58571FC5B36000A61AAF /* SignUpConfirmPinViewController.swift */,
+				616E585B1FC6AA8600A61AAF /* SignUpGeneratePrivateKeyViewController.swift */,
+				E0BB8D6E1F4ABE1E002B4C12 /* SignUpEnterPinViewController.swift */,
+				E0B2A6E61F56E914004B0995 /* PinSetViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		61B643041FCC05CA00E4DEC0 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				61B643051FCC05EB00E4DEC0 /* TwitterTimelineDataSource.swift */,
+				61A2F2231FDAB35B002A8F02 /* Twitter+Rx.swift */,
+			);
+			path = Twitter;
+			sourceTree = "<group>";
+		};
+		6CE593E3094166BE59D9990C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0D2E27E06A878B9DE3E1CC0 /* Pods-LykkeBlueLife.debug.xcconfig */,
+				E4D3662ABF236B17155E1C88 /* Pods-LykkeBlueLife.release.xcconfig */,
+				6BD2F8EC2ABD8B5021E6FABE /* Pods-LykkeBlueLifeTests.debug.xcconfig */,
+				3ECDF156FA9C7D888CC009C6 /* Pods-LykkeBlueLifeTests.release.xcconfig */,
+				3DAC567F3838BB826952EF59 /* Pods-LykkeBlueLife.debug.test.xcconfig */,
+				21327A34D2071484DBD8FEC5 /* Pods-LykkeBlueLife.release.test.xcconfig */,
+				3ACE93D6D77CEC55FE20D3F2 /* Pods-LykkeBlueLifeTests.debug.test.xcconfig */,
+				26859074DCDF44AC3C12DD64 /* Pods-LykkeBlueLifeTests.release.test.xcconfig */,
+				1956B0085B44B8AB39297D18 /* Pods-LykkeBlueLife.debug.dev.xcconfig */,
+				FCACF5FCE1B76C870FB7EBDA /* Pods-LykkeBlueLife.release.dev.xcconfig */,
+				00B1CB5BC42E30A54D07DFD7 /* Pods-LykkeBlueLifeTests.debug.dev.xcconfig */,
+				B7E3AF308239A5D824690E56 /* Pods-LykkeBlueLifeTests.release.dev.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE099E502016250A007CCB29 /* TradeCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				BE099E5320163254007CCB29 /* TradingAssetView */,
+				BE099E512016250A007CCB29 /* TradeCryptoViewController.swift */,
+			);
+			path = TradeCrypto;
+			sourceTree = "<group>";
+		};
+		BE099E5320163254007CCB29 /* TradingAssetView */ = {
+			isa = PBXGroup;
+			children = (
+				BE099E5420163260007CCB29 /* TradingAssetView.swift */,
+				BE099E5620163273007CCB29 /* TradingAssetView.xib */,
+			);
+			path = TradingAssetView;
+			sourceTree = "<group>";
+		};
+		C10D61531FB089380009699E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				C10D61541FB089560009699E /* QuoteViewController.swift */,
+				C10D61581FB0AD0F0009699E /* ManifestoViewController.swift */,
+				C13BA2E91FB1E4D90062121F /* OnboardingVideoViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C10D615C1FB0BEA60009699E /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				C10D615D1FB0BEC40009699E /* quotes.plist */,
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
+		C1167DCB1F83DA73004CF521 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C12D44D61F8523F700140EDD /* Presenter.swift */,
+				C1167DCF1F84B7DB004CF521 /* PinPresenter.swift */,
+				C17B69C61FAC9ED10076A53A /* OnboardingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C12FE76C1FC31B40002304EA /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C12FE76D1FC31B60002304EA /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C13BA2EF1FB32A5C0062121F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5AD9254200CD2F80053B39B /* CommunityViewModel.swift */,
+				F5AD9255200CD2F80053B39B /* ProfilePledgeViewModel.swift */,
+				F5AD9256200CD2F80053B39B /* ReferralLinkViewModel.swift */,
+				C13BA2F01FB32ACB0062121F /* FootprintViewModel.swift */,
+				C13BA2F41FB4841C0062121F /* NetPositiveViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C13E63A41F9F639B00873CA3 /* Change Password */ = {
+			isa = PBXGroup;
+			children = (
+				C13E63A71F9F656F00873CA3 /* NewPasswordViewController.swift */,
+				C13E63A91F9F663100873CA3 /* CreatePinViewController.swift */,
+				C13E63AB1F9F666900873CA3 /* VerifyPinViewController.swift */,
+				C13E63AD1F9F66D800873CA3 /* VerifySMSCodeViewController.swift */,
+				C13E63AF1F9F67A900873CA3 /* SuccessScreenViewController.swift */,
+			);
+			path = "Change Password";
+			sourceTree = "<group>";
+		};
+		C13E63B81FA0818200873CA3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6158FF001FD2D77400AFCC28 /* SettingItem.swift */,
+				E0BB8D8B1F4D95E6002B4C12 /* SettingsViewController.swift */,
+				61A2F2251FDAC63D002A8F02 /* SettingsViewController+Sections.swift */,
+				618B4BE01FD2C3E8001C5830 /* SettingsTableViewCell.swift */,
+				618B4BDE1FD2C3CB001C5830 /* SettingsTableViewCell.xib */,
+				E0B2A6E81F56E914004B0995 /* SettingsChangePhoneViewController.swift */,
+				E0B2A6E91F56E914004B0995 /* SettingsEmailConfirmViewController.swift */,
+				E0B2A6EA1F56E914004B0995 /* SettingsPhoneConfirmViewController.swift */,
+				E0B2A6EB1F56E914004B0995 /* SettingsPushNotificationsViewController.swift */,
+				C13E63B91FA081A500873CA3 /* BackupViewController.swift */,
+				C1FEDD891FA21B2400FD87C5 /* VerifyBackupViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C17B69C31FAC59360076A53A /* Pledge */ = {
+			isa = PBXGroup;
+			children = (
+				C17B69C41FAC59A30076A53A /* FootprintViewController.swift */,
+				C13BA2EB1FB204DE0062121F /* NetPositiveViewController.swift */,
+				C1985A5D1FCC6F8800CCD0D7 /* PledgeIntroViewController.swift */,
+				C1985A5F1FCD592C00CCD0D7 /* PledgeSuccessViewController.swift */,
+			);
+			path = Pledge;
+			sourceTree = "<group>";
+		};
+		C19A6D241FC6D1EC00AE4C7D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C19A6D251FC6D1EC00AE4C7D /* CommunityViewController.swift */,
+				C19A6D261FC6D1EC00AE4C7D /* HomePageViewController.swift */,
+				C19A6D271FC6D1EC00AE4C7D /* TwitterViewController.swift */,
+				C1985A4F1FC7214000CCD0D7 /* ProfileViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C1D5D1E81FDFE21600CC916A /* Sensitive */ = {
+			isa = PBXGroup;
+			children = (
+				C183F4B61FD992BD00F96379 /* GoogleService-Info.plist */,
+				C1D5D1E61FDFDE2D00CC916A /* AppConstants+Security.swift */,
+			);
+			path = Sensitive;
+			sourceTree = "<group>";
+		};
+		C1FEDD8B1FA7238200FD87C5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C1FEDD8D1FA7246A00FD87C5 /* American Typewriter Regular.ttf */,
+				C1FEDD921FA7246A00FD87C5 /* Replica-Bold.ttf */,
+				C1FEDD901FA7246A00FD87C5 /* Replica-BoldItalic.ttf */,
+				C1FEDD8C1FA7246900FD87C5 /* Replica-Italic.ttf */,
+				C1FEDD911FA7246A00FD87C5 /* Replica-Light.ttf */,
+				C1FEDD8F1FA7246A00FD87C5 /* Replica-LightItalic.ttf */,
+				C1FEDD931FA7246A00FD87C5 /* Replica-Regular.ttf */,
+				C1FEDD8E1FA7246A00FD87C5 /* ReplicaPro-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CEF4873711404E555DE2767B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C11FE5D21F95027A00903FDE /* QRCodeReader.framework */,
+				C1C0780D1F94FD3F00AC89A0 /* AVFoundation.framework */,
+				E0711C3D1F7BB57B001A1AE4 /* SafariServices.framework */,
+				EA09E41BAA36E80EDE810757 /* Pods_LykkeBlueLife.framework */,
+				B41E7BE62C2CC578659F4DC8 /* Pods_LykkeBlueLifeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E02804E71F62B0090058E36D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C12D44D81F865E4000140EDD /* AppConstants.swift */,
+				C12FE76A1FBB0E54002304EA /* AppTheme.swift */,
+				E02804E81F62B0090058E36D /* LWUtilsHelper.swift */,
+				C10D615A1FB0B30E0009699E /* UserDefaultsKeys.swift */,
+				C10D61611FB1B5380009699E /* PlistParser.swift */,
+				C10D615F1FB1AD560009699E /* DefaultPlistParser.swift */,
+				C13BA2E71FB1B6D60062121F /* RandomQuoteGenerator.swift */,
+				C136E00A1FC470FD00A9E696 /* LWKeychainManagerHelper.swift */,
+				C183F4A81FD813E700F96379 /* ReferralLinkHelper.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E0A9EAEC1F44624A001A0241 = {
+			isa = PBXGroup;
+			children = (
+				E0A9EAF71F44624B001A0241 /* LykkeBlueLife */,
+				E0A9EB0C1F44624B001A0241 /* LykkeBlueLifeTests */,
+				E0A9EAF61F44624B001A0241 /* Products */,
+				6CE593E3094166BE59D9990C /* Pods */,
+				CEF4873711404E555DE2767B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E0A9EAF61F44624B001A0241 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0A9EAF51F44624B001A0241 /* LykkeBlueLife.app */,
+				E0A9EB091F44624B001A0241 /* LykkeBlueLifeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0A9EAF71F44624B001A0241 /* LykkeBlueLife */ = {
+			isa = PBXGroup;
+			children = (
+				C1D5D1E81FDFE21600CC916A /* Sensitive */,
+				C17F7C521F8D10CB003661AB /* LykkeBlueLife.entitlements */,
+				E0A9EB1E1F44898C001A0241 /* Classes */,
+				E0A9EB251F457C2B001A0241 /* Resources */,
+				E0A9EAF81F44624B001A0241 /* AppDelegate.swift */,
+				E0A9EAFF1F44624B001A0241 /* Assets.xcassets */,
+				E0A9EB011F44624B001A0241 /* LaunchScreen.storyboard */,
+				E0A9EB041F44624B001A0241 /* Info.plist */,
+			);
+			path = LykkeBlueLife;
+			sourceTree = "<group>";
+		};
+		E0A9EB0C1F44624B001A0241 /* LykkeBlueLifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0A9EB0D1F44624B001A0241 /* LykkeBlueLifeTests.swift */,
+				E0A9EB0F1F44624B001A0241 /* Info.plist */,
+			);
+			path = LykkeBlueLifeTests;
+			sourceTree = "<group>";
+		};
+		E0A9EB1E1F44898C001A0241 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F5AD925A200CD3BF0053B39B /* Core */,
+				61B643041FCC05CA00E4DEC0 /* Twitter */,
+				C12FE76C1FC31B40002304EA /* Coordinator */,
+				C13BA2EF1FB32A5C0062121F /* ViewModel */,
+				C1167DCB1F83DA73004CF521 /* Presenter */,
+				E02804E71F62B0090058E36D /* Shared */,
+				E0BB8D821F4C6031002B4C12 /* Extensions */,
+				E0A9EB1F1F44898C001A0241 /* View */,
+				E0A9EB201F44898C001A0241 /* ViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E0A9EB1F1F44898C001A0241 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0AE50B21F617EA900CA8BA9 /* UIImageView+Rx.swift */,
+				E0AE50AE1F61724800CA8BA9 /* LWPortfolioCurrencyTableViewCell.swift */,
+				E0AE50AF1F61724800CA8BA9 /* LWPortfolioCurrencyTableViewCell.xib */,
+				E0B2A6F31F56E924004B0995 /* ChooseCurrencyViewCell.swift */,
+				E0B2A6F41F56E924004B0995 /* ChooseCurrencyViewCell.xib */,
+				E0B2A6F51F56E924004B0995 /* LoadingView.swift */,
+				E0BB8D801F4C3860002B4C12 /* UIHelper.swift */,
+				C12FE7661FBB0A45002304EA /* InviteButton.swift */,
+				61A9B8B41FC321B3002EC9A7 /* ButtonsBarView.xib */,
+				61A9B8B61FC321C8002EC9A7 /* ButtonsBarView.swift */,
+				616E584E1FC5928C00A61AAF /* NumPadView.xib */,
+				616E58501FC5945A00A61AAF /* NumPadView.swift */,
+				C1985A591FC860EA00CCD0D7 /* ProgressCircle.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0A9EB201F44898C001A0241 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C19A6D241FC6D1EC00AE4C7D /* Home */,
+				616E58541FC598AF00A61AAF /* Shared */,
+				61872A481FC2FA4F0017F07B /* SignUp */,
+				C10D61531FB089380009699E /* Onboarding */,
+				C17B69C31FAC59360076A53A /* Pledge */,
+				C13E63B81FA0818200873CA3 /* Settings */,
+				C13E63A41F9F639B00873CA3 /* Change Password */,
+				BE099E502016250A007CCB29 /* TradeCrypto */,
+				E0B2A6E51F56E914004B0995 /* ChangeCurrencyViewController.swift */,
+				E0B2A70B1F583FA6004B0995 /* ShakeScreenViewController.swift */,
+				E0B2A7051F56FEBA004B0995 /* ValidatePinViewController.swift */,
+				E0BB8D971F4EEBA0002B4C12 /* BaseViewController.swift */,
+				E0A9EB231F457BC8001A0241 /* HomeScreenViewController.swift */,
+				E02804E11F62A8F40058E36D /* BuySellStep1ViewController.swift */,
+				E028051A1F66B4480058E36D /* BuySellStep2ViewController.swift */,
+				E05515321F6FEBD000D488BE /* TransferByWAddressViewController.swift */,
+				E05515341F725F6700D488BE /* ReceiveByWAddressViewController.swift */,
+				E0711C321F7A4C7D001A1AE4 /* TransactionHistoryViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E0A9EB251F457C2B001A0241 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C10D615C1FB0BEA60009699E /* plist */,
+				C1FEDD8B1FA7238200FD87C5 /* Fonts */,
+				E0B2A70D1F5847BB004B0995 /* english_words_list.txt */,
+				E0A9EB261F457C2B001A0241 /* Storyboard */,
+				E0BB8D621F471F72002B4C12 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E0A9EB261F457C2B001A0241 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E0AE50A81F61701D00CA8BA9 /* Buy.storyboard */,
+				E0A9EAFC1F44624B001A0241 /* Main.storyboard */,
+				E0A9EB271F457CBC001A0241 /* SignInUp.storyboard */,
+				E0BB8D891F4D94EE002B4C12 /* Settings.storyboard */,
+				E02804DF1F6293330058E36D /* BuySell.storyboard */,
+				C13E63A21F9F611600873CA3 /* ChangePassword.storyboard */,
+				C17B69BE1FAA17A50076A53A /* Onboarding.storyboard */,
+				C17B69C01FAB72950076A53A /* Pledge.storyboard */,
+				616E58521FC5963A00A61AAF /* Shared.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E0BB8D821F4C6031002B4C12 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E02804E51F62AFAC0058E36D /* UIViewController+Extensions.swift */,
+				61A9B8BE1FC44D46002EC9A7 /* UIViewController+Rx.swift */,
+				9A2ECD9C1F500DA100E81680 /* UITextField+fixCaretPosition.swift */,
+				E0BB8D831F4C6031002B4C12 /* Notification+Extensions.swift */,
+				9A2ECD981F500DA100E81680 /* KeyboardView.swift */,
+				9AEAD0D91F545DC600E11EAB /* RoundedButton.swift */,
+				9A2ECD991F500DA100E81680 /* SkyFloatingLabelTextField.swift */,
+				9A2ECD9A1F500DA100E81680 /* SkyFloatingLabelTextFieldWithExtensions.swift */,
+				9A2ECD9B1F500DA100E81680 /* SkyFloatingLabelTextFieldWithIcon.swift */,
+				E028051C1F66D3FD0058E36D /* TempButton.swift */,
+				C1DB50301F8E655600C70875 /* UserDefaults+Extensions.swift */,
+				C13BA2ED1FB308220062121F /* UISlider+Extensions.swift */,
+				46286F601FC2C890002CAF8D /* Observable+Extensions.swift */,
+				46286F621FC2CA50002CAF8D /* CurrencyExchanger+Extensions.swift */,
+				61A9B8B81FC321FD002EC9A7 /* UIView+Extensions.swift */,
+				61A9B8BA1FC414F1002EC9A7 /* UINaviagtionBar+Extensions.swift */,
+				61A9B8BC1FC44919002EC9A7 /* UIScrollView+Rx.swift */,
+				C136E0081FC46B6800A9E696 /* UIApplication+TopViewController.swift */,
+				BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */,
+				BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */,
+				BE12543F201B6D71004FC314 /* DispatchQueue+Extensions.swift */,
+				BE125441201B708E004FC314 /* Driver+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F5AD925A200CD3BF0053B39B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F5AD9281200CD9D70053B39B /* Service */,
+				F5AD926C200CD3E90053B39B /* Model */,
+				F5AD925B200CD3C60053B39B /* Repository */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F5AD925B200CD3C60053B39B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F5AD9261200CD3DD0053B39B /* LWRxAuthManagerTwitterTimeLineJson.swift */,
+				F5AD925D200CD3DD0053B39B /* LWRxBlueAuthManager.swift */,
+				F5AD9263200CD3DE0053B39B /* LWRxBlueAuthManagerClaimReferralLink.swift */,
+				F5AD9262200CD3DD0053B39B /* LWRxBlueAuthManagerCommunityUsersCount.swift */,
+				F5AD925E200CD3DD0053B39B /* LWRxBlueAuthManagerPledgeGet.swift */,
+				F5AD9260200CD3DD0053B39B /* LWRxBlueAuthManagerPledgePost.swift */,
+				F5AD925C200CD3DD0053B39B /* LWRxBlueAuthManagerReferralLink.swift */,
+				F5AD925F200CD3DD0053B39B /* LWRxBlueAuthManagerReferralLinkInfo.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F5AD926C200CD3E90053B39B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5AD926F200CD3F30053B39B /* CommunityUsersCountPacket.swift */,
+				F5AD926D200CD3F30053B39B /* PledgeGetPacket.swift */,
+				F5AD9271200CD3F30053B39B /* PledgeModel.swift */,
+				F5AD9270200CD3F30053B39B /* PledgePostPacket.swift */,
+				F5AD9272200CD3F30053B39B /* ReferralLinkClaimPacket.swift */,
+				F5AD9273200CD3F40053B39B /* ReferralLinkInfoModel.swift */,
+				F5AD9274200CD3F40053B39B /* ReferralLinkInfoPacket.swift */,
+				F5AD9275200CD3F40053B39B /* ReferralLinkModel.swift */,
+				F5AD9276200CD3F40053B39B /* ReferralLinkPacket.swift */,
+				F5AD926E200CD3F30053B39B /* TwitterTimeLineJsonPacket.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5AD9281200CD9D70053B39B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F5AD9282200CD9E00053B39B /* PledgeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0A9EAF41F44624B001A0241 /* LykkeBlueLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0A9EB121F44624B001A0241 /* Build configuration list for PBXNativeTarget "LykkeBlueLife" */;
+			buildPhases = (
+				8C8C6081AFFCACAD94BC7AF3 /* [CP] Check Pods Manifest.lock */,
+				E0A9EAF11F44624B001A0241 /* Sources */,
+				E0A9EAF21F44624B001A0241 /* Frameworks */,
+				E0A9EAF31F44624B001A0241 /* Resources */,
+				B70EA3E5F9A5D32C8AED8178 /* [CP] Embed Pods Frameworks */,
+				E7C608D919C1A2DB5F7A7316 /* [CP] Copy Pods Resources */,
+				618BEE5C1FD699F8006DE0EA /* ShellScript */,
+				618BEE5F1FD6CA66006DE0EA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LykkeBlueLife;
+			productName = LykkeBlueLife;
+			productReference = E0A9EAF51F44624B001A0241 /* LykkeBlueLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0A9EB081F44624B001A0241 /* LykkeBlueLifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0A9EB151F44624B001A0241 /* Build configuration list for PBXNativeTarget "LykkeBlueLifeTests" */;
+			buildPhases = (
+				84A3E4EABB283A736ADE0298 /* [CP] Check Pods Manifest.lock */,
+				E0A9EB051F44624B001A0241 /* Sources */,
+				E0A9EB061F44624B001A0241 /* Frameworks */,
+				E0A9EB071F44624B001A0241 /* Resources */,
+				CCBD868D820EE38EDF965C6D /* [CP] Embed Pods Frameworks */,
+				ACE57253951909F7D5B38818 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0A9EB0B1F44624B001A0241 /* PBXTargetDependency */,
+			);
+			name = LykkeBlueLifeTests;
+			productName = LykkeBlueLifeTests;
+			productReference = E0A9EB091F44624B001A0241 /* LykkeBlueLifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0A9EAED1F44624A001A0241 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Lykke Blue Life";
+				TargetAttributes = {
+					E0A9EAF41F44624B001A0241 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
+					};
+					E0A9EB081F44624B001A0241 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = ZNE622G954;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E0A9EAF41F44624B001A0241;
+					};
+				};
+			};
+			buildConfigurationList = E0A9EAF01F44624A001A0241 /* Build configuration list for PBXProject "LykkeBlueLife" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0A9EAEC1F44624A001A0241;
+			productRefGroup = E0A9EAF61F44624B001A0241 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0A9EAF41F44624B001A0241 /* LykkeBlueLife */,
+				E0A9EB081F44624B001A0241 /* LykkeBlueLifeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0A9EAF31F44624B001A0241 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17B69C11FAB72950076A53A /* Pledge.storyboard in Resources */,
+				61A9B8B51FC321B3002EC9A7 /* ButtonsBarView.xib in Resources */,
+				C1FEDD991FA7273D00FD87C5 /* Replica-LightItalic.ttf in Resources */,
+				C17B69BF1FAA17A50076A53A /* Onboarding.storyboard in Resources */,
+				E02804E01F6293330058E36D /* BuySell.storyboard in Resources */,
+				C1FEDD9B1FA7273D00FD87C5 /* ReplicaPro-Regular.ttf in Resources */,
+				C1FEDD971FA7273D00FD87C5 /* Replica-Italic.ttf in Resources */,
+				C183F4B71FD992BD00F96379 /* GoogleService-Info.plist in Resources */,
+				E0BB8D631F471F72002B4C12 /* Localizable.strings in Resources */,
+				E0B2A6F71F56E924004B0995 /* ChooseCurrencyViewCell.xib in Resources */,
+				E0A9EB031F44624B001A0241 /* LaunchScreen.storyboard in Resources */,
+				616E58531FC5963A00A61AAF /* Shared.storyboard in Resources */,
+				C1FEDD941FA7273700FD87C5 /* American Typewriter Regular.ttf in Resources */,
+				E0A9EB001F44624B001A0241 /* Assets.xcassets in Resources */,
+				C1FEDD981FA7273D00FD87C5 /* Replica-Light.ttf in Resources */,
+				E0BB8D8A1F4D94EE002B4C12 /* Settings.storyboard in Resources */,
+				C13E63A31F9F611600873CA3 /* ChangePassword.storyboard in Resources */,
+				616E584F1FC5928C00A61AAF /* NumPadView.xib in Resources */,
+				E0AE50A91F61701D00CA8BA9 /* Buy.storyboard in Resources */,
+				BE099E5720163273007CCB29 /* TradingAssetView.xib in Resources */,
+				618B4BDF1FD2C3CB001C5830 /* SettingsTableViewCell.xib in Resources */,
+				E0A9EAFE1F44624B001A0241 /* Main.storyboard in Resources */,
+				E0AE50B11F61724800CA8BA9 /* LWPortfolioCurrencyTableViewCell.xib in Resources */,
+				C10D615E1FB0BEC40009699E /* quotes.plist in Resources */,
+				C1FEDD9A1FA7273D00FD87C5 /* Replica-Regular.ttf in Resources */,
+				C1FEDD951FA7273D00FD87C5 /* Replica-Bold.ttf in Resources */,
+				E0A9EB281F457CBC001A0241 /* SignInUp.storyboard in Resources */,
+				E0B2A70E1F5847BB004B0995 /* english_words_list.txt in Resources */,
+				C1FEDD961FA7273D00FD87C5 /* Replica-BoldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A9EB071F44624B001A0241 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		618BEE5C1FD699F8006DE0EA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
+		};
+		618BEE5F1FD6CA66006DE0EA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "GOOGLE_APP_ID=1:155786652284:ios:a5b78dc77c650ca2\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"${SRCROOT}/LykkeBlueLife/Sensitive/lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json\"";
+		};
+		84A3E4EABB283A736ADE0298 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LykkeBlueLifeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C8C6081AFFCACAD94BC7AF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LykkeBlueLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACE57253951909F7D5B38818 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LykkeBlueLifeTests/Pods-LykkeBlueLifeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B70EA3E5F9A5D32C8AED8178 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/EasyMapping/EasyMapping.framework",
+				"${BUILT_PRODUCTS_DIR}/GHODictionary/GHODictionary.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MDWamp/MDWamp.framework",
+				"${BUILT_PRODUCTS_DIR}/MPMessagePack/MPMessagePack.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
+				"${BUILT_PRODUCTS_DIR}/UIDeviceIdentifier/UIDeviceIdentifier.framework",
+				"${BUILT_PRODUCTS_DIR}/Valet/Valet.framework",
+				"${BUILT_PRODUCTS_DIR}/WalletCore/WalletCore.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlocksKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyMapping.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GHODictionary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDWamp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MPMessagePack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIDeviceIdentifier.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Valet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WalletCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCBD868D820EE38EDF965C6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LykkeBlueLifeTests/Pods-LykkeBlueLifeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7C608D919C1A2DB5F7A7316 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0A9EAF11F44624B001A0241 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5AD927A200CD3F40053B39B /* PledgePostPacket.swift in Sources */,
+				C183F4A91FD813E700F96379 /* ReferralLinkHelper.swift in Sources */,
+				E0B2A6F61F56E924004B0995 /* ChooseCurrencyViewCell.swift in Sources */,
+				E0BB8D671F472608002B4C12 /* SignUpEmailViewController.swift in Sources */,
+				C12FE76E1FC31B60002304EA /* AppCoordinator.swift in Sources */,
+				C17B69C51FAC59A30076A53A /* FootprintViewController.swift in Sources */,
+				9A2ECDA01F500DA100E81680 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				C136E0091FC46B6800A9E696 /* UIApplication+TopViewController.swift in Sources */,
+				F5AD927E200CD3F40053B39B /* ReferralLinkInfoPacket.swift in Sources */,
+				C10D615B1FB0B30E0009699E /* UserDefaultsKeys.swift in Sources */,
+				BE099E522016250B007CCB29 /* TradeCryptoViewController.swift in Sources */,
+				C13E63AC1F9F666900873CA3 /* VerifyPinViewController.swift in Sources */,
+				C12FE7671FBB0A45002304EA /* InviteButton.swift in Sources */,
+				F5AD927B200CD3F40053B39B /* PledgeModel.swift in Sources */,
+				61A2F2241FDAB35B002A8F02 /* Twitter+Rx.swift in Sources */,
+				C1985A571FC8440300CCD0D7 /* SignInPinViewController.swift in Sources */,
+				F5AD9268200CD3DE0053B39B /* LWRxBlueAuthManagerPledgePost.swift in Sources */,
+				E0BB8D6F1F4ABE1E002B4C12 /* SignUpEnterPinViewController.swift in Sources */,
+				F5AD9258200CD2F80053B39B /* ProfilePledgeViewModel.swift in Sources */,
+				616E585C1FC6AA8600A61AAF /* SignUpGeneratePrivateKeyViewController.swift in Sources */,
+				61E7158D1FC576C400A7554A /* SignUpPhoneConfirmationViewController.swift in Sources */,
+				C13BA2E81FB1B6D60062121F /* RandomQuoteGenerator.swift in Sources */,
+				6107C6001FC46CDB0061C35B /* SignUpAddPhoneViewController.swift in Sources */,
+				F5AD9283200CD9E00053B39B /* PledgeService.swift in Sources */,
+				E0B2A6F01F56E914004B0995 /* SettingsEmailConfirmViewController.swift in Sources */,
+				C1FEDD8A1FA21B2400FD87C5 /* VerifyBackupViewController.swift in Sources */,
+				BE125440201B6D71004FC314 /* DispatchQueue+Extensions.swift in Sources */,
+				C13E63AE1F9F66D800873CA3 /* VerifySMSCodeViewController.swift in Sources */,
+				618B4BE11FD2C3E8001C5830 /* SettingsTableViewCell.swift in Sources */,
+				9A2ECD9D1F500DA100E81680 /* KeyboardView.swift in Sources */,
+				C1985A501FC7214000CCD0D7 /* ProfileViewController.swift in Sources */,
+				F5AD9265200CD3DE0053B39B /* LWRxBlueAuthManager.swift in Sources */,
+				F5AD9278200CD3F40053B39B /* TwitterTimeLineJsonPacket.swift in Sources */,
+				F5AD927F200CD3F40053B39B /* ReferralLinkModel.swift in Sources */,
+				46286F611FC2C890002CAF8D /* Observable+Extensions.swift in Sources */,
+				61A9B8BB1FC414F1002EC9A7 /* UINaviagtionBar+Extensions.swift in Sources */,
+				61A9B8B71FC321C8002EC9A7 /* ButtonsBarView.swift in Sources */,
+				E0B2A6F11F56E914004B0995 /* SettingsPhoneConfirmViewController.swift in Sources */,
+				E0B2A6F81F56E924004B0995 /* LoadingView.swift in Sources */,
+				E05515351F725F6700D488BE /* ReceiveByWAddressViewController.swift in Sources */,
+				F5AD9277200CD3F40053B39B /* PledgeGetPacket.swift in Sources */,
+				C13BA2F11FB32ACB0062121F /* FootprintViewModel.swift in Sources */,
+				61A9B8BF1FC44D46002EC9A7 /* UIViewController+Rx.swift in Sources */,
+				616E58511FC5945A00A61AAF /* NumPadView.swift in Sources */,
+				C10D61551FB089560009699E /* QuoteViewController.swift in Sources */,
+				E0B2A7061F56FEBA004B0995 /* ValidatePinViewController.swift in Sources */,
+				C19A6D2D1FC6D1EC00AE4C7D /* TwitterViewController.swift in Sources */,
+				F5AD9280200CD3F40053B39B /* ReferralLinkPacket.swift in Sources */,
+				C136E00B1FC470FD00A9E696 /* LWKeychainManagerHelper.swift in Sources */,
+				C10D61601FB1AD560009699E /* DefaultPlistParser.swift in Sources */,
+				F5AD9266200CD3DE0053B39B /* LWRxBlueAuthManagerPledgeGet.swift in Sources */,
+				C1985A5A1FC860EA00CCD0D7 /* ProgressCircle.swift in Sources */,
+				E0BB8D8C1F4D95E6002B4C12 /* SettingsViewController.swift in Sources */,
+				C13BA2EA1FB1E4D90062121F /* OnboardingVideoViewController.swift in Sources */,
+				BE24B0F82017655B0005E7B8 /* UIButton+Extensions.swift in Sources */,
+				C1985A601FCD592C00CCD0D7 /* PledgeSuccessViewController.swift in Sources */,
+				C13BA2EC1FB204DE0062121F /* NetPositiveViewController.swift in Sources */,
+				C1167DD01F84B7DB004CF521 /* PinPresenter.swift in Sources */,
+				6158FF011FD2D77400AFCC28 /* SettingItem.swift in Sources */,
+				C1D5D1E71FDFDE2D00CC916A /* AppConstants+Security.swift in Sources */,
+				9A2ECD9F1F500DA100E81680 /* SkyFloatingLabelTextFieldWithExtensions.swift in Sources */,
+				E0B2A6EC1F56E914004B0995 /* ChangeCurrencyViewController.swift in Sources */,
+				F5AD9279200CD3F40053B39B /* CommunityUsersCountPacket.swift in Sources */,
+				C10D61621FB1B5380009699E /* PlistParser.swift in Sources */,
+				6107C5FE1FC45CA90061C35B /* SignUpVerifyEmailViewController.swift in Sources */,
+				E028051B1F66B4480058E36D /* BuySellStep2ViewController.swift in Sources */,
+				F5AD9259200CD2F80053B39B /* ReferralLinkViewModel.swift in Sources */,
+				C12FE76B1FBB0E54002304EA /* AppTheme.swift in Sources */,
+				E02804E21F62A8F40058E36D /* BuySellStep1ViewController.swift in Sources */,
+				F5AD926A200CD3DE0053B39B /* LWRxBlueAuthManagerCommunityUsersCount.swift in Sources */,
+				F5AD926B200CD3DE0053B39B /* LWRxBlueAuthManagerClaimReferralLink.swift in Sources */,
+				C1985A5E1FCC6F8800CCD0D7 /* PledgeIntroViewController.swift in Sources */,
+				E0AE50B01F61724800CA8BA9 /* LWPortfolioCurrencyTableViewCell.swift in Sources */,
+				E0A9EAF91F44624B001A0241 /* AppDelegate.swift in Sources */,
+				F5AD9267200CD3DE0053B39B /* LWRxBlueAuthManagerReferralLinkInfo.swift in Sources */,
+				C1985A581FC8440300CCD0D7 /* SignInCodeViewController.swift in Sources */,
+				E0BB8D7B1F4B1DAC002B4C12 /* SignUpPasswordViewController.swift in Sources */,
+				E0B2A6ED1F56E914004B0995 /* PinSetViewController.swift in Sources */,
+				BE31CC041FFD3AEF001B350C /* InputForm+Extensions.swift in Sources */,
+				61A9B8BD1FC44919002EC9A7 /* UIScrollView+Rx.swift in Sources */,
+				F5AD9257200CD2F80053B39B /* CommunityViewModel.swift in Sources */,
+				E0BB8D691F47262C002B4C12 /* SignInViewController.swift in Sources */,
+				C13E63A81F9F656F00873CA3 /* NewPasswordViewController.swift in Sources */,
+				616E58561FC598C400A61AAF /* PinPadViewController.swift in Sources */,
+				9AEAD0DA1F545DC600E11EAB /* RoundedButton.swift in Sources */,
+				C17B69C71FAC9ED10076A53A /* OnboardingPresenter.swift in Sources */,
+				616E58581FC5B36000A61AAF /* SignUpConfirmPinViewController.swift in Sources */,
+				E0A9EB241F457BC8001A0241 /* HomeScreenViewController.swift in Sources */,
+				C13BA2EE1FB308220062121F /* UISlider+Extensions.swift in Sources */,
+				616E585A1FC5B3C000A61AAF /* SignUpSetPinViewController.swift in Sources */,
+				C10D61591FB0AD0F0009699E /* ManifestoViewController.swift in Sources */,
+				E02804E91F62B0090058E36D /* LWUtilsHelper.swift in Sources */,
+				61B643061FCC05EB00E4DEC0 /* TwitterTimelineDataSource.swift in Sources */,
+				F5AD9264200CD3DE0053B39B /* LWRxBlueAuthManagerReferralLink.swift in Sources */,
+				BE099E5520163260007CCB29 /* TradingAssetView.swift in Sources */,
+				61A2F2261FDAC63D002A8F02 /* SettingsViewController+Sections.swift in Sources */,
+				C12D44D91F865E4000140EDD /* AppConstants.swift in Sources */,
+				E0711C331F7A4C7D001A1AE4 /* TransactionHistoryViewController.swift in Sources */,
+				F5AD927D200CD3F40053B39B /* ReferralLinkInfoModel.swift in Sources */,
+				C19A6D2B1FC6D1EC00AE4C7D /* CommunityViewController.swift in Sources */,
+				9A2ECDA11F500DA100E81680 /* UITextField+fixCaretPosition.swift in Sources */,
+				F5AD9269200CD3DE0053B39B /* LWRxAuthManagerTwitterTimeLineJson.swift in Sources */,
+				C1DB50311F8E655600C70875 /* UserDefaults+Extensions.swift in Sources */,
+				E0B2A6EF1F56E914004B0995 /* SettingsChangePhoneViewController.swift in Sources */,
+				E0AE50B31F617EA900CA8BA9 /* UIImageView+Rx.swift in Sources */,
+				E0BB8D841F4C6031002B4C12 /* Notification+Extensions.swift in Sources */,
+				E05515331F6FEBD000D488BE /* TransferByWAddressViewController.swift in Sources */,
+				C13E63BA1FA081A500873CA3 /* BackupViewController.swift in Sources */,
+				F5AD927C200CD3F40053B39B /* ReferralLinkClaimPacket.swift in Sources */,
+				BE125442201B708E004FC314 /* Driver+Extensions.swift in Sources */,
+				E0BB8D811F4C3860002B4C12 /* UIHelper.swift in Sources */,
+				C19A6D2C1FC6D1EC00AE4C7D /* HomePageViewController.swift in Sources */,
+				46286F631FC2CA50002CAF8D /* CurrencyExchanger+Extensions.swift in Sources */,
+				E0B2A70C1F583FA6004B0995 /* ShakeScreenViewController.swift in Sources */,
+				E02804E61F62AFAC0058E36D /* UIViewController+Extensions.swift in Sources */,
+				C12D44D71F8523F700140EDD /* Presenter.swift in Sources */,
+				E0BB8D981F4EEBA0002B4C12 /* BaseViewController.swift in Sources */,
+				E0B2A6F21F56E914004B0995 /* SettingsPushNotificationsViewController.swift in Sources */,
+				61A9B8B91FC321FD002EC9A7 /* UIView+Extensions.swift in Sources */,
+				E028051D1F66D3FD0058E36D /* TempButton.swift in Sources */,
+				9A2ECD9E1F500DA100E81680 /* SkyFloatingLabelTextField.swift in Sources */,
+				C13E63B01F9F67A900873CA3 /* SuccessScreenViewController.swift in Sources */,
+				C13BA2F51FB4841C0062121F /* NetPositiveViewModel.swift in Sources */,
+				C13E63AA1F9F663100873CA3 /* CreatePinViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A9EB051F44624B001A0241 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0A9EB0E1F44624B001A0241 /* LykkeBlueLifeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0A9EB0B1F44624B001A0241 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0A9EAF41F44624B001A0241 /* LykkeBlueLife */;
+			targetProxy = E0A9EB0A1F44624B001A0241 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0A9EAFC1F44624B001A0241 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0A9EAFD1F44624B001A0241 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E0A9EB011F44624B001A0241 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0A9EB021F44624B001A0241 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		618BEE561FD5C003006DE0EA /* Debug.Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug.Dev;
+		};
+		618BEE571FD5C003006DE0EA /* Debug.Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1956B0085B44B8AB39297D18 /* Pods-LykkeBlueLife.debug.dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_ENTITLEMENTS = LykkeBlueLife/LykkeBlueLife.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SPFVYM4YAV;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GHODictionary\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MDWamp\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MPMessagePack\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxOptional\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwiftExt\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SocketRocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UIDeviceIdentifier\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Valet\"",
+					"$(PROJECT_DIR)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"$(PROJECT_DIR)/Twitter-Kit-iOS",
+				);
+				INFOPLIST_FILE = LykkeBlueLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DENV_DEV";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lykkex.lykkeblue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug.Dev;
+		};
+		618BEE581FD5C003006DE0EA /* Debug.Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B1CB5BC42E30A54D07DFD7 /* Pods-LykkeBlueLifeTests.debug.dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZNE622G954;
+				INFOPLIST_FILE = LykkeBlueLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PrimeHolding.Lykke-Wallet-BlueLife.LykkeBlueLifeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LykkeBlueLife.app/LykkeBlueLife";
+			};
+			name = Debug.Dev;
+		};
+		618BEE591FD5C012006DE0EA /* Release.Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release.Dev;
+		};
+		618BEE5A1FD5C012006DE0EA /* Release.Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCACF5FCE1B76C870FB7EBDA /* Pods-LykkeBlueLife.release.dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_ENTITLEMENTS = LykkeBlueLife/LykkeBlueLife.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SPFVYM4YAV;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GHODictionary\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MDWamp\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MPMessagePack\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxOptional\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwiftExt\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SocketRocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UIDeviceIdentifier\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Valet\"",
+					"$(PROJECT_DIR)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"$(PROJECT_DIR)/Twitter-Kit-iOS",
+				);
+				INFOPLIST_FILE = LykkeBlueLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DENV_DEV";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lykkex.lykkeblue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release.Dev;
+		};
+		618BEE5B1FD5C012006DE0EA /* Release.Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7E3AF308239A5D824690E56 /* Pods-LykkeBlueLifeTests.release.dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZNE622G954;
+				INFOPLIST_FILE = LykkeBlueLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PrimeHolding.Lykke-Wallet-BlueLife.LykkeBlueLifeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LykkeBlueLife.app/LykkeBlueLife";
+			};
+			name = Release.Dev;
+		};
+		E0A9EB101F44624B001A0241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		E0A9EB111F44624B001A0241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0A9EB131F44624B001A0241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D2E27E06A878B9DE3E1CC0 /* Pods-LykkeBlueLife.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_ENTITLEMENTS = LykkeBlueLife/LykkeBlueLife.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SPFVYM4YAV;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GHODictionary\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MDWamp\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MPMessagePack\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxOptional\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwiftExt\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SocketRocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UIDeviceIdentifier\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Valet\"",
+					"$(PROJECT_DIR)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"$(PROJECT_DIR)/Twitter-Kit-iOS",
+				);
+				INFOPLIST_FILE = LykkeBlueLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lykkex.lykkeblue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E0A9EB141F44624B001A0241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4D3662ABF236B17155E1C88 /* Pods-LykkeBlueLife.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_ENTITLEMENTS = LykkeBlueLife/LykkeBlueLife.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SPFVYM4YAV;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GHODictionary\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MDWamp\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MPMessagePack\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxOptional\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwiftExt\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SocketRocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UIDeviceIdentifier\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Valet\"",
+					"$(PROJECT_DIR)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"$(PROJECT_DIR)/Twitter-Kit-iOS",
+				);
+				INFOPLIST_FILE = LykkeBlueLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lykkex.lykkeblue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E0A9EB161F44624B001A0241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD2F8EC2ABD8B5021E6FABE /* Pods-LykkeBlueLifeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZNE622G954;
+				INFOPLIST_FILE = LykkeBlueLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PrimeHolding.Lykke-Wallet-BlueLife.LykkeBlueLifeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LykkeBlueLife.app/LykkeBlueLife";
+			};
+			name = Debug;
+		};
+		E0A9EB171F44624B001A0241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ECDF156FA9C7D888CC009C6 /* Pods-LykkeBlueLifeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZNE622G954;
+				INFOPLIST_FILE = LykkeBlueLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PrimeHolding.Lykke-Wallet-BlueLife.LykkeBlueLifeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LykkeBlueLife.app/LykkeBlueLife";
+			};
+			name = Release;
+		};
+		E0A9EB181F448714001A0241 /* Debug.Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug.Test;
+		};
+		E0A9EB191F448714001A0241 /* Debug.Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DAC567F3838BB826952EF59 /* Pods-LykkeBlueLife.debug.test.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_ENTITLEMENTS = LykkeBlueLife/LykkeBlueLife.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SPFVYM4YAV;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GHODictionary\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MDWamp\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MPMessagePack\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxOptional\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwiftExt\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SocketRocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UIDeviceIdentifier\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Valet\"",
+					"$(PROJECT_DIR)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"$(PROJECT_DIR)/Twitter-Kit-iOS",
+				);
+				INFOPLIST_FILE = LykkeBlueLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DENV_TEST";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lykkex.lykkeblue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug.Test;
+		};
+		E0A9EB1A1F448714001A0241 /* Debug.Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ACE93D6D77CEC55FE20D3F2 /* Pods-LykkeBlueLifeTests.debug.test.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZNE622G954;
+				INFOPLIST_FILE = LykkeBlueLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PrimeHolding.Lykke-Wallet-BlueLife.LykkeBlueLifeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LykkeBlueLife.app/LykkeBlueLife";
+			};
+			name = Debug.Test;
+		};
+		E0A9EB1B1F44871F001A0241 /* Release.Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release.Test;
+		};
+		E0A9EB1C1F44871F001A0241 /* Release.Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21327A34D2071484DBD8FEC5 /* Pods-LykkeBlueLife.release.test.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_ENTITLEMENTS = LykkeBlueLife/LykkeBlueLife.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SPFVYM4YAV;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GHODictionary\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MDWamp\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MPMessagePack\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxOptional\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwiftExt\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SocketRocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UIDeviceIdentifier\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Valet\"",
+					"$(PROJECT_DIR)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"$(PROJECT_DIR)/Twitter-Kit-iOS",
+				);
+				INFOPLIST_FILE = LykkeBlueLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DENV_TEST";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lykkex.lykkeblue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release.Test;
+		};
+		E0A9EB1D1F44871F001A0241 /* Release.Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26859074DCDF44AC3C12DD64 /* Pods-LykkeBlueLifeTests.release.test.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZNE622G954;
+				INFOPLIST_FILE = LykkeBlueLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PrimeHolding.Lykke-Wallet-BlueLife.LykkeBlueLifeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LykkeBlueLife.app/LykkeBlueLife";
+			};
+			name = Release.Test;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0A9EAF01F44624A001A0241 /* Build configuration list for PBXProject "LykkeBlueLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0A9EB101F44624B001A0241 /* Debug */,
+				E0A9EB181F448714001A0241 /* Debug.Test */,
+				618BEE561FD5C003006DE0EA /* Debug.Dev */,
+				E0A9EB111F44624B001A0241 /* Release */,
+				E0A9EB1B1F44871F001A0241 /* Release.Test */,
+				618BEE591FD5C012006DE0EA /* Release.Dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0A9EB121F44624B001A0241 /* Build configuration list for PBXNativeTarget "LykkeBlueLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0A9EB131F44624B001A0241 /* Debug */,
+				E0A9EB191F448714001A0241 /* Debug.Test */,
+				618BEE571FD5C003006DE0EA /* Debug.Dev */,
+				E0A9EB141F44624B001A0241 /* Release */,
+				E0A9EB1C1F44871F001A0241 /* Release.Test */,
+				618BEE5A1FD5C012006DE0EA /* Release.Dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0A9EB151F44624B001A0241 /* Build configuration list for PBXNativeTarget "LykkeBlueLifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0A9EB161F44624B001A0241 /* Debug */,
+				E0A9EB1A1F448714001A0241 /* Debug.Test */,
+				618BEE581FD5C003006DE0EA /* Debug.Dev */,
+				E0A9EB171F44624B001A0241 /* Release */,
+				E0A9EB1D1F44871F001A0241 /* Release.Test */,
+				618BEE5B1FD5C012006DE0EA /* Release.Dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0A9EAED1F44624A001A0241 /* Project object */;
+}
