@@ -38,6 +38,12 @@
 		9A2ECDA01F500DA100E81680 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2ECD9B1F500DA100E81680 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
 		9A2ECDA11F500DA100E81680 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2ECD9C1F500DA100E81680 /* UITextField+fixCaretPosition.swift */; };
 		9AEAD0DA1F545DC600E11EAB /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEAD0D91F545DC600E11EAB /* RoundedButton.swift */; };
+		BE099E522016250B007CCB29 /* TradeCryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE099E512016250A007CCB29 /* TradeCryptoViewController.swift */; };
+		BE099E5520163260007CCB29 /* TradingAssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE099E5420163260007CCB29 /* TradingAssetView.swift */; };
+		BE099E5720163273007CCB29 /* TradingAssetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE099E5620163273007CCB29 /* TradingAssetView.xib */; };
+		BE125440201B6D71004FC314 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE12543F201B6D71004FC314 /* DispatchQueue+Extensions.swift */; };
+		BE125442201B708E004FC314 /* Driver+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE125441201B708E004FC314 /* Driver+Extensions.swift */; };
+		BE24B0F82017655B0005E7B8 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */; };
 		BE31CC041FFD3AEF001B350C /* InputForm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */; };
 		C10D61551FB089560009699E /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D61541FB089560009699E /* QuoteViewController.swift */; };
 		C10D61591FB0AD0F0009699E /* ManifestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D61581FB0AD0F0009699E /* ManifestoViewController.swift */; };
@@ -135,7 +141,6 @@
 		E0BB8D8A1F4D94EE002B4C12 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0BB8D891F4D94EE002B4C12 /* Settings.storyboard */; };
 		E0BB8D8C1F4D95E6002B4C12 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB8D8B1F4D95E6002B4C12 /* SettingsViewController.swift */; };
 		E0BB8D981F4EEBA0002B4C12 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB8D971F4EEBA0002B4C12 /* BaseViewController.swift */; };
-		F50733FE20160D4D00E76AB2 /* lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json in Resources */ = {isa = PBXBuildFile; fileRef = F50733FD20160D4D00E76AB2 /* lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json */; };
 		F5AD9257200CD2F80053B39B /* CommunityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9254200CD2F80053B39B /* CommunityViewModel.swift */; };
 		F5AD9258200CD2F80053B39B /* ProfilePledgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9255200CD2F80053B39B /* ProfilePledgeViewModel.swift */; };
 		F5AD9259200CD2F80053B39B /* ReferralLinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD9256200CD2F80053B39B /* ReferralLinkViewModel.swift */; };
@@ -213,6 +218,12 @@
 		A0D2E27E06A878B9DE3E1CC0 /* Pods-LykkeBlueLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife.debug.xcconfig"; sourceTree = "<group>"; };
 		B41E7BE62C2CC578659F4DC8 /* Pods_LykkeBlueLifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LykkeBlueLifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E3AF308239A5D824690E56 /* Pods-LykkeBlueLifeTests.release.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLifeTests.release.dev.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLifeTests/Pods-LykkeBlueLifeTests.release.dev.xcconfig"; sourceTree = "<group>"; };
+		BE099E512016250A007CCB29 /* TradeCryptoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeCryptoViewController.swift; sourceTree = "<group>"; };
+		BE099E5420163260007CCB29 /* TradingAssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingAssetView.swift; sourceTree = "<group>"; };
+		BE099E5620163273007CCB29 /* TradingAssetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TradingAssetView.xib; sourceTree = "<group>"; };
+		BE12543F201B6D71004FC314 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		BE125441201B708E004FC314 /* Driver+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Driver+Extensions.swift"; sourceTree = "<group>"; };
+		BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputForm+Extensions.swift"; sourceTree = "<group>"; };
 		C10D61541FB089560009699E /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		C10D61581FB0AD0F0009699E /* ManifestoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManifestoViewController.swift; sourceTree = "<group>"; };
@@ -319,7 +330,6 @@
 		E0BB8D971F4EEBA0002B4C12 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = LykkeBlueLife/Classes/ViewController/BaseViewController.swift; sourceTree = SOURCE_ROOT; };
 		E4D3662ABF236B17155E1C88 /* Pods-LykkeBlueLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LykkeBlueLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-LykkeBlueLife/Pods-LykkeBlueLife.release.xcconfig"; sourceTree = "<group>"; };
 		EA09E41BAA36E80EDE810757 /* Pods_LykkeBlueLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LykkeBlueLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F50733FD20160D4D00E76AB2 /* lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json"; path = "../../../../Downloads/Sensitive/lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json"; sourceTree = "<group>"; };
 		F5AD9254200CD2F80053B39B /* CommunityViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityViewModel.swift; sourceTree = "<group>"; };
 		F5AD9255200CD2F80053B39B /* ProfilePledgeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePledgeViewModel.swift; sourceTree = "<group>"; };
 		F5AD9256200CD2F80053B39B /* ReferralLinkViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralLinkViewModel.swift; sourceTree = "<group>"; };
@@ -420,6 +430,24 @@
 				B7E3AF308239A5D824690E56 /* Pods-LykkeBlueLifeTests.release.dev.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE099E502016250A007CCB29 /* TradeCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				BE099E5320163254007CCB29 /* TradingAssetView */,
+				BE099E512016250A007CCB29 /* TradeCryptoViewController.swift */,
+			);
+			path = TradeCrypto;
+			sourceTree = "<group>";
+		};
+		BE099E5320163254007CCB29 /* TradingAssetView */ = {
+			isa = PBXGroup;
+			children = (
+				BE099E5420163260007CCB29 /* TradingAssetView.swift */,
+				BE099E5620163273007CCB29 /* TradingAssetView.xib */,
+			);
+			path = TradingAssetView;
 			sourceTree = "<group>";
 		};
 		C10D61531FB089380009699E /* Onboarding */ = {
@@ -525,7 +553,6 @@
 		C1D5D1E81FDFE21600CC916A /* Sensitive */ = {
 			isa = PBXGroup;
 			children = (
-				F50733FD20160D4D00E76AB2 /* lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json */,
 				C183F4B61FD992BD00F96379 /* GoogleService-Info.plist */,
 				C1D5D1E61FDFDE2D00CC916A /* AppConstants+Security.swift */,
 			);
@@ -665,6 +692,7 @@
 				C17B69C31FAC59360076A53A /* Pledge */,
 				C13E63B81FA0818200873CA3 /* Settings */,
 				C13E63A41F9F639B00873CA3 /* Change Password */,
+				BE099E502016250A007CCB29 /* TradeCrypto */,
 				E0B2A6E51F56E914004B0995 /* ChangeCurrencyViewController.swift */,
 				E0B2A70B1F583FA6004B0995 /* ShakeScreenViewController.swift */,
 				E0B2A7051F56FEBA004B0995 /* ValidatePinViewController.swift */,
@@ -729,6 +757,9 @@
 				61A9B8BC1FC44919002EC9A7 /* UIScrollView+Rx.swift */,
 				C136E0081FC46B6800A9E696 /* UIApplication+TopViewController.swift */,
 				BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */,
+				BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */,
+				BE12543F201B6D71004FC314 /* DispatchQueue+Extensions.swift */,
+				BE125441201B708E004FC314 /* Driver+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -899,13 +930,13 @@
 				C13E63A31F9F611600873CA3 /* ChangePassword.storyboard in Resources */,
 				616E584F1FC5928C00A61AAF /* NumPadView.xib in Resources */,
 				E0AE50A91F61701D00CA8BA9 /* Buy.storyboard in Resources */,
+				BE099E5720163273007CCB29 /* TradingAssetView.xib in Resources */,
 				618B4BDF1FD2C3CB001C5830 /* SettingsTableViewCell.xib in Resources */,
 				E0A9EAFE1F44624B001A0241 /* Main.storyboard in Resources */,
 				E0AE50B11F61724800CA8BA9 /* LWPortfolioCurrencyTableViewCell.xib in Resources */,
 				C10D615E1FB0BEC40009699E /* quotes.plist in Resources */,
 				C1FEDD9A1FA7273D00FD87C5 /* Replica-Regular.ttf in Resources */,
 				C1FEDD951FA7273D00FD87C5 /* Replica-Bold.ttf in Resources */,
-				F50733FE20160D4D00E76AB2 /* lykke-blue-firebase-crashreporting-jofmw-04c57b9b3d.json in Resources */,
 				E0A9EB281F457CBC001A0241 /* SignInUp.storyboard in Resources */,
 				E0B2A70E1F5847BB004B0995 /* english_words_list.txt in Resources */,
 				C1FEDD961FA7273D00FD87C5 /* Replica-BoldItalic.ttf in Resources */,
@@ -1028,6 +1059,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
 				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
 				"${BUILT_PRODUCTS_DIR}/UIDeviceIdentifier/UIDeviceIdentifier.framework",
 				"${BUILT_PRODUCTS_DIR}/Valet/Valet.framework",
@@ -1058,6 +1090,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIDeviceIdentifier.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Valet.framework",
@@ -1120,6 +1153,7 @@
 				C136E0091FC46B6800A9E696 /* UIApplication+TopViewController.swift in Sources */,
 				F5AD927E200CD3F40053B39B /* ReferralLinkInfoPacket.swift in Sources */,
 				C10D615B1FB0B30E0009699E /* UserDefaultsKeys.swift in Sources */,
+				BE099E522016250B007CCB29 /* TradeCryptoViewController.swift in Sources */,
 				C13E63AC1F9F666900873CA3 /* VerifyPinViewController.swift in Sources */,
 				C12FE7671FBB0A45002304EA /* InviteButton.swift in Sources */,
 				F5AD927B200CD3F40053B39B /* PledgeModel.swift in Sources */,
@@ -1135,6 +1169,7 @@
 				F5AD9283200CD9E00053B39B /* PledgeService.swift in Sources */,
 				E0B2A6F01F56E914004B0995 /* SettingsEmailConfirmViewController.swift in Sources */,
 				C1FEDD8A1FA21B2400FD87C5 /* VerifyBackupViewController.swift in Sources */,
+				BE125440201B6D71004FC314 /* DispatchQueue+Extensions.swift in Sources */,
 				C13E63AE1F9F66D800873CA3 /* VerifySMSCodeViewController.swift in Sources */,
 				618B4BE11FD2C3E8001C5830 /* SettingsTableViewCell.swift in Sources */,
 				9A2ECD9D1F500DA100E81680 /* KeyboardView.swift in Sources */,
@@ -1162,6 +1197,7 @@
 				C1985A5A1FC860EA00CCD0D7 /* ProgressCircle.swift in Sources */,
 				E0BB8D8C1F4D95E6002B4C12 /* SettingsViewController.swift in Sources */,
 				C13BA2EA1FB1E4D90062121F /* OnboardingVideoViewController.swift in Sources */,
+				BE24B0F82017655B0005E7B8 /* UIButton+Extensions.swift in Sources */,
 				C1985A601FCD592C00CCD0D7 /* PledgeSuccessViewController.swift in Sources */,
 				C13BA2EC1FB204DE0062121F /* NetPositiveViewController.swift in Sources */,
 				C1167DD01F84B7DB004CF521 /* PinPresenter.swift in Sources */,
@@ -1201,6 +1237,7 @@
 				E02804E91F62B0090058E36D /* LWUtilsHelper.swift in Sources */,
 				61B643061FCC05EB00E4DEC0 /* TwitterTimelineDataSource.swift in Sources */,
 				F5AD9264200CD3DE0053B39B /* LWRxBlueAuthManagerReferralLink.swift in Sources */,
+				BE099E5520163260007CCB29 /* TradingAssetView.swift in Sources */,
 				61A2F2261FDAC63D002A8F02 /* SettingsViewController+Sections.swift in Sources */,
 				C12D44D91F865E4000140EDD /* AppConstants.swift in Sources */,
 				E0711C331F7A4C7D001A1AE4 /* TransactionHistoryViewController.swift in Sources */,
@@ -1215,6 +1252,7 @@
 				E05515331F6FEBD000D488BE /* TransferByWAddressViewController.swift in Sources */,
 				C13E63BA1FA081A500873CA3 /* BackupViewController.swift in Sources */,
 				F5AD927C200CD3F40053B39B /* ReferralLinkClaimPacket.swift in Sources */,
+				BE125442201B708E004FC314 /* Driver+Extensions.swift in Sources */,
 				E0BB8D811F4C3860002B4C12 /* UIHelper.swift in Sources */,
 				C19A6D2C1FC6D1EC00AE4C7D /* HomePageViewController.swift in Sources */,
 				46286F631FC2CA50002CAF8D /* CurrencyExchanger+Extensions.swift in Sources */,

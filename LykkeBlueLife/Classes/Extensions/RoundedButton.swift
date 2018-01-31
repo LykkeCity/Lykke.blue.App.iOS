@@ -12,11 +12,6 @@ import UIKit
 @IBDesignable
 class RoundedButton:UIButton {
     
-    @IBInspectable var borderWidth: CGFloat = 0 {
-        didSet {
-            layer.borderWidth = borderWidth
-        }
-    }
     //Normal state bg and border
     @IBInspectable var normalBorderColor: UIColor? {
         didSet {

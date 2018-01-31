@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -321,7 +322,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2176.8000000000002" y="1405.5472263868066"/>
+            <point key="canvasLocation" x="2639" y="1406"/>
         </scene>
         <!--Transfer ByW Address View Controller-->
         <scene sceneID="dQZ-fg-wYW">
@@ -397,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DLB-KZ-4gj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2176.8000000000002" y="2046.9265367316343"/>
+            <point key="canvasLocation" x="2639" y="2063"/>
         </scene>
         <!--Receive ByW Address View Controller-->
         <scene sceneID="cCk-6C-coP">
@@ -463,7 +464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tcq-0i-CFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2922.4000000000001" y="2040.6296851574214"/>
+            <point key="canvasLocation" x="3332" y="2041"/>
         </scene>
         <!--Buy Sell Step2 View Controller-->
         <scene sceneID="UPk-yJ-NDX">
@@ -718,7 +719,82 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3026" y="1406"/>
+            <point key="canvasLocation" x="3434" y="1406"/>
+        </scene>
+        <!--Trade Crypto View Controller-->
+        <scene sceneID="Y9p-sl-qwz">
+            <objects>
+                <viewController storyboardIdentifier="TradeCryptoViewController" id="ahR-aX-0D8" customClass="TradeCryptoViewController" customModule="LykkeBlueLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W8R-Lj-voM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tiA-54-yn9">
+                                <rect key="frame" x="0.0" y="145" width="375" height="397"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6X-FE-9Dy" userLabel="firstAsset" customClass="TradingAssetView" customModule="LykkeBlueLife" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="0.0" width="343" height="104"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="104" id="EsF-1z-MBi"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOU-xK-SC9" userLabel="secondAsset" customClass="TradingAssetView" customModule="LykkeBlueLife" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="158.5" width="343" height="104"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="104" id="QJa-MV-U8m"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdj-t3-CWA">
+                                        <rect key="frame" x="16" y="317" width="343" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="TSb-l0-EtN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Execute Trade">
+                                            <color key="titleColor" red="0.48627450979999998" green="0.80784313730000001" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.48627450979999998" green="0.80784313730000001" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Mdj-t3-CWA" secondAttribute="trailing" constant="16" id="02F-VP-YKF"/>
+                                    <constraint firstAttribute="trailing" secondItem="uOU-xK-SC9" secondAttribute="trailing" constant="16" id="7km-Tl-eJy"/>
+                                    <constraint firstItem="uOU-xK-SC9" firstAttribute="leading" secondItem="tiA-54-yn9" secondAttribute="leading" constant="16" id="8Ux-fl-wK2"/>
+                                    <constraint firstAttribute="trailing" secondItem="n6X-FE-9Dy" secondAttribute="trailing" constant="16" id="fYH-Jo-2Gy"/>
+                                    <constraint firstItem="Mdj-t3-CWA" firstAttribute="leading" secondItem="tiA-54-yn9" secondAttribute="leading" constant="16" id="jlM-ef-7Tp"/>
+                                    <constraint firstItem="n6X-FE-9Dy" firstAttribute="leading" secondItem="tiA-54-yn9" secondAttribute="leading" constant="16" id="lqj-Wh-WHe"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tiA-54-yn9" firstAttribute="top" secondItem="wCl-H5-2cn" secondAttribute="top" constant="125" id="6RM-nZ-0lw"/>
+                            <constraint firstItem="tiA-54-yn9" firstAttribute="trailing" secondItem="wCl-H5-2cn" secondAttribute="trailing" id="9He-KB-v6N"/>
+                            <constraint firstItem="wCl-H5-2cn" firstAttribute="bottom" secondItem="tiA-54-yn9" secondAttribute="bottom" constant="125" id="Q2N-xO-fVq"/>
+                            <constraint firstItem="tiA-54-yn9" firstAttribute="leading" secondItem="wCl-H5-2cn" secondAttribute="leading" id="cVb-qd-qHZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wCl-H5-2cn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vQf-Aa-wZs"/>
+                    <connections>
+                        <outlet property="executeTradeButton" destination="Mdj-t3-CWA" id="zOz-uy-Byu"/>
+                        <outlet property="firstAsset" destination="n6X-FE-9Dy" id="YaI-V6-gLS"/>
+                        <outlet property="secondAsset" destination="uOU-xK-SC9" id="0X4-MU-N0x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wgq-mR-aIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="2116"/>
         </scene>
     </scenes>
 </document>
