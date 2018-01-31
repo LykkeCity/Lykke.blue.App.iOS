@@ -28,6 +28,10 @@ public class AppCoordinator {
     }
     
     public func presentLogin(fromViewController viewController: UIViewController?) {
+        guard !(viewController is SignInViewController) else {
+            return
+        }
+        
         let storyboard = UIStoryboard(name: AppConstants.Storyboard.signInUp, bundle: nil)
         let signUp = storyboard.instantiateViewController(withIdentifier: AppConstants.Screen.signIn)
         
