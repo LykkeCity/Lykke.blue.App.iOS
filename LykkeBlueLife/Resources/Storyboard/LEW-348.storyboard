@@ -59,9 +59,8 @@
         <!--Navigation Controller-->
         <scene sceneID="zd6-dh-kna">
             <objects>
-                <navigationController id="jNn-kq-yPi" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="jNn-kq-yPi" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fm7-PT-hoG">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -72,16 +71,58 @@
             </objects>
             <point key="canvasLocation" x="566" y="28"/>
         </scene>
-        <!--View Controller-->
+        <!--Begin Private Key Backup View Controller-->
         <scene sceneID="cTP-9U-vEw">
             <objects>
-                <viewController id="vDS-rE-CV4" sceneMemberID="viewController">
+                <viewController id="vDS-rE-CV4" customClass="BeginPrivateKeyBackupViewController" customModule="LykkeBlueLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YAT-iL-njM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="577"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Backup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14T-rS-PUV">
-                                <rect key="frame" x="137" y="322" width="100" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a Backup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14T-rS-PUV">
+                                <rect key="frame" x="129" y="278" width="116.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkr-Qd-vf8">
+                                <rect key="frame" x="37.5" y="417" width="300" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="7gN-Vu-bya"/>
+                                    <constraint firstAttribute="width" constant="300" id="ijL-Oa-ULL"/>
+                                </constraints>
+                                <state key="normal" title="Begin"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="14T-rS-PUV" firstAttribute="centerY" secondItem="YAT-iL-njM" secondAttribute="centerY" id="2C2-oY-HCQ"/>
+                            <constraint firstItem="xkr-Qd-vf8" firstAttribute="centerX" secondItem="YAT-iL-njM" secondAttribute="centerX" id="3yL-qM-5kA"/>
+                            <constraint firstItem="14T-rS-PUV" firstAttribute="centerX" secondItem="YAT-iL-njM" secondAttribute="centerX" id="JI5-xP-ehk"/>
+                            <constraint firstItem="UFg-Nd-ctE" firstAttribute="bottom" secondItem="xkr-Qd-vf8" secondAttribute="bottom" constant="80" id="Rpp-C7-U5l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UFg-Nd-ctE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aQb-MB-vUn"/>
+                    <connections>
+                        <outlet property="beginButton" destination="xkr-Qd-vf8" id="XLk-NM-6Tv"/>
+                        <segue destination="x51-Zd-NEf" kind="show" identifier="showPrivateKeyWords" id="Djj-Cm-ysH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CYN-IK-HdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308" y="27.436281859070466"/>
+        </scene>
+        <!--Show Private Key Words View Controller-->
+        <scene sceneID="USx-nj-lnc">
+            <objects>
+                <viewController id="x51-Zd-NEf" customClass="ShowPrivateKeyWordsViewController" customModule="LykkeBlueLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KVV-Wj-sXA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="577"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show words" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fya-qo-Bd9">
+                                <rect key="frame" x="140" y="278" width="94" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -89,13 +130,12 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="UFg-Nd-ctE"/>
+                        <viewLayoutGuide key="safeArea" id="gEa-b4-WOM"/>
                     </view>
-                    <navigationItem key="navigationItem" id="aQb-MB-vUn"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CYN-IK-HdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVY-dE-rlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1308" y="28"/>
+            <point key="canvasLocation" x="2042" y="27"/>
         </scene>
     </scenes>
 </document>
