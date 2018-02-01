@@ -45,6 +45,7 @@
 		BE125442201B708E004FC314 /* Driver+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE125441201B708E004FC314 /* Driver+Extensions.swift */; };
 		BE24B0F82017655B0005E7B8 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */; };
 		BE31CC041FFD3AEF001B350C /* InputForm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */; };
+		BE564ECC20231046004C1982 /* LWPrivateKeyManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE564ECB20231046004C1982 /* LWPrivateKeyManager+Extensions.swift */; };
 		BE5864FD2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5864FC2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift */; };
 		BE5864FF20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5864FE20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift */; };
 		BED425FC2020A2AE00046EFC /* LEW-348.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED425FB2020A2AE00046EFC /* LEW-348.storyboard */; };
@@ -229,6 +230,7 @@
 		BE125441201B708E004FC314 /* Driver+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Driver+Extensions.swift"; sourceTree = "<group>"; };
 		BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputForm+Extensions.swift"; sourceTree = "<group>"; };
+		BE564ECB20231046004C1982 /* LWPrivateKeyManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LWPrivateKeyManager+Extensions.swift"; sourceTree = "<group>"; };
 		BE5864FC2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginPrivateKeyBackupViewController.swift; sourceTree = "<group>"; };
 		BE5864FE20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPrivateKeyWordsViewController.swift; sourceTree = "<group>"; };
 		BED425FB2020A2AE00046EFC /* LEW-348.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "LEW-348.storyboard"; sourceTree = "<group>"; };
@@ -780,6 +782,7 @@
 				BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */,
 				BE12543F201B6D71004FC314 /* DispatchQueue+Extensions.swift */,
 				BE125441201B708E004FC314 /* Driver+Extensions.swift */,
+				BE564ECB20231046004C1982 /* LWPrivateKeyManager+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1288,6 +1291,7 @@
 				E028051D1F66D3FD0058E36D /* TempButton.swift in Sources */,
 				9A2ECD9E1F500DA100E81680 /* SkyFloatingLabelTextField.swift in Sources */,
 				C13E63B01F9F67A900873CA3 /* SuccessScreenViewController.swift in Sources */,
+				BE564ECC20231046004C1982 /* LWPrivateKeyManager+Extensions.swift in Sources */,
 				C13BA2F51FB4841C0062121F /* NetPositiveViewModel.swift in Sources */,
 				BE5864FF20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift in Sources */,
 				C13E63AA1F9F663100873CA3 /* CreatePinViewController.swift in Sources */,
