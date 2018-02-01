@@ -46,6 +46,7 @@
 		BE24B0F82017655B0005E7B8 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */; };
 		BE31CC041FFD3AEF001B350C /* InputForm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */; };
 		BE564ECC20231046004C1982 /* LWPrivateKeyManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE564ECB20231046004C1982 /* LWPrivateKeyManager+Extensions.swift */; };
+		BE564ECE20233A67004C1982 /* CheckPrivateKeyWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE564ECD20233A67004C1982 /* CheckPrivateKeyWordsViewController.swift */; };
 		BE5864FD2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5864FC2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift */; };
 		BE5864FF20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5864FE20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift */; };
 		BED425FC2020A2AE00046EFC /* LEW-348.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED425FB2020A2AE00046EFC /* LEW-348.storyboard */; };
@@ -231,6 +232,7 @@
 		BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputForm+Extensions.swift"; sourceTree = "<group>"; };
 		BE564ECB20231046004C1982 /* LWPrivateKeyManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LWPrivateKeyManager+Extensions.swift"; sourceTree = "<group>"; };
+		BE564ECD20233A67004C1982 /* CheckPrivateKeyWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPrivateKeyWordsViewController.swift; sourceTree = "<group>"; };
 		BE5864FC2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginPrivateKeyBackupViewController.swift; sourceTree = "<group>"; };
 		BE5864FE20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPrivateKeyWordsViewController.swift; sourceTree = "<group>"; };
 		BED425FB2020A2AE00046EFC /* LEW-348.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "LEW-348.storyboard"; sourceTree = "<group>"; };
@@ -466,6 +468,7 @@
 				BED425FE2020B0E600046EFC /* BackupPrivateKeyContainer.swift */,
 				BE5864FC2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift */,
 				BE5864FE20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift */,
+				BE564ECD20233A67004C1982 /* CheckPrivateKeyWordsViewController.swift */,
 			);
 			path = BackupPrivateKey;
 			sourceTree = "<group>";
@@ -1183,6 +1186,7 @@
 				F5AD927B200CD3F40053B39B /* PledgeModel.swift in Sources */,
 				61A2F2241FDAB35B002A8F02 /* Twitter+Rx.swift in Sources */,
 				BED425FF2020B0E600046EFC /* BackupPrivateKeyContainer.swift in Sources */,
+				BE564ECE20233A67004C1982 /* CheckPrivateKeyWordsViewController.swift in Sources */,
 				C1985A571FC8440300CCD0D7 /* SignInPinViewController.swift in Sources */,
 				F5AD9268200CD3DE0053B39B /* LWRxBlueAuthManagerPledgePost.swift in Sources */,
 				E0BB8D6F1F4ABE1E002B4C12 /* SignUpEnterPinViewController.swift in Sources */,

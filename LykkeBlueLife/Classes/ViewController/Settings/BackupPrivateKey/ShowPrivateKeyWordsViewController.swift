@@ -65,6 +65,11 @@ class ShowPrivateKeyWordsViewController: UIViewController {
             })
             .disposed(by: disposeBag)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        completedWordsWriting()
+    }
 
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -88,14 +93,13 @@ class ShowPrivateKeyWordsViewController: UIViewController {
         performSegue(withIdentifier: "checkWordsBackup", sender: nil)
     }
     
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "checkWordsBackup" {
+            let vc = segue.destination as! CheckPrivateKeyWordsViewController
+            vc.words = words
+        }
+     }
 
 }

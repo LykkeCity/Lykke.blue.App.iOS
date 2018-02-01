@@ -229,20 +229,103 @@
             </objects>
             <point key="canvasLocation" x="2042" y="27"/>
         </scene>
-        <!--View Controller-->
+        <!--Check Private Key Words View Controller-->
         <scene sceneID="SRL-Lx-O7u">
             <objects>
-                <viewController id="AVE-YP-Cxe" sceneMemberID="viewController">
+                <viewController id="AVE-YP-Cxe" customClass="CheckPrivateKeyWordsViewController" customModule="LykkeBlueLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rPs-l2-yds">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="577"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arh-qU-g8g" userLabel="Underline">
+                                <rect key="frame" x="20" y="286.5" width="335" height="1"/>
+                                <color key="backgroundColor" red="0.48627450979999998" green="0.80784313730000001" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="EZg-Nx-GAi"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TYPE ALL 12 WORDS SEPARATED BY SPACE TO VERIFY YOUR BACKUP" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1i4-dx-J6o">
+                                <rect key="frame" x="28" y="30" width="319" height="62.5"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhz-f6-DiQ">
+                                <rect key="frame" x="20" y="391" width="335" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="SkE-Yb-pPV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="CONFIRM">
+                                    <color key="titleColor" red="0.48627450979999998" green="0.80784313730000001" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="awo-Wm-glw">
+                                <rect key="frame" x="20" y="250.5" width="335" height="36"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Rzg-su-Z9g"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="arh-qU-g8g" firstAttribute="leading" secondItem="awo-Wm-glw" secondAttribute="leading" id="0zp-kJ-FKe"/>
+                            <constraint firstItem="arh-qU-g8g" firstAttribute="trailing" secondItem="awo-Wm-glw" secondAttribute="trailing" id="6zh-ao-mzo"/>
+                            <constraint firstItem="Hhz-f6-DiQ" firstAttribute="leading" secondItem="awo-Wm-glw" secondAttribute="leading" id="Cma-CG-42i"/>
+                            <constraint firstItem="1i4-dx-J6o" firstAttribute="top" secondItem="lKi-wb-7MV" secondAttribute="top" constant="10" id="Neb-oT-tUg"/>
+                            <constraint firstItem="Hhz-f6-DiQ" firstAttribute="trailing" secondItem="awo-Wm-glw" secondAttribute="trailing" id="Zgf-BX-bQi"/>
+                            <constraint firstAttribute="centerY" secondItem="awo-Wm-glw" secondAttribute="centerY" constant="20" id="djU-sp-Drk"/>
+                            <constraint firstItem="lKi-wb-7MV" firstAttribute="trailing" secondItem="awo-Wm-glw" secondAttribute="trailing" constant="20" id="jzw-T7-dei"/>
+                            <constraint firstItem="1i4-dx-J6o" firstAttribute="leading" secondItem="lKi-wb-7MV" secondAttribute="leading" constant="28" id="nYS-EC-4MV"/>
+                            <constraint firstItem="arh-qU-g8g" firstAttribute="top" secondItem="awo-Wm-glw" secondAttribute="bottom" id="t15-OL-l29"/>
+                            <constraint firstItem="awo-Wm-glw" firstAttribute="leading" secondItem="lKi-wb-7MV" secondAttribute="leading" constant="20" id="tV5-Zc-DsU"/>
+                            <constraint firstItem="lKi-wb-7MV" firstAttribute="bottom" secondItem="Hhz-f6-DiQ" secondAttribute="bottom" constant="117" id="uwu-XD-aqq"/>
+                            <constraint firstItem="awo-Wm-glw" firstAttribute="centerX" secondItem="rPs-l2-yds" secondAttribute="centerX" id="wFR-qe-sBl"/>
+                            <constraint firstItem="lKi-wb-7MV" firstAttribute="trailing" secondItem="1i4-dx-J6o" secondAttribute="trailing" constant="28" id="zfl-H5-gZL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lKi-wb-7MV"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="Hhz-f6-DiQ" id="eew-OF-5GV"/>
+                        <outlet property="textField" destination="awo-Wm-glw" id="qwb-x9-wDb"/>
+                        <outlet property="titleLabel" destination="1i4-dx-J6o" id="FKd-lL-Nup"/>
+                        <segue destination="Vec-59-OjQ" kind="show" identifier="backupCompleted" id="ctT-nj-Zqz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDW-d2-h6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2778" y="27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gFg-xn-5lm">
+            <objects>
+                <viewController id="Vec-59-OjQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Af-PJ-7QV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="577"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backup successful" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nn-Po-IJU">
+                                <rect key="frame" x="90.5" y="276" width="193" height="25.5"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6nn-Po-IJU" firstAttribute="centerY" secondItem="1Af-PJ-7QV" secondAttribute="centerY" id="DhA-1Y-Mv5"/>
+                            <constraint firstItem="6nn-Po-IJU" firstAttribute="centerX" secondItem="1Af-PJ-7QV" secondAttribute="centerX" id="e6A-xi-hvT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QXP-jd-LeI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cw6-s1-t5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3546" y="27"/>
         </scene>
     </scenes>
 </document>
