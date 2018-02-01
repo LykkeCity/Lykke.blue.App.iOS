@@ -6,9 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmericanTypewriter.ttc">
+            <string>AmericanTypewriter</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Backup Private Key Container-->
         <scene sceneID="0ag-uk-JSd">
@@ -25,13 +31,14 @@
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backup Private Key" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caa-yV-LdA">
-                                <rect key="frame" x="114" y="35" width="147" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="107" y="35" width="162" height="20"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYt-XL-Z4d">
-                                <rect key="frame" x="320" y="31" width="39" height="30"/>
+                                <rect key="frame" x="316" y="29.5" width="43" height="32"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                 <state key="normal" title="Close"/>
                             </button>
                         </subviews>
@@ -121,21 +128,121 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="577"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show words" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fya-qo-Bd9">
-                                <rect key="frame" x="140" y="278" width="94" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write down the following words and keep them in safe place" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fya-qo-Bd9">
+                                <rect key="frame" x="25" y="58" width="325" height="39.5"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNh-04-38B">
+                                <rect key="frame" x="0.0" y="127.5" width="375" height="322"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ERw-IO-Kpu">
+                                    <size key="itemSize" width="364" height="198"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WordCell" id="YKM-q2-91f">
+                                        <rect key="frame" x="0.0" y="62" width="364" height="198"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="364" height="198"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIRE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ru4-DZ-f4l">
+                                                    <rect key="frame" x="8" y="8" width="348" height="182"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                                    <color key="textColor" red="0.48627450979999998" green="0.80784313730000001" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="ru4-DZ-f4l" secondAttribute="trailing" id="GeS-3D-qkm"/>
+                                            <constraint firstItem="ru4-DZ-f4l" firstAttribute="leading" secondItem="YKM-q2-91f" secondAttribute="leadingMargin" id="Hdf-MO-XSu"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="ru4-DZ-f4l" secondAttribute="bottom" id="o3p-bu-xd3"/>
+                                            <constraint firstItem="ru4-DZ-f4l" firstAttribute="top" secondItem="YKM-q2-91f" secondAttribute="topMargin" id="zoy-ny-j8e"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cl-qE-iU0">
+                                <rect key="frame" x="283" y="498" width="58" height="40"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="-8" minY="-2" maxX="8" maxY="2"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="0.48627450979999998" green="0.80784313730000001" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 OF 12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MO7-Pc-nXG">
+                                <rect key="frame" x="159" y="508.5" width="58.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
+                                <color key="textColor" red="0.48627450979999998" green="0.80784313730000001" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLN-hg-CnF">
+                                <rect key="frame" x="35.5" y="498" width="56" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="iY5-Fl-oik"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="PREV">
+                                    <color key="titleColor" red="0.48627450979999998" green="0.80784313730000001" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MO7-Pc-nXG" firstAttribute="centerX" secondItem="KVV-Wj-sXA" secondAttribute="centerX" id="0gB-mg-mww"/>
+                            <constraint firstItem="gEa-b4-WOM" firstAttribute="bottom" secondItem="MO7-Pc-nXG" secondAttribute="bottom" constant="50" id="0ph-jC-vxN"/>
+                            <constraint firstItem="XNh-04-38B" firstAttribute="top" secondItem="fya-qo-Bd9" secondAttribute="bottom" constant="30" id="8Dh-Le-FSo"/>
+                            <constraint firstItem="5cl-qE-iU0" firstAttribute="centerY" secondItem="MO7-Pc-nXG" secondAttribute="centerY" id="BMC-71-2Nt"/>
+                            <constraint firstItem="MO7-Pc-nXG" firstAttribute="top" secondItem="XNh-04-38B" secondAttribute="bottom" constant="59" id="BZ3-4r-xkV"/>
+                            <constraint firstAttribute="trailing" secondItem="fya-qo-Bd9" secondAttribute="trailing" constant="25" id="EKf-Cm-lKd"/>
+                            <constraint firstItem="MO7-Pc-nXG" firstAttribute="leading" secondItem="ZLN-hg-CnF" secondAttribute="trailing" constant="67.5" id="HKN-Em-Bdb"/>
+                            <constraint firstItem="fya-qo-Bd9" firstAttribute="top" secondItem="gEa-b4-WOM" secondAttribute="top" constant="38" id="KiT-o1-05L"/>
+                            <constraint firstItem="5cl-qE-iU0" firstAttribute="leading" secondItem="MO7-Pc-nXG" secondAttribute="trailing" constant="65.5" id="Vgi-cG-S2T"/>
+                            <constraint firstItem="fya-qo-Bd9" firstAttribute="leading" secondItem="gEa-b4-WOM" secondAttribute="leading" constant="25" id="WqA-Jl-kvc"/>
+                            <constraint firstItem="XNh-04-38B" firstAttribute="centerY" secondItem="KVV-Wj-sXA" secondAttribute="centerY" id="bz4-Sf-nxH"/>
+                            <constraint firstItem="MO7-Pc-nXG" firstAttribute="centerY" secondItem="ZLN-hg-CnF" secondAttribute="centerY" id="gTb-AN-rBR"/>
+                            <constraint firstItem="fya-qo-Bd9" firstAttribute="centerX" secondItem="KVV-Wj-sXA" secondAttribute="centerX" id="kWv-JJ-xEc"/>
+                            <constraint firstItem="5cl-qE-iU0" firstAttribute="height" secondItem="ZLN-hg-CnF" secondAttribute="height" id="m0F-kE-eui"/>
+                            <constraint firstItem="XNh-04-38B" firstAttribute="trailing" secondItem="gEa-b4-WOM" secondAttribute="trailing" id="mkp-me-bx4"/>
+                            <constraint firstItem="XNh-04-38B" firstAttribute="leading" secondItem="gEa-b4-WOM" secondAttribute="leading" id="mo5-ZA-589"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gEa-b4-WOM"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="XNh-04-38B" id="v8f-UL-qtQ"/>
+                        <outlet property="nextButton" destination="5cl-qE-iU0" id="svA-MH-tPy"/>
+                        <outlet property="pageLabel" destination="MO7-Pc-nXG" id="Mm7-AO-688"/>
+                        <outlet property="previousButton" destination="ZLN-hg-CnF" id="cpg-lP-umy"/>
+                        <outlet property="titleLabel" destination="fya-qo-Bd9" id="he7-yC-WR5"/>
+                        <segue destination="AVE-YP-Cxe" kind="show" identifier="checkWordsBackup" id="1SM-HP-ZRn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVY-dE-rlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2042" y="27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SRL-Lx-O7u">
+            <objects>
+                <viewController id="AVE-YP-Cxe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rPs-l2-yds">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="577"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lKi-wb-7MV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kDW-d2-h6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2778" y="27"/>
         </scene>
     </scenes>
 </document>
