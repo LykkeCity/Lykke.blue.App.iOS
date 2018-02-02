@@ -50,6 +50,7 @@
 		BE564ED020236E7E004C1982 /* LWNetworkTemplate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE564ECF20236E7E004C1982 /* LWNetworkTemplate+Extensions.swift */; };
 		BE5864FD2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5864FC2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift */; };
 		BE5864FF20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5864FE20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift */; };
+		BE5BCD2020248B4C008C4491 /* ViewControllerUXProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5BCD1F20248B4C008C4491 /* ViewControllerUXProtocol.swift */; };
 		BED425FC2020A2AE00046EFC /* LEW-348.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED425FB2020A2AE00046EFC /* LEW-348.storyboard */; };
 		BED425FF2020B0E600046EFC /* BackupPrivateKeyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED425FE2020B0E600046EFC /* BackupPrivateKeyContainer.swift */; };
 		C10D61551FB089560009699E /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D61541FB089560009699E /* QuoteViewController.swift */; };
@@ -237,6 +238,7 @@
 		BE564ECF20236E7E004C1982 /* LWNetworkTemplate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LWNetworkTemplate+Extensions.swift"; sourceTree = "<group>"; };
 		BE5864FC2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginPrivateKeyBackupViewController.swift; sourceTree = "<group>"; };
 		BE5864FE20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPrivateKeyWordsViewController.swift; sourceTree = "<group>"; };
+		BE5BCD1F20248B4C008C4491 /* ViewControllerUXProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUXProtocol.swift; sourceTree = "<group>"; };
 		BED425FB2020A2AE00046EFC /* LEW-348.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "LEW-348.storyboard"; sourceTree = "<group>"; };
 		BED425FE2020B0E600046EFC /* BackupPrivateKeyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupPrivateKeyContainer.swift; sourceTree = "<group>"; };
 		C10D61541FB089560009699E /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
@@ -464,6 +466,14 @@
 			path = TradingAssetView;
 			sourceTree = "<group>";
 		};
+		BE5BCD1E20248AE3008C4491 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BE5BCD1F20248B4C008C4491 /* ViewControllerUXProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		BED425FD2020B0CF00046EFC /* BackupPrivateKey */ = {
 			isa = PBXGroup;
 			children = (
@@ -680,6 +690,7 @@
 				C12FE76C1FC31B40002304EA /* Coordinator */,
 				C13BA2EF1FB32A5C0062121F /* ViewModel */,
 				C1167DCB1F83DA73004CF521 /* Presenter */,
+				BE5BCD1E20248AE3008C4491 /* Protocols */,
 				E02804E71F62B0090058E36D /* Shared */,
 				E0BB8D821F4C6031002B4C12 /* Extensions */,
 				E0A9EB1F1F44898C001A0241 /* View */,
@@ -1249,6 +1260,7 @@
 				F5AD926B200CD3DE0053B39B /* LWRxBlueAuthManagerClaimReferralLink.swift in Sources */,
 				C1985A5E1FCC6F8800CCD0D7 /* PledgeIntroViewController.swift in Sources */,
 				E0AE50B01F61724800CA8BA9 /* LWPortfolioCurrencyTableViewCell.swift in Sources */,
+				BE5BCD2020248B4C008C4491 /* ViewControllerUXProtocol.swift in Sources */,
 				E0A9EAF91F44624B001A0241 /* AppDelegate.swift in Sources */,
 				F5AD9267200CD3DE0053B39B /* LWRxBlueAuthManagerReferralLinkInfo.swift in Sources */,
 				C1985A581FC8440300CCD0D7 /* SignInCodeViewController.swift in Sources */,
