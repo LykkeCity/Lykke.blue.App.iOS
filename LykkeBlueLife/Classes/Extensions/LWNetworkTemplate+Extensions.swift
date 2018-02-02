@@ -21,7 +21,7 @@ extension LWNetworkTemplate: LWAuthManagerDelegate {
                 return
             }
             
-            let storyboard = UIStoryboard(name: "LEW-348", bundle: nil)
+            let storyboard = UIStoryboard(name: "BackupPrivateKey", bundle: nil)
             let backupVC = storyboard.instantiateViewController(withIdentifier: "BackupPrivateKeyContainer")
             backupVC.setupTitle(message)
             vc.present(backupVC, animated: true)

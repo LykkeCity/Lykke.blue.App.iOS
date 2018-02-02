@@ -555,6 +555,7 @@
                         <outlet property="popupContainer" destination="39y-s7-8N5" id="K0Y-Sx-hPD"/>
                         <outlet property="questionLabel" destination="xni-C2-ih7" id="dAn-Hg-tnv"/>
                         <outlet property="ringImageView" destination="3Jl-b4-Trv" id="8W1-Vz-YDH"/>
+                        <outlet property="tradeButton" destination="a8o-Mb-DMJ" id="ABW-Ug-9XV"/>
                         <outlet property="treeCount" destination="f7o-mC-NKP" id="xDa-JS-vaM"/>
                         <outlet property="treeImageView" destination="WJ6-tj-vtV" id="UwX-jF-xMp"/>
                         <outlet property="treeLabel" destination="oTl-X7-jv9" id="ywt-jj-IIl"/>

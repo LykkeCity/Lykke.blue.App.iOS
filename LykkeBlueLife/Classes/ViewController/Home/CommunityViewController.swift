@@ -22,6 +22,7 @@ class CommunityViewController: UIViewController {
     @IBOutlet weak var treeCount: UILabel!
     @IBOutlet weak var amountInBaseAsset: UILabel!
     @IBOutlet weak var background: UIImageView!
+    @IBOutlet weak var tradeButton: UIButton!
     
     let didAppear = PublishSubject<Void>()
     let willDisappear = PublishSubject<Void>()
@@ -102,6 +103,8 @@ class CommunityViewController: UIViewController {
         for view in [questionLabel, popupContainer] {
             view?.isHidden = true
         }
+        
+        tradeButton.titleLabel?.textColor = .white
         
         parent.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: AppTheme.navigationTitleFont,
                                                                           NSForegroundColorAttributeName: UIColor.white]
