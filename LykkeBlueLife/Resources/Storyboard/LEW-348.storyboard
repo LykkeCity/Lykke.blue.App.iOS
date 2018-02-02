@@ -27,7 +27,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qeQ-OM-C19">
                                 <rect key="frame" x="0.0" y="90" width="375" height="577"/>
                                 <connections>
-                                    <segue destination="jNn-kq-yPi" kind="embed" id="TcS-p0-avI"/>
+                                    <segue destination="jNn-kq-yPi" kind="embed" identifier="navigationVC" id="TcS-p0-avI"/>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backup Private Key" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caa-yV-LdA">
@@ -86,8 +86,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="577"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a Backup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14T-rS-PUV">
-                                <rect key="frame" x="129" y="278" width="116.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a Backup" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14T-rS-PUV">
+                                <rect key="frame" x="20" y="198" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -98,21 +98,25 @@
                                     <constraint firstAttribute="height" constant="80" id="7gN-Vu-bya"/>
                                     <constraint firstAttribute="width" constant="300" id="ijL-Oa-ULL"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 <state key="normal" title="Begin"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="14T-rS-PUV" firstAttribute="centerY" secondItem="YAT-iL-njM" secondAttribute="centerY" id="2C2-oY-HCQ"/>
+                            <constraint firstAttribute="centerY" secondItem="14T-rS-PUV" secondAttribute="centerY" constant="80" id="2C2-oY-HCQ"/>
                             <constraint firstItem="xkr-Qd-vf8" firstAttribute="centerX" secondItem="YAT-iL-njM" secondAttribute="centerX" id="3yL-qM-5kA"/>
                             <constraint firstItem="14T-rS-PUV" firstAttribute="centerX" secondItem="YAT-iL-njM" secondAttribute="centerX" id="JI5-xP-ehk"/>
+                            <constraint firstItem="UFg-Nd-ctE" firstAttribute="trailing" secondItem="14T-rS-PUV" secondAttribute="trailing" constant="20" id="N2j-K3-AYA"/>
                             <constraint firstItem="UFg-Nd-ctE" firstAttribute="bottom" secondItem="xkr-Qd-vf8" secondAttribute="bottom" constant="80" id="Rpp-C7-U5l"/>
+                            <constraint firstItem="14T-rS-PUV" firstAttribute="leading" secondItem="UFg-Nd-ctE" secondAttribute="leading" constant="20" id="xl8-VM-UcE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UFg-Nd-ctE"/>
                     </view>
                     <navigationItem key="navigationItem" id="aQb-MB-vUn"/>
                     <connections>
                         <outlet property="beginButton" destination="xkr-Qd-vf8" id="XLk-NM-6Tv"/>
+                        <outlet property="titleLabel" destination="14T-rS-PUV" id="mdk-d8-U3o"/>
                         <segue destination="x51-Zd-NEf" kind="show" identifier="showPrivateKeyWords" id="Djj-Cm-ysH"/>
                     </connections>
                 </viewController>

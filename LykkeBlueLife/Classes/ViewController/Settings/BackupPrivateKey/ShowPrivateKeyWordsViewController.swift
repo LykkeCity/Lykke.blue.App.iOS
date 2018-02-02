@@ -65,11 +65,6 @@ class ShowPrivateKeyWordsViewController: UIViewController {
             })
             .disposed(by: disposeBag)
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        completedWordsWriting()
-    }
 
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()

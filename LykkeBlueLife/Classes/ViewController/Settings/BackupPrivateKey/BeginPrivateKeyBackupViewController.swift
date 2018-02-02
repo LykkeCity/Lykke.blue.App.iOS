@@ -13,12 +13,16 @@ import RxCocoa
 class BeginPrivateKeyBackupViewController: UIViewController {
 
     @IBOutlet weak var beginButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
     
-    let disposeBag = DisposeBag()
+    fileprivate let disposeBag = DisposeBag()
+    fileprivate var backupTitle: String? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        titleLabel.text = backupTitle ?? titleLabel.text
+        
         beginButton.rx.tap
             .flatMap { return ValidatePinViewController.presentPinViewController(from: self, allowToClose: true) }
             .delay(0.1, scheduler: MainScheduler.instance)
@@ -29,9 +33,8 @@ class BeginPrivateKeyBackupViewController: UIViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func setupTitle(_ title: String) {
+        backupTitle = title
     }
     
 
