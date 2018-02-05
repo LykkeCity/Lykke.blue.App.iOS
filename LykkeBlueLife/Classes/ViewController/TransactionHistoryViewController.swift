@@ -59,8 +59,9 @@ class TransactionHistoryViewController: BaseViewController {
             .disposed(by: disposeBag)
         
         transactionsViewModel.transactionsAsCsv
+            .asObservable()
             .isLoading()
-            .drive(onNext: {[weak self] isLoading in
+            .bind(onNext: {[weak self] isLoading in
                 self?.showLoadingView(isLoading: isLoading)
             })
             .disposed(by: disposeBag)
