@@ -20,16 +20,12 @@ class BackupPrivateKeyContainer: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let vc = self
-        
         closeButton.rx.tap
             .asObservable()
-            .subscribe(onNext: { [weak vc] in
-                vc?.dismiss(animated: true, completion: nil)
+            .subscribe(onNext: { [weak self] in
+                self?.dismiss(animated: true, completion: nil)
             })
             .disposed(by: disposeBag)
-        
-        // Do any additional setup after loading the view.
     }
 
     override func setupTitle(_ title: String) {

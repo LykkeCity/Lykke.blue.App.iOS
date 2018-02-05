@@ -27,7 +27,7 @@ class BeginPrivateKeyBackupViewController: UIViewController {
             .flatMap { return ValidatePinViewController.presentPinViewController(from: self, allowToClose: true) }
             .delay(0.1, scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
-                self?.performSegue(withIdentifier: "showPrivateKeyWords", sender: nil)
+                self?.performSegue(withIdentifier: AppConstants.Segue.showPrivateKeyWords, sender: nil)
             })
             .disposed(by: disposeBag)
         
