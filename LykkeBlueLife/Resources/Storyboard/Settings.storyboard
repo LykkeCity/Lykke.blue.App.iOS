@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,11 +40,20 @@
                     <size key="freeformSize" width="375" height="767"/>
                     <connections>
                         <outlet property="tableView" destination="n1Y-eG-Vzr" id="ZB1-K6-kSU"/>
+                        <segue destination="NIi-La-KaY" kind="presentation" identifier="showBeginPrivateKeyBackup" id="oqm-kh-JWl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMA-PB-SvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-236" y="-48.125937031484263"/>
+        </scene>
+        <!--BackupPrivateKey-->
+        <scene sceneID="OHt-8E-ZD1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BackupPrivateKey" id="NIi-La-KaY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5M-Io-jdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="519"/>
         </scene>
         <!--Settings Push Notifications View Controller-->
         <scene sceneID="97f-G7-veX">
@@ -119,101 +128,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QDl-Qg-2gv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1078" y="573"/>
-        </scene>
-        <!--Backup View Controller-->
-        <scene sceneID="1AP-YI-v0l">
-            <objects>
-                <viewController id="L9U-Nk-ML7" customClass="BackupViewController" customModule="LykkeBlueLife" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="la4-4Q-wlk"/>
-                        <viewControllerLayoutGuide type="bottom" id="cg9-2q-2QT"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ALN-Al-94M">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihk-Fs-ubJ">
-                                <rect key="frame" x="147" y="304" width="80" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="riL-0o-WDj"/>
-                                    <constraint firstAttribute="height" constant="21" id="wwH-ku-Cu9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="backup word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVh-QF-ywo">
-                                <rect key="frame" x="112" y="211" width="150" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="1" constant="150" id="21Y-A3-JoU"/>
-                                    <constraint firstAttribute="height" constant="21" id="xaZ-Sh-Pgg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="cVh-QF-ywo" firstAttribute="centerX" secondItem="ALN-Al-94M" secondAttribute="centerX" id="9gV-Ss-6Uc"/>
-                            <constraint firstItem="cg9-2q-2QT" firstAttribute="top" secondItem="ihk-Fs-ubJ" secondAttribute="bottom" constant="342" id="SqQ-nF-wec"/>
-                            <constraint firstItem="ihk-Fs-ubJ" firstAttribute="top" secondItem="cVh-QF-ywo" secondAttribute="bottom" constant="8" id="buB-fN-BtF"/>
-                            <constraint firstItem="ihk-Fs-ubJ" firstAttribute="centerX" secondItem="ALN-Al-94M" secondAttribute="centerX" id="eCS-bG-4or"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="step" destination="ihk-Fs-ubJ" id="fnb-wd-bPK"/>
-                        <outlet property="word" destination="cVh-QF-ywo" id="aHt-1S-6tS"/>
-                        <segue destination="FjC-ng-1H5" kind="show" identifier="showVerifyBackup" id="6va-Uq-zvA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HB5-hO-EyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1758" y="573"/>
-        </scene>
-        <!--Verify Backup View Controller-->
-        <scene sceneID="QGC-nC-TZ4">
-            <objects>
-                <viewController id="FjC-ng-1H5" customClass="VerifyBackupViewController" customModule="LykkeBlueLife" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sIr-eo-XtQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="29b-Z9-9gU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="d8a-J0-JHe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FR2-Qo-Lmg">
-                                <rect key="frame" x="16" y="178" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nearly ready!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slZ-P1-chN">
-                                <rect key="frame" x="136" y="76" width="102" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please type all 12 words separated by space to verify your backup" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poz-i0-E7Y">
-                                <rect key="frame" x="25" y="110" width="334" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="backup" destination="FR2-Qo-Lmg" id="ceK-y4-jM2"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MQG-gQ-Z12" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2440.8000000000002" y="572.56371814092961"/>
         </scene>
         <!--Settings Change Phone View Controller-->
         <scene sceneID="GOn-L6-5b4">

@@ -45,6 +45,14 @@
 		BE125442201B708E004FC314 /* Driver+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE125441201B708E004FC314 /* Driver+Extensions.swift */; };
 		BE24B0F82017655B0005E7B8 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */; };
 		BE31CC041FFD3AEF001B350C /* InputForm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */; };
+		BE564ECC20231046004C1982 /* LWPrivateKeyManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE564ECB20231046004C1982 /* LWPrivateKeyManager+Extensions.swift */; };
+		BE564ECE20233A67004C1982 /* CheckPrivateKeyWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE564ECD20233A67004C1982 /* CheckPrivateKeyWordsViewController.swift */; };
+		BE564ED020236E7E004C1982 /* LWNetworkTemplate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE564ECF20236E7E004C1982 /* LWNetworkTemplate+Extensions.swift */; };
+		BE5864FD2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5864FC2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift */; };
+		BE5864FF20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5864FE20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift */; };
+		BE5BCD2020248B4C008C4491 /* ViewControllerUXProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5BCD1F20248B4C008C4491 /* ViewControllerUXProtocol.swift */; };
+		BED425FC2020A2AE00046EFC /* BackupPrivateKey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED425FB2020A2AE00046EFC /* BackupPrivateKey.storyboard */; };
+		BED425FF2020B0E600046EFC /* BackupPrivateKeyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED425FE2020B0E600046EFC /* BackupPrivateKeyContainer.swift */; };
 		C10D61551FB089560009699E /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D61541FB089560009699E /* QuoteViewController.swift */; };
 		C10D61591FB0AD0F0009699E /* ManifestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D61581FB0AD0F0009699E /* ManifestoViewController.swift */; };
 		C10D615B1FB0B30E0009699E /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D615A1FB0B30E0009699E /* UserDefaultsKeys.swift */; };
@@ -71,7 +79,6 @@
 		C13E63AC1F9F666900873CA3 /* VerifyPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E63AB1F9F666900873CA3 /* VerifyPinViewController.swift */; };
 		C13E63AE1F9F66D800873CA3 /* VerifySMSCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E63AD1F9F66D800873CA3 /* VerifySMSCodeViewController.swift */; };
 		C13E63B01F9F67A900873CA3 /* SuccessScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E63AF1F9F67A900873CA3 /* SuccessScreenViewController.swift */; };
-		C13E63BA1FA081A500873CA3 /* BackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E63B91FA081A500873CA3 /* BackupViewController.swift */; };
 		C17B69BF1FAA17A50076A53A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17B69BE1FAA17A50076A53A /* Onboarding.storyboard */; };
 		C17B69C11FAB72950076A53A /* Pledge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17B69C01FAB72950076A53A /* Pledge.storyboard */; };
 		C17B69C51FAC59A30076A53A /* FootprintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B69C41FAC59A30076A53A /* FootprintViewController.swift */; };
@@ -89,7 +96,6 @@
 		C19A6D2D1FC6D1EC00AE4C7D /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6D271FC6D1EC00AE4C7D /* TwitterViewController.swift */; };
 		C1D5D1E71FDFDE2D00CC916A /* AppConstants+Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5D1E61FDFDE2D00CC916A /* AppConstants+Security.swift */; };
 		C1DB50311F8E655600C70875 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB50301F8E655600C70875 /* UserDefaults+Extensions.swift */; };
-		C1FEDD8A1FA21B2400FD87C5 /* VerifyBackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FEDD891FA21B2400FD87C5 /* VerifyBackupViewController.swift */; };
 		C1FEDD941FA7273700FD87C5 /* American Typewriter Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1FEDD8D1FA7246A00FD87C5 /* American Typewriter Regular.ttf */; };
 		C1FEDD951FA7273D00FD87C5 /* Replica-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1FEDD921FA7246A00FD87C5 /* Replica-Bold.ttf */; };
 		C1FEDD961FA7273D00FD87C5 /* Replica-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1FEDD901FA7246A00FD87C5 /* Replica-BoldItalic.ttf */; };
@@ -225,6 +231,14 @@
 		BE125441201B708E004FC314 /* Driver+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Driver+Extensions.swift"; sourceTree = "<group>"; };
 		BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		BE31CC031FFD3AEF001B350C /* InputForm+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputForm+Extensions.swift"; sourceTree = "<group>"; };
+		BE564ECB20231046004C1982 /* LWPrivateKeyManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LWPrivateKeyManager+Extensions.swift"; sourceTree = "<group>"; };
+		BE564ECD20233A67004C1982 /* CheckPrivateKeyWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPrivateKeyWordsViewController.swift; sourceTree = "<group>"; };
+		BE564ECF20236E7E004C1982 /* LWNetworkTemplate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LWNetworkTemplate+Extensions.swift"; sourceTree = "<group>"; };
+		BE5864FC2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginPrivateKeyBackupViewController.swift; sourceTree = "<group>"; };
+		BE5864FE20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPrivateKeyWordsViewController.swift; sourceTree = "<group>"; };
+		BE5BCD1F20248B4C008C4491 /* ViewControllerUXProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUXProtocol.swift; sourceTree = "<group>"; };
+		BED425FB2020A2AE00046EFC /* BackupPrivateKey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BackupPrivateKey.storyboard; sourceTree = "<group>"; };
+		BED425FE2020B0E600046EFC /* BackupPrivateKeyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupPrivateKeyContainer.swift; sourceTree = "<group>"; };
 		C10D61541FB089560009699E /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		C10D61581FB0AD0F0009699E /* ManifestoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManifestoViewController.swift; sourceTree = "<group>"; };
 		C10D615A1FB0B30E0009699E /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
@@ -252,7 +266,6 @@
 		C13E63AB1F9F666900873CA3 /* VerifyPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPinViewController.swift; sourceTree = "<group>"; };
 		C13E63AD1F9F66D800873CA3 /* VerifySMSCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifySMSCodeViewController.swift; sourceTree = "<group>"; };
 		C13E63AF1F9F67A900873CA3 /* SuccessScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessScreenViewController.swift; sourceTree = "<group>"; };
-		C13E63B91FA081A500873CA3 /* BackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupViewController.swift; sourceTree = "<group>"; };
 		C17B69BE1FAA17A50076A53A /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		C17B69C01FAB72950076A53A /* Pledge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pledge.storyboard; sourceTree = "<group>"; };
 		C17B69C41FAC59A30076A53A /* FootprintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootprintViewController.swift; sourceTree = "<group>"; };
@@ -272,7 +285,6 @@
 		C1C0780D1F94FD3F00AC89A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C1D5D1E61FDFDE2D00CC916A /* AppConstants+Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppConstants+Security.swift"; sourceTree = "<group>"; };
 		C1DB50301F8E655600C70875 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
-		C1FEDD891FA21B2400FD87C5 /* VerifyBackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyBackupViewController.swift; sourceTree = "<group>"; };
 		C1FEDD8C1FA7246900FD87C5 /* Replica-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Replica-Italic.ttf"; sourceTree = "<group>"; };
 		C1FEDD8D1FA7246A00FD87C5 /* American Typewriter Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "American Typewriter Regular.ttf"; sourceTree = "<group>"; };
 		C1FEDD8E1FA7246A00FD87C5 /* ReplicaPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReplicaPro-Regular.ttf"; sourceTree = "<group>"; };
@@ -450,6 +462,25 @@
 			path = TradingAssetView;
 			sourceTree = "<group>";
 		};
+		BE5BCD1E20248AE3008C4491 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BE5BCD1F20248B4C008C4491 /* ViewControllerUXProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BED425FD2020B0CF00046EFC /* BackupPrivateKey */ = {
+			isa = PBXGroup;
+			children = (
+				BED425FE2020B0E600046EFC /* BackupPrivateKeyContainer.swift */,
+				BE5864FC2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift */,
+				BE5864FE20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift */,
+				BE564ECD20233A67004C1982 /* CheckPrivateKeyWordsViewController.swift */,
+			);
+			path = BackupPrivateKey;
+			sourceTree = "<group>";
+		};
 		C10D61531FB089380009699E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +544,7 @@
 		C13E63B81FA0818200873CA3 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				BED425FD2020B0CF00046EFC /* BackupPrivateKey */,
 				6158FF001FD2D77400AFCC28 /* SettingItem.swift */,
 				E0BB8D8B1F4D95E6002B4C12 /* SettingsViewController.swift */,
 				61A2F2251FDAC63D002A8F02 /* SettingsViewController+Sections.swift */,
@@ -522,8 +554,6 @@
 				E0B2A6E91F56E914004B0995 /* SettingsEmailConfirmViewController.swift */,
 				E0B2A6EA1F56E914004B0995 /* SettingsPhoneConfirmViewController.swift */,
 				E0B2A6EB1F56E914004B0995 /* SettingsPushNotificationsViewController.swift */,
-				C13E63B91FA081A500873CA3 /* BackupViewController.swift */,
-				C1FEDD891FA21B2400FD87C5 /* VerifyBackupViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -654,6 +684,7 @@
 				C12FE76C1FC31B40002304EA /* Coordinator */,
 				C13BA2EF1FB32A5C0062121F /* ViewModel */,
 				C1167DCB1F83DA73004CF521 /* Presenter */,
+				BE5BCD1E20248AE3008C4491 /* Protocols */,
 				E02804E71F62B0090058E36D /* Shared */,
 				E0BB8D821F4C6031002B4C12 /* Extensions */,
 				E0A9EB1F1F44898C001A0241 /* View */,
@@ -731,6 +762,7 @@
 				C17B69BE1FAA17A50076A53A /* Onboarding.storyboard */,
 				C17B69C01FAB72950076A53A /* Pledge.storyboard */,
 				616E58521FC5963A00A61AAF /* Shared.storyboard */,
+				BED425FB2020A2AE00046EFC /* BackupPrivateKey.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -760,6 +792,8 @@
 				BE24B0F72017655B0005E7B8 /* UIButton+Extensions.swift */,
 				BE12543F201B6D71004FC314 /* DispatchQueue+Extensions.swift */,
 				BE125441201B708E004FC314 /* Driver+Extensions.swift */,
+				BE564ECB20231046004C1982 /* LWPrivateKeyManager+Extensions.swift */,
+				BE564ECF20236E7E004C1982 /* LWNetworkTemplate+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -920,6 +954,7 @@
 				C1FEDD971FA7273D00FD87C5 /* Replica-Italic.ttf in Resources */,
 				C183F4B71FD992BD00F96379 /* GoogleService-Info.plist in Resources */,
 				E0BB8D631F471F72002B4C12 /* Localizable.strings in Resources */,
+				BED425FC2020A2AE00046EFC /* BackupPrivateKey.storyboard in Resources */,
 				E0B2A6F71F56E924004B0995 /* ChooseCurrencyViewCell.xib in Resources */,
 				E0A9EB031F44624B001A0241 /* LaunchScreen.storyboard in Resources */,
 				616E58531FC5963A00A61AAF /* Shared.storyboard in Resources */,
@@ -1158,6 +1193,8 @@
 				C12FE7671FBB0A45002304EA /* InviteButton.swift in Sources */,
 				F5AD927B200CD3F40053B39B /* PledgeModel.swift in Sources */,
 				61A2F2241FDAB35B002A8F02 /* Twitter+Rx.swift in Sources */,
+				BED425FF2020B0E600046EFC /* BackupPrivateKeyContainer.swift in Sources */,
+				BE564ECE20233A67004C1982 /* CheckPrivateKeyWordsViewController.swift in Sources */,
 				C1985A571FC8440300CCD0D7 /* SignInPinViewController.swift in Sources */,
 				F5AD9268200CD3DE0053B39B /* LWRxBlueAuthManagerPledgePost.swift in Sources */,
 				E0BB8D6F1F4ABE1E002B4C12 /* SignUpEnterPinViewController.swift in Sources */,
@@ -1168,7 +1205,7 @@
 				6107C6001FC46CDB0061C35B /* SignUpAddPhoneViewController.swift in Sources */,
 				F5AD9283200CD9E00053B39B /* PledgeService.swift in Sources */,
 				E0B2A6F01F56E914004B0995 /* SettingsEmailConfirmViewController.swift in Sources */,
-				C1FEDD8A1FA21B2400FD87C5 /* VerifyBackupViewController.swift in Sources */,
+				BE564ED020236E7E004C1982 /* LWNetworkTemplate+Extensions.swift in Sources */,
 				BE125440201B6D71004FC314 /* DispatchQueue+Extensions.swift in Sources */,
 				C13E63AE1F9F66D800873CA3 /* VerifySMSCodeViewController.swift in Sources */,
 				618B4BE11FD2C3E8001C5830 /* SettingsTableViewCell.swift in Sources */,
@@ -1216,10 +1253,12 @@
 				F5AD926B200CD3DE0053B39B /* LWRxBlueAuthManagerClaimReferralLink.swift in Sources */,
 				C1985A5E1FCC6F8800CCD0D7 /* PledgeIntroViewController.swift in Sources */,
 				E0AE50B01F61724800CA8BA9 /* LWPortfolioCurrencyTableViewCell.swift in Sources */,
+				BE5BCD2020248B4C008C4491 /* ViewControllerUXProtocol.swift in Sources */,
 				E0A9EAF91F44624B001A0241 /* AppDelegate.swift in Sources */,
 				F5AD9267200CD3DE0053B39B /* LWRxBlueAuthManagerReferralLinkInfo.swift in Sources */,
 				C1985A581FC8440300CCD0D7 /* SignInCodeViewController.swift in Sources */,
 				E0BB8D7B1F4B1DAC002B4C12 /* SignUpPasswordViewController.swift in Sources */,
+				BE5864FD2021E9C500CF8321 /* BeginPrivateKeyBackupViewController.swift in Sources */,
 				E0B2A6ED1F56E914004B0995 /* PinSetViewController.swift in Sources */,
 				BE31CC041FFD3AEF001B350C /* InputForm+Extensions.swift in Sources */,
 				61A9B8BD1FC44919002EC9A7 /* UIScrollView+Rx.swift in Sources */,
@@ -1250,7 +1289,6 @@
 				E0AE50B31F617EA900CA8BA9 /* UIImageView+Rx.swift in Sources */,
 				E0BB8D841F4C6031002B4C12 /* Notification+Extensions.swift in Sources */,
 				E05515331F6FEBD000D488BE /* TransferByWAddressViewController.swift in Sources */,
-				C13E63BA1FA081A500873CA3 /* BackupViewController.swift in Sources */,
 				F5AD927C200CD3F40053B39B /* ReferralLinkClaimPacket.swift in Sources */,
 				BE125442201B708E004FC314 /* Driver+Extensions.swift in Sources */,
 				E0BB8D811F4C3860002B4C12 /* UIHelper.swift in Sources */,
@@ -1265,7 +1303,9 @@
 				E028051D1F66D3FD0058E36D /* TempButton.swift in Sources */,
 				9A2ECD9E1F500DA100E81680 /* SkyFloatingLabelTextField.swift in Sources */,
 				C13E63B01F9F67A900873CA3 /* SuccessScreenViewController.swift in Sources */,
+				BE564ECC20231046004C1982 /* LWPrivateKeyManager+Extensions.swift in Sources */,
 				C13BA2F51FB4841C0062121F /* NetPositiveViewModel.swift in Sources */,
+				BE5864FF20220C6500CF8321 /* ShowPrivateKeyWordsViewController.swift in Sources */,
 				C13E63AA1F9F663100873CA3 /* CreatePinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

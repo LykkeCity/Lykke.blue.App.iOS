@@ -29,6 +29,7 @@ extension SettingsViewController {
                 twitterItem,
             ]),
             SettingsSection(header: "general", items: [
+                SettingItem(id: "backupPrivateKey", handler: SettingsBackupWalletItem(presenter: self)),
                 touItem,
                 SettingItem(id: "support", handler: SettingsSupportItem()),
             ]),

@@ -32,6 +32,8 @@ public enum AppConstants {
         public static let showSignInSMSCode = "showSignInSMSCode"
         public static let showProfile = "showProfile"
         public static let showQuote = "showQuote"
+        public static let showBeginPrivateKeyBackup = "showBeginPrivateKeyBackup"
+        public static let showPrivateKeyWords = "showPrivateKeyWords"
     }
     
     public enum Storyboard {
@@ -40,6 +42,7 @@ public enum AppConstants {
         public static let onboarding = "Onboarding"
         public static let pledge = "Pledge"
         public static let signUpNav = "SignUpNav"
+        public static let backupPrivateKey = "BackupPrivateKey"
     }
     
     public enum Screen {
@@ -52,6 +55,7 @@ public enum AppConstants {
         public static let twitter = "Twitter"
         public static let community = "Community"
         public static let profile = "Profile"
+        public static let startPrivateKeyBackup = "BackupPrivateKeyContainer"
     }
     
     public enum Navigation {

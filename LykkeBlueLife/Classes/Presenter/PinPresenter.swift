@@ -13,19 +13,23 @@ class PinPresenter: Presenter {
                        viewControllerToPresent: UIViewController? = nil) {
         if UIApplication.topViewController() is ValidatePinViewController { return }
         
-        let storyboard = UIStoryboard(name: AppConstants.Storyboard.signInUp, bundle: nil)
-        let pin = storyboard.instantiateViewController(withIdentifier: AppConstants.Screen.validatePin)
+        
+        var toPresent: UIViewController! = viewControllerToPresent
+        
+        if toPresent == nil {
+            toPresent = ValidatePinViewController.pinPadViewController()
+        }
         
         guard let viewController = viewController else {
             if let window = UIApplication.shared.delegate?.window as? UIWindow {
-                window.rootViewController = pin
+                window.rootViewController = toPresent
                 window.makeKeyAndVisible()
             }
             
             return
         }
         
-        viewController.present(pin, animated: true, completion: nil)
+        viewController.present(toPresent, animated: true, completion: nil)
     }
     
     
